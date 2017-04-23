@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Camping Advice Wordpress
 
 #Web Design Activity
@@ -83,3 +84,6 @@ successfullY.
 *d. Briefly describe what hardware and software applications you are intending to use for the task.
 *e.Give one reason why yoou have chosen that software application.^
 *f. What legal or locar guidelines would you need to think about before completing the task?
+=======
+# CampingAdviceWordpress
+>>>>>>> origin/master
