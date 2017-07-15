@@ -23,31 +23,31 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2016/12/black-family-in-tent-smiling.jpg" alt="black-family-in-tent-smiling" /></a>
+                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Sliderimages/black-family-in-tent-smiling.jpg" alt="black-family-in-tent-smiling" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2016/12/Man-sitting-in-tent-in-wood-lands.jpg" alt="Man-sitting-in-tent-in-wood-lands" /></a>
+                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Sliderimages/Man-sitting-in-tent-in-wood-lands.jpg" alt="Man-sitting-in-tent-in-wood-lands" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2016/12/group-of-young-people-camping.jpg" alt="group-of-young-people-camping" /></a>
+                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Sliderimages/group-of-young-people-camping.jpg" alt="group-of-young-people-camping" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2016/12/kids-running-around-tent.jpg" alt="kids-running-around-tent" /></a>
+                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Sliderimages/kids-running-around-tent.jpg" alt="kids-running-around-tent" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
                         <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2016/12/young-couple-in-tent.jpg" alt="young-couple-in-tent" /></a>
+                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Sliderimages/young-couple-in-tent.jpg" alt="young-couple-in-tent" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>

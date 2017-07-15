@@ -46,14 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-nbproject/
 .sass-cache/
-css/.sass-cache/
 images/
 js/bootstrap/
 js/Respond-master/
-
+css/partials/
 css/main.scss
 css/main.css.map
 css/bootstrap.min.css
@@ -61,4 +58,4 @@ css/bootstrap.css.map
 css/bootstrap.css
 
 js/
-/nbproject/private/
+nbproject/
