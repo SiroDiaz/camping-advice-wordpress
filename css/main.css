@@ -105,33 +105,59 @@
 #bbpress-forums ul.bbp-topics li.bbp-header {
   float: left;
   display: block;
-  width: 25%;
+  width: 20%;
   background-color: #336600;
-  color: #fff; }
+  color: #fff;
+  padding: 8px;
+  text-indent: 5%; }
   #bbpress-forums ul.bbp-topics li.bbp-header ul {
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0; }
     #bbpress-forums ul.bbp-topics li.bbp-header ul li {
       letter-spacing: 0.1em;
       line-height: 35px;
       font-size: 1em; }
     #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-title {
+<<<<<<< HEAD
       line-height: 40px; }
+=======
+      color: #336600;
+      background-color: #fff;
+      line-height: 67px; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-voice-count {
+      color: #336600;
+      background-color: #fff; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-reply-count {
+      color: #336600;
+      background-color: #fff; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-freshness {
+      color: #336600;
+      background-color: #fff; }
+>>>>>>> 385738f109bc65bb942701216540152f38404459
 #bbpress-forums ul.bbp-topics li.bbp-body {
-  width: 73%;
+  width: 80%;
   display: inline-block;
   line-height: auto; }
   #bbpress-forums ul.bbp-topics li.bbp-body ul.topic {
     height: auto;
-    padding: 12.25px; }
+    padding: 8px;
+    background-color: #336600;
+    text-indent: 5%; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title {
       font-size: 1em; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title a.bbp-topic-permalink {
         display: inline-block;
         width: 40%;
         float: left;
+<<<<<<< HEAD
         line-height: 40px; }
+=======
+        line-height: 67px;
+        color: #336600;
+        background-color: #fff; }
+>>>>>>> 385738f109bc65bb942701216540152f38404459
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta {
-        width: 60%;
+        width: auto;
         height: auto;
         display: inline-block;
         float: left; }
@@ -142,7 +168,9 @@
           white-space: normal;
           display: block;
           height: 35px;
-          line-height: 35px; }
+          line-height: 35px;
+          color: #336600;
+          background-color: #fff; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-by a.bbp-author-avatar {
             width: 8%;
             margin: 0; }
@@ -154,16 +182,22 @@
             width: 53%;
             font-size: 0.95em; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-voice-count {
-      width: 100%; }
+      width: 100%;
+      color: #336600;
+      background-color: #fff; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-reply-count {
-      width: 100%; }
+      width: 100%;
+      color: #336600;
+      background-color: #fff; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness {
-      width: 100%; }
+      width: 100%;
+      color: #336600;
+      background-color: #fff; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness a {
         width: 40%;
         float: left; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta {
-        width: 60%;
+        width: auto;
         display: inline-block; }
         #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span {
           width: 100%;
@@ -171,13 +205,13 @@
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span #text {
             display: block; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-avatar {
-            width: 8%; }
+            width: 15%; }
             #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-avatar img.avatar {
               width: 100%;
               margin: 0; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-name {
             font-size: 0.95em;
-            width: 56%;
+            width: 100%;
             float: none; }
 #bbpress-forums li.bbp-header ul li {
   letter-spacing: 0.1em;
@@ -218,7 +252,11 @@
   border: 0;
   outline: none; }
 #bbpress-forums div.bbp-template-notice img.avatar {
+<<<<<<< HEAD
   width: 8%;
+=======
+  width: 5%;
+>>>>>>> 385738f109bc65bb942701216540152f38404459
   margin-top: 2%; }
 #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar input.ed_button {
   width: 9%; }
@@ -349,7 +387,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 #buddypress #item-header-cover-image #item-header-avatar {
   margin-top: 1.5em;
-  width: 17%; }
+  width: 12%; }
 
 #buddypress div.item-list-tabs ul li.selected a {
   background-color: #336600;
@@ -379,7 +417,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 #buddypress #header-cover-image {
   background-color: #336600;
-  height: 175px; }
+  height: 135px; }
 
 #buddypress #item-header-cover-image #item-header-avatar img.avatar {
   display: block; }
@@ -499,7 +537,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 .bp-user #buddypress #item-header {
   padding-top: 0;
-  height: 180px; }
+  height: 140px; }
 
 .bp_members,
 .forum {
@@ -974,6 +1012,7 @@ ul {
       .container-fluid .error-box h1 {
         font-size: 1.5em;
         line-height: 40px;
+<<<<<<< HEAD
         display: block; }
       .container-fluid .error-box h1 a {
         text-decoration: none;
@@ -997,6 +1036,21 @@ ul {
     .container-fluid #main-content, .container-fluid #main-content-comments {
       height: auto;
       min-height: 600px;
+=======
+        letter-spacing: 0.2em;
+        font-size: 2em;
+        color: #336600;
+        text-align: center; }
+    .container-fluid #main-content p.bbp-topic-meta, .container-fluid #main-content-comments p.bbp-topic-meta {
+      width: 75%;
+      font-size: 0.9em;
+      display: inline-block;
+      min-height: 30px;
+      line-height: 30px; }
+      .container-fluid #main-content p.bbp-topic-meta img.avatar, .container-fluid #main-content-comments p.bbp-topic-meta img.avatar {
+        width: 7%; }
+    .container-fluid #main-content p, .container-fluid #main-content-comments p {
+>>>>>>> 385738f109bc65bb942701216540152f38404459
       width: 96%;
       margin: 0 auto;
       background-color: #fff;

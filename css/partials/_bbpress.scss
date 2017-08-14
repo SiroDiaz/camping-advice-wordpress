@@ -126,34 +126,75 @@
 
     //topics
     ul.bbp-topics{
+<<<<<<< HEAD
 
         li.bbp-header {
             float:left;
             display:block;
             width:25%;
+=======
+        
+        li.bbp-header { 
+            float:left; 
+            display:block; 
+            width:20%;
+>>>>>>> 385738f109bc65bb942701216540152f38404459
             background-color: $color1;
             color: $color2;
+            padding: 8px;
+            text-indent:5%;
             ul {
                 overflow: hidden;
+                margin: 0;
                 li {
                     letter-spacing: 0.1em;
                     line-height: 35px;
+<<<<<<< HEAD
 
                     font-size: 1em;
                 }
                 li.bbp-topic-title{ line-height:40px;}
 
+=======
+                    font-size: 1em;
+                }
+                li.bbp-topic-title{ 
+                    color: $color1;
+                    background-color: $color2;
+                    line-height:67px;
+                }
+                
+                li.bbp-topic-voice-count{
+                    color: $color1;
+                    background-color: $color2;
+                }
+                li.bbp-topic-reply-count{
+                    color: $color1;
+                    background-color: $color2;
+                }
+                li.bbp-topic-freshness{
+                    color: $color1;
+                    background-color: $color2;
+
+                }
+                
+>>>>>>> 385738f109bc65bb942701216540152f38404459
             }
 
         }
 
         li.bbp-body{
+<<<<<<< HEAD
             width:73%;
+=======
+            width:80%; 
+>>>>>>> 385738f109bc65bb942701216540152f38404459
             display:inline-block;
             line-height:auto;
 
             ul.topic {
                 height: auto;
+<<<<<<< HEAD
                 padding: 12.25px;
 
                 li.bbp-topic-title{
@@ -162,6 +203,25 @@
                     a.bbp-topic-permalink{display: inline-block; width: 40%; float: left; line-height: 40px;}
                     p.bbp-topic-meta {
                         width: 60%;
+=======
+                padding: 8px;
+                background-color: $color1;
+                text-indent:5%;
+                
+                li.bbp-topic-title{
+                                        
+                    font-size: 1em;
+                    a.bbp-topic-permalink{
+                        display: inline-block; 
+                        width: 40%; 
+                        float: left; 
+                        line-height: 67px;
+                        color: $color1;
+                        background-color: $color2;
+                    }
+                    p.bbp-topic-meta {  
+                        width: auto;
+>>>>>>> 385738f109bc65bb942701216540152f38404459
                         height: auto;
                         display: inline-block;
                         float:left;
@@ -171,6 +231,8 @@
                             display: block;
                             height: 35px;
                             line-height: 35px;
+                            color: $color1;
+                            background-color: $color2;
                             a.bbp-author-avatar{
                                 width: 8%;
                                 margin:0;
@@ -182,13 +244,23 @@
 
                     }
                 }
-                li.bbp-topic-voice-count{width:100%;}
-                li.bbp-topic-reply-count{width:100%;}
+                li.bbp-topic-voice-count{
+                    width:100%;
+                    color: $color1;
+                    background-color: $color2;
+                }
+                li.bbp-topic-reply-count{
+                    width:100%;
+                    color: $color1;
+                    background-color: $color2;
+                }
                 li.bbp-topic-freshness{
                     width:100%;
+                    color: $color1;
+                    background-color: $color2;
                     a{width:40%; float: left; }
                     p.bbp-topic-meta{
-                        width: 60%;
+                        width: auto;
                         display: inline-block;
 
                         span{
@@ -197,11 +269,19 @@
                             #text{display:block;}
 
                             a.bbp-author-avatar{
+<<<<<<< HEAD
                                width:8%;
 
                                img.avatar{width:100%; margin: 0;}
                            }
                             a.bbp-author-name{ font-size:0.95em; width: 56%; float: none;}
+=======
+                               width:15%; 
+                                                             
+                               img.avatar{width:100%; margin: 0;}
+                           } 
+                            a.bbp-author-name{ font-size:0.95em; width: 100%; float: none;}
+>>>>>>> 385738f109bc65bb942701216540152f38404459
                         }
                     }
                 }
@@ -210,8 +290,13 @@
         }
 
     }
+<<<<<<< HEAD
 
 
+=======
+    
+      
+>>>>>>> 385738f109bc65bb942701216540152f38404459
     li.bbp-header ul li {
         letter-spacing: 0.1em;
         width: 100%;
@@ -262,9 +347,15 @@
 
 
     }
+<<<<<<< HEAD
 
     div.bbp-template-notice img.avatar{ width: 8%; margin-top: 2% ;}
 
+=======
+    
+    div.bbp-template-notice img.avatar{ width: 5%; margin-top: 2% ;}
+    
+>>>>>>> 385738f109bc65bb942701216540152f38404459
     div.bbp-the-content-wrapper {
 
         div.quicktags-toolbar {
@@ -434,7 +525,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 #buddypress #item-header-cover-image #item-header-avatar {
     margin-top: 1.5em;
-    width: 17%;
+    width: 12%;
 }
 
 #buddypress div.item-list-tabs ul li.selected a {
@@ -466,10 +557,17 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
     label{font-size:0.8em;}
 }
 
+<<<<<<< HEAD
 #buddypress #header-cover-image {
     background-color: $color1;
     height: 175px;
 
+=======
+#buddypress #header-cover-image { 
+    background-color: $color1; 
+    height: 135px;
+    
+>>>>>>> 385738f109bc65bb942701216540152f38404459
 }
 
 #buddypress #item-header-cover-image {
@@ -625,7 +723,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 .bp-user #buddypress #item-header {
     padding-top: 0;
-    height:180px;
+    height:140px;
 }
 
 .bp_members,
