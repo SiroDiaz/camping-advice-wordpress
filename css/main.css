@@ -115,7 +115,7 @@
       line-height: 35px;
       font-size: 1em; }
     #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-title {
-      line-height: 60px; }
+      line-height: 40px; }
 #bbpress-forums ul.bbp-topics li.bbp-body {
   width: 73%;
   display: inline-block;
@@ -129,7 +129,7 @@
         display: inline-block;
         width: 40%;
         float: left;
-        line-height: 60px; }
+        line-height: 40px; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta {
         width: 60%;
         height: auto;
@@ -218,7 +218,7 @@
   border: 0;
   outline: none; }
 #bbpress-forums div.bbp-template-notice img.avatar {
-  width: 10%;
+  width: 8%;
   margin-top: 2%; }
 #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar input.ed_button {
   width: 9%; }
@@ -242,8 +242,14 @@
     line-height: 30px;
     background-color: #336600; }
 
+#bbpress-forums div.bbp-reply-author a.bbp-author-name {
+  margin: 0; }
+
+.widget.buddypress .item-avatar a {
+  width: 22%; }
+
 .widget.buddypress div.item-avatar img.avatar {
-  margin: 3%; }
+  margin: 15%; }
 
 .widget.buddypress .bp-login-widget-user-avatar {
   margin: 3%; }
@@ -790,720 +796,238 @@ li,
 ul {
   list-style: none; }
 
-.container-fluid {
-  max-width: 85%;
-  min-height: 800px;
-  /*Slider*/
-  /*text col*/
-  /*end of main-content*/
-  /*Leftside*/
-  /*end of leftside*/
-  /*end of text fill*/
-  /*text boxes*/
-  /*end of text boxes*/
-  /*Right side*/
-  /*end of right side*/
-  /*Footer*/
-  /* end of Footer*/ }
-  .container-fluid .comment-meta img.avatar {
-    width: 4%; }
-  .container-fluid header {
-    width: 100%;
-    height: auto; }
-    .container-fluid header .socials {
+@media only screen and (max-width: 1920px) {
+  .container-fluid {
+    max-width: 64%;
+    min-height: 800px;
+    /*Slider*/
+    /*text col*/
+    /*end of main-content*/
+    /*Leftside*/
+    /*end of leftside*/
+    /*end of text fill*/
+    /*text boxes*/
+    /*end of text boxes*/
+    /*Right side*/
+    /*end of right side*/
+    /*Footer*/
+    /* end of Footer*/ }
+    .container-fluid .comment-meta img.avatar {
+      width: 4%; }
+    .container-fluid header {
       width: 100%;
-      height: 35px;
-      display: inline-block;
-      /*Navigation*/ }
-      .container-fluid header .socials ul {
+      height: auto;
+      min-height: 75px; }
+      .container-fluid header .socials {
+        width: 100%;
+        height: 35px;
+        display: inline-block;
+        /*Navigation*/ }
+        .container-fluid header .socials ul {
+          margin: 0;
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 100%; }
+          .container-fluid header .socials ul li {
+            float: left;
+            display: inline-block;
+            width: 25%;
+            height: 100%; }
+            .container-fluid header .socials ul li a {
+              height: 100%;
+              width: 100%;
+              text-align: center;
+              display: block; }
+              .container-fluid header .socials ul li a i {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 1.3em;
+                color: #336600;
+                -webkit-transform-origin: 0, 0;
+                -moz-transform-origin: 0, 0;
+                -o-transform-origin: 0, 0;
+                transform-origin: 0, 0;
+                -webkit-animation-fill-mode: both;
+                -moz-animation-fill-mode: both;
+                -o-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-transition: all 0.2s linear;
+                -moz-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+                line-height: 35px; }
+              .container-fluid header .socials ul li a i:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+                color: #336600; }
+      .container-fluid header .campuklogo {
+        margin: 0;
+        padding: 0; }
+    .container-fluid nav {
+      padding: 0;
+      margin-bottom: 1%;
+      min-height: 50px; }
+      .container-fluid nav .container {
         margin: 0;
         padding: 0;
-        display: block;
-        width: 100%;
-        height: 100%; }
-        .container-fluid header .socials ul li {
-          float: left;
-          display: inline-block;
-          width: 25%;
-          height: 100%; }
-          .container-fluid header .socials ul li a {
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            display: block; }
-            .container-fluid header .socials ul li a i {
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              font-size: 1.3em;
-              color: #336600;
-              -webkit-transform-origin: 0, 0;
-              -moz-transform-origin: 0, 0;
-              -o-transform-origin: 0, 0;
-              transform-origin: 0, 0;
-              -webkit-animation-fill-mode: both;
-              -moz-animation-fill-mode: both;
-              -o-animation-fill-mode: both;
-              animation-fill-mode: both;
-              -webkit-transition: all 0.2s linear;
-              -moz-transition: all 0.2s linear;
-              -o-transition: all 0.2s linear;
-              transition: all 0.2s linear;
-              line-height: 35px; }
-            .container-fluid header .socials ul li a i:hover {
-              -webkit-transform: scale(1.1);
-              -moz-transform: scale(1.1);
-              -o-transform: scale(1.1);
-              transform: scale(1.1);
-              color: #336600; }
-    .container-fluid header .campuklogo {
-      margin: 0; }
-  .container-fluid nav {
-    padding: 0;
-    margin-bottom: 1%;
-    min-height: 50px; }
-    .container-fluid nav .container {
-      margin: 0;
-      padding: 0;
-      border: none; }
-    .container-fluid nav .navbar-toggle {
-      display: none; }
-    .container-fluid nav .navbar-collapse {
-      position: relative;
-      margin-bottom: 5px;
-      border: 0;
-      font-family: Candara, Arial, Helvetica, sans-serif;
-      z-index: 2; }
-    .container-fluid nav #main-navi {
-      margin: 0;
-      width: 100%; }
-      .container-fluid nav #main-navi .navbar {
-        padding: 0; }
-      .container-fluid nav #main-navi ul.navbar-default {
+        border: none; }
+      .container-fluid nav .navbar-toggle {
+        display: none; }
+      .container-fluid nav .navbar-collapse {
+        position: relative;
+        margin-bottom: 5px;
+        border: 0;
+        font-family: Candara, Arial, Helvetica, sans-serif;
+        z-index: 2; }
+      .container-fluid nav #main-navi {
         margin: 0;
-        font-family: Candara, Arial, Helvetica, sans-serif; }
-        .container-fluid nav #main-navi ul.navbar-default li {
-          font-family: Candara, Arial, Helvetica, sans-serif;
-          text-align: center;
-          height: 50px;
-          width: 14%;
-          background-color: #336600;
-          display: inline-block;
-          -webkit-transition: all 0.2s linear;
-          -moz-transition: all 0.2s linear;
-          -o-transition: all 0.2s linear;
-          transition: all 0.2s linear; }
-          .container-fluid nav #main-navi ul.navbar-default li a.nav-link {
-            height: 100%;
-            font-size: 1em;
-            color: #fff;
-            text-decoration: none;
-            width: 100%;
-            line-height: 50px;
-            padding: 0;
-            display: block; }
-            .container-fluid nav #main-navi ul.navbar-default li a.nav-link:hover {
+        width: 100%; }
+        .container-fluid nav #main-navi .navbar {
+          padding: 0; }
+        .container-fluid nav #main-navi ul.navbar-default {
+          margin: 0;
+          font-family: Candara, Arial, Helvetica, sans-serif; }
+          .container-fluid nav #main-navi ul.navbar-default li {
+            font-family: Candara, Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 50px;
+            width: 14%;
+            background-color: #336600;
+            display: inline-block;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear; }
+            .container-fluid nav #main-navi ul.navbar-default li a.nav-link {
+              height: 100%;
+              font-size: 1em;
+              color: #fff;
+              text-decoration: none;
+              width: 100%;
+              line-height: 50px;
+              padding: 0;
+              display: block; }
+              .container-fluid nav #main-navi ul.navbar-default li a.nav-link:hover {
+                color: #336600;
+                line-height: 50px;
+                height: 50px;
+                font-size: 1em;
+                background-color: #fff; }
+              .container-fluid nav #main-navi ul.navbar-default li a.nav-link:active {
+                background-color: #fff;
+                color: #336600; }
+        .container-fluid nav #main-navi ul#main-menu {
+          padding: 0;
+          width: 100%;
+          height: auto;
+          list-style: none;
+          margin: 0;
+          border: none; }
+          .container-fluid nav #main-navi ul#main-menu li {
+            font-family: Candara, Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 50px;
+            width: 14%;
+            background-color: #336600;
+            display: inline-block;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear; }
+            .container-fluid nav #main-navi ul#main-menu li a.nav-link {
+              height: 100%;
+              font-size: 1em;
+              color: #fff;
+              text-decoration: none;
+              width: 100%;
+              line-height: 50px;
+              padding: 0;
+              display: block; }
+            .container-fluid nav #main-navi ul#main-menu li a:hover {
               color: #336600;
               line-height: 50px;
               height: 50px;
               font-size: 1em;
               background-color: #fff; }
-            .container-fluid nav #main-navi ul.navbar-default li a.nav-link:active {
+            .container-fluid nav #main-navi ul#main-menu li a:active {
               background-color: #fff;
               color: #336600; }
-      .container-fluid nav #main-navi ul#main-menu {
-        padding: 0;
-        width: 100%;
-        height: auto;
-        list-style: none;
-        margin: 0;
-        border: none; }
-        .container-fluid nav #main-navi ul#main-menu li {
-          font-family: Candara, Arial, Helvetica, sans-serif;
-          text-align: center;
-          height: 50px;
-          width: 14%;
-          background-color: #336600;
-          display: inline-block;
-          -webkit-transition: all 0.2s linear;
-          -moz-transition: all 0.2s linear;
-          -o-transition: all 0.2s linear;
-          transition: all 0.2s linear; }
-          .container-fluid nav #main-navi ul#main-menu li a.nav-link {
-            height: 100%;
-            font-size: 1em;
-            color: #fff;
-            text-decoration: none;
-            width: 100%;
-            line-height: 50px;
-            padding: 0;
-            display: block; }
-          .container-fluid nav #main-navi ul#main-menu li a:hover {
-            color: #336600;
-            line-height: 50px;
-            height: 50px;
-            font-size: 1em;
-            background-color: #fff; }
-          .container-fluid nav #main-navi ul#main-menu li a:active {
-            background-color: #fff;
-            color: #336600; }
-  .container-fluid .carousel {
-    width: 80%;
-    margin: 0 auto;
-    display: block; }
-  .container-fluid .error-box {
-    min-height: 600px;
-    font-size: 100%;
-    letter-spacing: 0.1em;
-    width: 100%;
-    padding-top: 1em;
-    height: auto;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    line-height: 1.5em;
-    background-color: #fff; }
-    .container-fluid .error-box h1 {
-      font-size: 1.5em;
-      line-height: 40px;
-      display: block; }
-    .container-fluid .error-box h1 a {
-      text-decoration: none;
-      display: block; }
-  .container-fluid .submit {
-    font-size: 100%;
-    background: #063;
-    background-color: #336600;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    color: #fff;
-    width: 80px;
-    height: 25px;
-    line-height: 1.5em; }
-    .container-fluid .submit:hover {
-      background-color: #fff;
-      color: #063;
-      cursor: pointer; }
-  .container-fluid #main-content, .container-fluid #main-content-comments {
-    height: auto;
-    min-height: 600px;
-    width: 96%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 0 2.5%;
-    /*#main-content { float: left;  height: auto; width: 340px;}*/
-    /*register Form*/
-    /*search form*/
-    /* results page*/
-    /*search pagination*/
-    /*search count*/
-    /*images column*/
-    /*#right_side #pic_col {float: left;height: auto; width: 345px;}*/ }
-    .container-fluid #main-content h1, .container-fluid #main-content-comments h1 {
-      display: block;
-      margin: 0;
-      color: #336600;
-      text-align: center;
-      font-size: 2em;
-      width: 100%;
-      line-height: 60px; }
-    .container-fluid #main-content h2, .container-fluid #main-content-comments h2 {
-      margin: 1% 0;
-      width: 100%;
-      color: #336600;
-      height: 40px;
-      line-height: 40px;
-      letter-spacing: 0.1em;
-      font-size: 1.4em;
-      text-align: left;
-      display: block; }
-      .container-fluid #main-content h2 a, .container-fluid #main-content-comments h2 a {
-        display: block;
-        text-decoration: none;
-        margin: 0 auto;
-        height: 100%;
-        width: 80%;
-        line-height: 40px;
-        letter-spacing: 0.2em;
-        font-size: 2em;
-        color: #336600;
-        text-align: center; }
-    .container-fluid #main-content p, .container-fluid #main-content-comments p {
-      width: 96%;
-      margin: 0;
-      font-size: 1em;
-      line-height: 1.7em;
-      color: #333; }
-      .container-fluid #main-content p a, .container-fluid #main-content-comments p a {
-        color: #336600;
-        font-size: 1.2em; }
-    .container-fluid #main-content ul, .container-fluid #main-content-comments ul {
-      list-style: none;
-      margin: 2% 0;
-      font-size: 1.1em;
-      width: auto; }
-      .container-fluid #main-content ul li, .container-fluid #main-content-comments ul li {
-        letter-spacing: 0.1em;
-        width: 100%;
-        text-align: left;
-        line-height: 35px;
-        display: block;
-        font-style: italic;
-        font-size: 0.9em; }
-        .container-fluid #main-content ul li span, .container-fluid #main-content-comments ul li span {
-          height: 100%;
-          color: #336600; }
-    .container-fluid #main-content .post header.entry-header, .container-fluid #main-content-comments .post header.entry-header {
-      height: 60px; }
-    .container-fluid #main-content .post p.right, .container-fluid #main-content-comments .post p.right {
-      float: right;
-      width: 10%;
-      display: block;
-      text-align: center; }
-    .container-fluid #main-content .post a.read_more, .container-fluid #main-content-comments .post a.read_more {
-      display: block;
-      width: 15%;
-      background-color: #336600;
-      color: #fff;
-      height: 35px;
-      line-height: 35px;
-      text-align: center; }
-      .container-fluid #main-content .post a.read_more:hover, .container-fluid #main-content-comments .post a.read_more:hover {
-        background-color: #6ab866;
-        color: #336600; }
-    .container-fluid #main-content .post .featuredImage, .container-fluid #main-content-comments .post .featuredImage {
-      width: 70%;
-      margin: 2% auto; }
-    .container-fluid #main-content #summary, .container-fluid #main-content-comments #summary {
-      display: none;
-      width: 100%;
-      height: 100px;
-      font-size: 1em;
-      background-color: #336600;
-      color: #fff; }
-    .container-fluid #main-content .panel, .container-fluid #main-content-comments .panel {
-      border-color: #336600; }
-      .container-fluid #main-content .panel .panel-heading, .container-fluid #main-content-comments .panel .panel-heading {
-        border-color: #336600;
-        background-color: #F0F7E8; }
-        .container-fluid #main-content .panel .panel-heading h3.panel-title, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title {
-          font-size: 1.5em;
-          height: 30px;
-          line-height: 1.3em;
-          margin-top: 5px;
-          color: #336600; }
-          .container-fluid #main-content .panel .panel-heading h3.panel-title span, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title span {
-            color: #336600;
-            margin: 0 0.5% 0 0;
-            display: inline-block;
-            height: 100%;
-            line-height: 1.3em; }
-      .container-fluid #main-content .panel .panel-body .activ_img,
-      .container-fluid #main-content .panel .panel-body .cook_img,
-      .container-fluid #main-content .panel .panel-body .equip1_img,
-      .container-fluid #main-content .panel .panel-body .equip2_img,
-      .container-fluid #main-content .panel .panel-body .equip_img,
-      .container-fluid #main-content .panel .panel-body .trav_img, .container-fluid #main-content-comments .panel .panel-body .activ_img,
-      .container-fluid #main-content-comments .panel .panel-body .cook_img,
-      .container-fluid #main-content-comments .panel .panel-body .equip1_img,
-      .container-fluid #main-content-comments .panel .panel-body .equip2_img,
-      .container-fluid #main-content-comments .panel .panel-body .equip_img,
-      .container-fluid #main-content-comments .panel .panel-body .trav_img {
-        margin: 0 2% 0 0;
-        width: 15%;
-        display: inline-block;
-        float: left; }
-      .container-fluid #main-content .panel .panel-body p, .container-fluid #main-content-comments .panel .panel-body p {
-        width: 100%;
-        margin: 0 0 1%;
-        font-size: 1em;
-        line-height: 1.5em;
-        color: #333; }
-      .container-fluid #main-content .panel .panel-body p a, .container-fluid #main-content-comments .panel .panel-body p a {
-        color: #336600;
-        font-size: 1.2em; }
-    .container-fluid #main-content section#account-box, .container-fluid #main-content-comments section#account-box {
+    .container-fluid .carousel {
       width: 80%;
       margin: 0 auto;
-      display: block;
-      border: 1px #ccc solid;
-      padding: 2%; }
-    .container-fluid #main-content .nav-tabs, .container-fluid #main-content-comments .nav-tabs {
-      list-style: none;
-      margin: 0;
-      font-size: 1.1em;
-      width: 100%;
-      height: 50px;
-      background-color: #fff; }
-      .container-fluid #main-content .nav-tabs li, .container-fluid #main-content-comments .nav-tabs li {
-        letter-spacing: 0.1em;
-        width: 24%;
-        text-align: center;
-        line-height: 1.5em;
-        display: block;
-        font-style: italic;
-        font-size: 0.9em;
-        height: auto;
-        margin-right: 1%; }
-        .container-fluid #main-content .nav-tabs li span, .container-fluid #main-content-comments .nav-tabs li span {
-          height: 100%;
-          color: #336600; }
-    .container-fluid #main-content div.tab-content h3, .container-fluid #main-content-comments div.tab-content h3 {
-      margin: 0; }
-    .container-fluid #main-content div.tab-content .media, .container-fluid #main-content-comments div.tab-content .media {
-      height: auto;
-      font-size: 0.75em;
-      margin: 0.5em 0;
-      padding: 0;
-      width: 100%;
-      list-style: none;
       display: block; }
-    .container-fluid #main-content div.tab-content .media .media-left, .container-fluid #main-content-comments div.tab-content .media .media-left {
-      display: inline-block;
-      width: 20%;
-      padding: 0;
-      margin: 0;
-      border: 0;
-      text-decoration: none;
-      overflow: hidden;
-      cursor: pointer; }
-    .container-fluid #main-content div.tab-content .media .media-body, .container-fluid #main-content-comments div.tab-content .media .media-body {
-      width: 79%;
-      display: inline-block; }
-      .container-fluid #main-content div.tab-content .media .media-body h3, .container-fluid #main-content-comments div.tab-content .media .media-body h3 {
-        font-size: 1.3em;
-        font-weight: bold;
-        font-style: italic;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6em; }
-      .container-fluid #main-content div.tab-content .media .media-body p, .container-fluid #main-content-comments div.tab-content .media .media-body p {
-        width: 100%;
-        line-height: 1.6em;
-        margin: 0;
-        font-size: 1.1em;
-        text-align: left; }
-      .container-fluid #main-content div.tab-content .media .media-body ul.list-group, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group {
-        width: 98%;
-        margin: 0;
-        padding: 0 1% 0 0; }
-        .container-fluid #main-content div.tab-content .media .media-body ul.list-group li, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group li {
-          width: 100%;
-          display: inline-block;
-          margin: 0 0 0.5em; }
-    .container-fluid #main-content div.tab-content ul.list-group, .container-fluid #main-content-comments div.tab-content ul.list-group {
-      width: 98%;
-      margin: 0;
-      padding: 0 1% 0 0; }
-      .container-fluid #main-content div.tab-content ul.list-group li, .container-fluid #main-content-comments div.tab-content ul.list-group li {
-        width: 100%;
-        display: inline-block;
-        margin: 0 0 0.5em; }
-    .container-fluid #main-content #campregister, .container-fluid #main-content-comments #campregister {
-      margin: auto;
-      background-color: #336600;
-      padding: 0;
-      font-family: Candara, Arial, Helvetica, sans-serif;
+    .container-fluid .error-box {
+      min-height: 600px;
+      font-size: 100%;
+      letter-spacing: 0.1em;
+      width: 100%;
+      padding-top: 1em;
       height: auto;
-      width: 50%; }
-      .container-fluid #main-content #campregister form#RegForm, .container-fluid #main-content-comments #campregister form#RegForm {
-        margin: auto;
-        background-color: #336600;
-        width: 90%;
-        height: auto; }
-        .container-fluid #main-content #campregister form#RegForm img, .container-fluid #main-content-comments #campregister form#RegForm img {
-          width: 25%;
-          height: 40px; }
-        .container-fluid #main-content #campregister form#RegForm label, .container-fluid #main-content-comments #campregister form#RegForm label {
-          color: #fff;
-          text-align: left;
-          line-height: 35px;
-          width: 100%;
-          display: block;
-          letter-spacing: 0.1em;
-          font-size: 1em;
-          font-weight: 100; }
-        .container-fluid #main-content #campregister form#RegForm .verifybox, .container-fluid #main-content-comments #campregister form#RegForm .verifybox {
-          width: 72%;
-          height: 100%;
-          font-size: 1em;
-          color: #000;
-          float: left;
-          display: inline-block; }
-        .container-fluid #main-content #campregister form#RegForm .textfield, .container-fluid #main-content-comments #campregister form#RegForm .textfield {
-          width: 100%;
-          height: 100%;
-          font-size: 1em;
-          color: #000; }
-        .container-fluid #main-content #campregister form#RegForm #select8, .container-fluid #main-content-comments #campregister form#RegForm #select8 {
-          width: 100%;
-          font-size: 1em;
-          color: #336600;
-          height: 40px;
-          display: block; }
-        .container-fluid #main-content #campregister form#RegForm #Submit, .container-fluid #main-content-comments #campregister form#RegForm #Submit {
-          width: 40%;
-          margin: auto;
-          font-size: 0.9em;
-          color: #fff;
-          border: 1px solid #e5e5e5;
-          outline: 0;
-          height: 35px;
-          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          line-height: 30px;
-          background: #fff;
-          background-color: #336600;
-          display: block; }
-        .container-fluid #main-content #campregister form#RegForm #Submit:hover, .container-fluid #main-content-comments #campregister form#RegForm #Submit:hover {
-          color: #336600;
-          background-color: #fff;
-          color: #063;
-          cursor: pointer; }
-    .container-fluid #main-content .error,
-    .container-fluid #main-content .notice,
-    .container-fluid #main-content .success, .container-fluid #main-content-comments .error,
-    .container-fluid #main-content-comments .notice,
-    .container-fluid #main-content-comments .success {
-      padding: 0.8em;
-      margin-bottom: 1em;
-      border: 2px solid #336600; }
-    .container-fluid #main-content .error, .container-fluid #main-content-comments .error {
-      background: #ffffff;
-      color: #336600;
-      border-color: #297F10;
-      width: 100%; }
-    .container-fluid #main-content .notice, .container-fluid #main-content-comments .notice {
-      background: #FFF6BF;
-      color: #336600;
-      border-color: #FFD324;
-      width: 100%; }
-    .container-fluid #main-content .success, .container-fluid #main-content-comments .success {
-      background: #E6EFC2;
-      color: #336600;
-      border-color: #C6D880;
-      width: 100%; }
-    .container-fluid #main-content section.searchformadvance, .container-fluid #main-content-comments section.searchformadvance {
-      margin: auto;
-      background-color: #336600;
-      padding: 0;
-      font-family: Candara, Arial, Helvetica, sans-serif;
-      height: auto;
-      width: 50%; }
-      .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 {
-        padding-top: 3%; }
-        .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7 img.ajax-loader, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 img.ajax-loader {
-          border: medium none;
-          vertical-align: middle;
-          height: 100px;
-          width: 10%;
-          display: block;
-          margin: 5% auto; }
-      .container-fluid #main-content section.searchformadvance form.wpcf7-form,
-      .container-fluid #main-content section.searchformadvance form#contactform,
-      .container-fluid #main-content section.searchformadvance form#login,
-      .container-fluid #main-content section.searchformadvance form#retrieve,
-      .container-fluid #main-content section.searchformadvance form#searchform, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form,
-      .container-fluid #main-content-comments section.searchformadvance form#contactform,
-      .container-fluid #main-content-comments section.searchformadvance form#login,
-      .container-fluid #main-content-comments section.searchformadvance form#retrieve,
-      .container-fluid #main-content-comments section.searchformadvance form#searchform {
-        height: auto;
-        width: 90%;
-        margin: 0 auto;
+      margin-bottom: 5px;
+      padding-left: 5px;
+      line-height: 1.5em;
+      background-color: #fff; }
+      .container-fluid .error-box h1 {
+        font-size: 1.5em;
+        line-height: 40px;
         display: block; }
-        .container-fluid #main-content section.searchformadvance form.wpcf7-form label,
-        .container-fluid #main-content section.searchformadvance form#contactform label,
-        .container-fluid #main-content section.searchformadvance form#login label,
-        .container-fluid #main-content section.searchformadvance form#retrieve label,
-        .container-fluid #main-content section.searchformadvance form#searchform label, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form label,
-        .container-fluid #main-content-comments section.searchformadvance form#contactform label,
-        .container-fluid #main-content-comments section.searchformadvance form#login label,
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve label,
-        .container-fluid #main-content-comments section.searchformadvance form#searchform label {
-          color: #fff;
-          text-align: left;
-          width: 100%;
-          display: block;
-          letter-spacing: 0.1em;
-          font-size: 1em;
-          line-height: 35px;
-          font-weight: 100; }
-        .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="email"], .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="text"], .container-fluid #main-content section.searchformadvance form.wpcf7-form .textfield,
-        .container-fluid #main-content section.searchformadvance form#contactform input[type="email"],
-        .container-fluid #main-content section.searchformadvance form#contactform input[type="text"],
-        .container-fluid #main-content section.searchformadvance form#contactform .textfield,
-        .container-fluid #main-content section.searchformadvance form#login input[type="email"],
-        .container-fluid #main-content section.searchformadvance form#login input[type="text"],
-        .container-fluid #main-content section.searchformadvance form#login .textfield,
-        .container-fluid #main-content section.searchformadvance form#retrieve input[type="email"],
-        .container-fluid #main-content section.searchformadvance form#retrieve input[type="text"],
-        .container-fluid #main-content section.searchformadvance form#retrieve .textfield,
-        .container-fluid #main-content section.searchformadvance form#searchform input[type="email"],
-        .container-fluid #main-content section.searchformadvance form#searchform input[type="text"],
-        .container-fluid #main-content section.searchformadvance form#searchform .textfield, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="email"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="text"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form .textfield,
-        .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="email"],
-        .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="text"],
-        .container-fluid #main-content-comments section.searchformadvance form#contactform .textfield,
-        .container-fluid #main-content-comments section.searchformadvance form#login input[type="email"],
-        .container-fluid #main-content-comments section.searchformadvance form#login input[type="text"],
-        .container-fluid #main-content-comments section.searchformadvance form#login .textfield,
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="email"],
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="text"],
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve .textfield,
-        .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="email"],
-        .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="text"],
-        .container-fluid #main-content-comments section.searchformadvance form#searchform .textfield {
-          width: 100%;
-          height: 100%;
-          height: 35px;
-          color: #000;
-          border: 0;
-          outline: none; }
-        .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content section.searchformadvance form.wpcf7-form #Submit,
-        .container-fluid #main-content section.searchformadvance form#contactform input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#contactform #Submit,
-        .container-fluid #main-content section.searchformadvance form#login input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#login #Submit,
-        .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#retrieve #Submit,
-        .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#searchform #Submit, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit,
-        .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit,
-        .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#login #Submit,
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve #Submit,
-        .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#searchform #Submit {
-          width: 40%;
-          margin: auto;
-          font-size: 1em;
-          line-height: 30px;
-          color: #fff;
-          border: 1px solid #e5e5e5;
-          outline: 0;
-          height: 35px;
-          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          background-color: #336600;
-          display: block; }
-        .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content section.searchformadvance form.wpcf7-form #Submit:hover,
-        .container-fluid #main-content section.searchformadvance form#contactform input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#contactform #Submit:hover,
-        .container-fluid #main-content section.searchformadvance form#login input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#login #Submit:hover,
-        .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#retrieve #Submit:hover,
-        .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
-        .container-fluid #main-content section.searchformadvance form#searchform #Submit:hover, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit:hover,
-        .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit:hover,
-        .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#login #Submit:hover,
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#retrieve #Submit:hover,
-        .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="submit"],
-        .container-fluid #main-content-comments section.searchformadvance form#searchform #Submit:hover {
-          background-color: #fff;
-          color: #063;
-          cursor: pointer; }
-    .container-fluid #main-content section#search_result, .container-fluid #main-content-comments section#search_result {
-      margin: auto;
-      font-size: 1em;
-      width: 90%;
-      height: auto;
-      padding: 0; }
-      .container-fluid #main-content section#search_result .result_s, .container-fluid #main-content-comments section#search_result .result_s {
-        height: auto;
-        width: 16%;
-        display: inline-block;
-        float: left;
-        margin: 0;
-        padding: 0; }
-      .container-fluid #main-content section#search_result .result_s1, .container-fluid #main-content-comments section#search_result .result_s1 {
-        height: auto;
-        width: 34%;
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0; }
-      .container-fluid #main-content section#search_result .result_s li, .container-fluid #main-content-comments section#search_result .result_s li {
-        height: 30px;
-        line-height: 30px;
-        font-size: 0.8em;
-        padding: 0; }
-      .container-fluid #main-content section#search_result .result_s1 li, .container-fluid #main-content-comments section#search_result .result_s1 li {
-        height: 30px;
-        width: 100%;
-        line-height: 30px;
-        padding: 0;
-        font-size: 0.8em; }
-      .container-fluid #main-content section#search_result .resultmap, .container-fluid #main-content-comments section#search_result .resultmap {
-        float: right;
-        height: 420px;
-        width: 50%;
-        border: 2px solid #336600; }
-      .container-fluid #main-content section#search_result .resultimage, .container-fluid #main-content-comments section#search_result .resultimage {
-        max-height: 100%;
-        margin: 10px 0 0;
-        float: left;
-        width: 47%;
-        display: inline-block; }
-      .container-fluid #main-content section#search_result .resulttext, .container-fluid #main-content-comments section#search_result .resulttext {
-        width: 100%;
-        height: auto;
-        clear: both;
-        margin: 1% 0;
-        line-height: 1.5em;
-        display: inline-block; }
-    .container-fluid #main-content #pagination, .container-fluid #main-content-comments #pagination {
-      margin: 1% 0;
-      height: 30px; }
-      .container-fluid #main-content #pagination ul, .container-fluid #main-content-comments #pagination ul {
-        margin: 0;
-        padding: 0;
-        width: 50%;
-        height: 100%; }
-      .container-fluid #main-content #pagination ul li, .container-fluid #main-content-comments #pagination ul li {
-        width: auto;
-        display: inline-block;
-        float: left;
-        margin-right: 4%; }
-      .container-fluid #main-content #pagination ul li a, .container-fluid #main-content-comments #pagination ul li a {
-        display: block;
-        text-align: left;
+      .container-fluid .error-box h1 a {
         text-decoration: none;
-        padding: 1%;
-        color: #000; }
-      .container-fluid #main-content #pagination ul li a:hover, .container-fluid #main-content-comments #pagination ul li a:hover {
+        display: block; }
+    .container-fluid .submit {
+      font-size: 100%;
+      background: #063;
+      background-color: #336600;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      color: #fff;
+      width: 80px;
+      height: 25px;
+      line-height: 1.5em; }
+      .container-fluid .submit:hover {
+        background-color: #fff;
+        color: #063;
+        cursor: pointer; }
+    .container-fluid #main-content, .container-fluid #main-content-comments {
+      height: auto;
+      min-height: 600px;
+      width: 96%;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 0 2.5%;
+      /*#main-content { float: left;  height: auto; width: 340px;}*/
+      /*register Form*/
+      /*search form*/
+      /* results page*/
+      /*search pagination*/
+      /*search count*/
+      /*images column*/
+      /*#right_side #pic_col {float: left;height: auto; width: 345px;}*/ }
+      .container-fluid #main-content h1, .container-fluid #main-content-comments h1 {
+        display: block;
+        margin: 0;
         color: #336600;
-        font-weight: bold; }
-    .container-fluid #main-content .count, .container-fluid #main-content-comments .count {
-      font-size: 0.95em; }
-  .container-fluid aside#side-bar-left {
-    height: auto;
-    background-color: #fff;
-    padding: 2%;
-    /* homepage text box*/ }
-    .container-fluid aside#side-bar-left ul#menu-front-menu {
-      list-style: none;
-      padding: 0; }
-      .container-fluid aside#side-bar-left ul#menu-front-menu li {
+        text-align: center;
+        font-size: 2em;
         width: 100%;
+        line-height: 60px; }
+      .container-fluid #main-content h2, .container-fluid #main-content-comments h2 {
+        margin: 1% 0;
+        width: 100%;
+        color: #336600;
         height: 40px;
         line-height: 40px;
-        margin: 0.5em 0;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: 0.1em; }
-        .container-fluid aside#side-bar-left ul#menu-front-menu li a {
+        letter-spacing: 0.1em;
+        font-size: 1.4em;
+        text-align: left;
+        display: block; }
+        .container-fluid #main-content h2 a, .container-fluid #main-content-comments h2 a {
           display: block;
           text-decoration: none;
           margin: 0 auto;
@@ -1511,122 +1035,699 @@ ul {
           width: 80%;
           line-height: 40px;
           letter-spacing: 0.2em;
-          font-size: 0.85em;
-          color: #fff;
-          text-align: center;
-          background-color: #336600;
-          -webkit-transform-origin: 0, 0;
-          -moz-transform-origin: 0, 0;
-          -o-transform-origin: 0, 0;
-          transform-origin: 0, 0;
-          -webkit-animation-fill-mode: both;
-          -moz-animation-fill-mode: both;
-          -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-          -webkit-transition: all 0.2s linear;
-          -moz-transition: all 0.2s linear;
-          -o-transition: all 0.2s linear;
-          transition: all 0.2s linear; }
-        .container-fluid aside#side-bar-left ul#menu-front-menu li a:hover {
-          font-size: 0.95em;
-          width: 80%;
-          background-color: #fff;
+          font-size: 2em;
           color: #336600;
-          text-decoration: none;
-          line-height: 40px;
-          font-weight: bold;
-          letter-spacing: 0.1em; }
-    .container-fluid aside#side-bar-left .side-bar-box {
-      height: auto;
-      text-decoration: none;
-      padding: 0;
-      margin: 0; }
-      .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form {
+          text-align: center; }
+      .container-fluid #main-content p, .container-fluid #main-content-comments p {
+        width: 96%;
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.7em;
+        color: #333; }
+        .container-fluid #main-content p a, .container-fluid #main-content-comments p a {
+          color: #336600;
+          font-size: 1.2em; }
+      .container-fluid #main-content ul, .container-fluid #main-content-comments ul {
+        list-style: none;
+        margin: 2% 0;
+        font-size: 1.1em;
+        width: auto; }
+        .container-fluid #main-content ul li, .container-fluid #main-content-comments ul li {
+          letter-spacing: 0.1em;
+          width: 100%;
+          text-align: left;
+          line-height: 35px;
+          display: block;
+          font-style: italic;
+          font-size: 0.9em; }
+          .container-fluid #main-content ul li span, .container-fluid #main-content-comments ul li span {
+            height: 100%;
+            color: #336600; }
+      .container-fluid #main-content .post header.entry-header, .container-fluid #main-content-comments .post header.entry-header {
+        height: 60px; }
+      .container-fluid #main-content .post p.right, .container-fluid #main-content-comments .post p.right {
+        float: right;
+        width: 10%;
+        display: block;
+        text-align: center; }
+      .container-fluid #main-content .post a.read_more, .container-fluid #main-content-comments .post a.read_more {
+        display: block;
+        width: 15%;
         background-color: #336600;
         color: #fff;
-        width: 80%;
-        padding: 2%;
+        height: 35px;
+        line-height: 35px;
+        text-align: center; }
+        .container-fluid #main-content .post a.read_more:hover, .container-fluid #main-content-comments .post a.read_more:hover {
+          background-color: #6ab866;
+          color: #336600; }
+      .container-fluid #main-content .post .featuredImage, .container-fluid #main-content-comments .post .featuredImage {
+        width: 70%;
         margin: 2% auto; }
-        .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-user-login,
-        .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-user-pass {
-          margin: 1em 0;
+      .container-fluid #main-content #summary, .container-fluid #main-content-comments #summary {
+        display: none;
+        width: 100%;
+        height: 100px;
+        font-size: 1em;
+        background-color: #336600;
+        color: #fff; }
+      .container-fluid #main-content .panel, .container-fluid #main-content-comments .panel {
+        border-color: #336600; }
+        .container-fluid #main-content .panel .panel-heading, .container-fluid #main-content-comments .panel .panel-heading {
+          border-color: #336600;
+          background-color: #F0F7E8; }
+          .container-fluid #main-content .panel .panel-heading h3.panel-title, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title {
+            font-size: 1.5em;
+            height: 30px;
+            line-height: 1.3em;
+            margin-top: 5px;
+            color: #336600; }
+            .container-fluid #main-content .panel .panel-heading h3.panel-title span, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title span {
+              color: #336600;
+              margin: 0 0.5% 0 0;
+              display: inline-block;
+              height: 100%;
+              line-height: 1.3em; }
+        .container-fluid #main-content .panel .panel-body .activ_img,
+        .container-fluid #main-content .panel .panel-body .cook_img,
+        .container-fluid #main-content .panel .panel-body .equip1_img,
+        .container-fluid #main-content .panel .panel-body .equip2_img,
+        .container-fluid #main-content .panel .panel-body .equip_img,
+        .container-fluid #main-content .panel .panel-body .trav_img, .container-fluid #main-content-comments .panel .panel-body .activ_img,
+        .container-fluid #main-content-comments .panel .panel-body .cook_img,
+        .container-fluid #main-content-comments .panel .panel-body .equip1_img,
+        .container-fluid #main-content-comments .panel .panel-body .equip2_img,
+        .container-fluid #main-content-comments .panel .panel-body .equip_img,
+        .container-fluid #main-content-comments .panel .panel-body .trav_img {
+          margin: 0 2% 0 0;
+          width: 15%;
+          display: inline-block;
+          float: left; }
+        .container-fluid #main-content .panel .panel-body p, .container-fluid #main-content-comments .panel .panel-body p {
+          width: 100%;
+          margin: 0 0 1%;
+          font-size: 1em;
+          line-height: 1.5em;
+          color: #333; }
+        .container-fluid #main-content .panel .panel-body p a, .container-fluid #main-content-comments .panel .panel-body p a {
+          color: #336600;
+          font-size: 1.2em; }
+      .container-fluid #main-content section#account-box, .container-fluid #main-content-comments section#account-box {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        border: 1px #ccc solid;
+        padding: 2%; }
+      .container-fluid #main-content .nav-tabs, .container-fluid #main-content-comments .nav-tabs {
+        list-style: none;
+        margin: 0;
+        font-size: 1.1em;
+        width: 100%;
+        height: 50px;
+        background-color: #fff; }
+        .container-fluid #main-content .nav-tabs li, .container-fluid #main-content-comments .nav-tabs li {
+          letter-spacing: 0.1em;
+          width: 24%;
+          text-align: center;
+          line-height: 1.5em;
           display: block;
-          font-weight: normal;
-          width: 100%;
-          color: #000; }
-        .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-submit {
-          width: 100%;
-          height: 50px;
+          font-style: italic;
           font-size: 0.9em;
-          color: #fff;
-          border: 1px solid #e5e5e5;
-          outline: 0;
-          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          background: #fff;
+          height: auto;
+          margin-right: 1%; }
+          .container-fluid #main-content .nav-tabs li span, .container-fluid #main-content-comments .nav-tabs li span {
+            height: 100%;
+            color: #336600; }
+      .container-fluid #main-content div.tab-content h3, .container-fluid #main-content-comments div.tab-content h3 {
+        margin: 0; }
+      .container-fluid #main-content div.tab-content .media, .container-fluid #main-content-comments div.tab-content .media {
+        height: auto;
+        font-size: 0.75em;
+        margin: 0.5em 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        display: block; }
+      .container-fluid #main-content div.tab-content .media .media-left, .container-fluid #main-content-comments div.tab-content .media .media-left {
+        display: inline-block;
+        width: 20%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer; }
+      .container-fluid #main-content div.tab-content .media .media-body, .container-fluid #main-content-comments div.tab-content .media .media-body {
+        width: 79%;
+        display: inline-block; }
+        .container-fluid #main-content div.tab-content .media .media-body h3, .container-fluid #main-content-comments div.tab-content .media .media-body h3 {
+          font-size: 1.3em;
+          font-weight: bold;
+          font-style: italic;
+          margin: 0;
+          padding: 0;
+          line-height: 1.6em; }
+        .container-fluid #main-content div.tab-content .media .media-body p, .container-fluid #main-content-comments div.tab-content .media .media-body p {
+          width: 100%;
+          line-height: 1.6em;
+          margin: 0;
+          font-size: 1.1em;
+          text-align: left; }
+        .container-fluid #main-content div.tab-content .media .media-body ul.list-group, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group {
+          width: 98%;
+          margin: 0;
+          padding: 0 1% 0 0; }
+          .container-fluid #main-content div.tab-content .media .media-body ul.list-group li, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group li {
+            width: 100%;
+            display: inline-block;
+            margin: 0 0 0.5em; }
+      .container-fluid #main-content div.tab-content ul.list-group, .container-fluid #main-content-comments div.tab-content ul.list-group {
+        width: 98%;
+        margin: 0;
+        padding: 0 1% 0 0; }
+        .container-fluid #main-content div.tab-content ul.list-group li, .container-fluid #main-content-comments div.tab-content ul.list-group li {
+          width: 100%;
+          display: inline-block;
+          margin: 0 0 0.5em; }
+      .container-fluid #main-content #campregister, .container-fluid #main-content-comments #campregister {
+        margin: auto;
+        background-color: #336600;
+        padding: 0;
+        font-family: Candara, Arial, Helvetica, sans-serif;
+        height: auto;
+        width: 50%; }
+        .container-fluid #main-content #campregister form#RegForm, .container-fluid #main-content-comments #campregister form#RegForm {
+          margin: auto;
           background-color: #336600;
-          display: block; }
-          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-submit:hover {
+          width: 90%;
+          height: auto; }
+          .container-fluid #main-content #campregister form#RegForm img, .container-fluid #main-content-comments #campregister form#RegForm img {
+            width: 25%;
+            height: 40px; }
+          .container-fluid #main-content #campregister form#RegForm label, .container-fluid #main-content-comments #campregister form#RegForm label {
+            color: #fff;
+            text-align: left;
+            line-height: 35px;
+            width: 100%;
+            display: block;
+            letter-spacing: 0.1em;
+            font-size: 1em;
+            font-weight: 100; }
+          .container-fluid #main-content #campregister form#RegForm .verifybox, .container-fluid #main-content-comments #campregister form#RegForm .verifybox {
+            width: 72%;
+            height: 100%;
+            font-size: 1em;
+            color: #000;
+            float: left;
+            display: inline-block; }
+          .container-fluid #main-content #campregister form#RegForm .textfield, .container-fluid #main-content-comments #campregister form#RegForm .textfield {
+            width: 100%;
+            height: 100%;
+            font-size: 1em;
+            color: #000; }
+          .container-fluid #main-content #campregister form#RegForm #select8, .container-fluid #main-content-comments #campregister form#RegForm #select8 {
+            width: 100%;
+            font-size: 1em;
+            color: #336600;
+            height: 40px;
+            display: block; }
+          .container-fluid #main-content #campregister form#RegForm #Submit, .container-fluid #main-content-comments #campregister form#RegForm #Submit {
+            width: 40%;
+            margin: auto;
+            font-size: 0.9em;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 35px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            line-height: 30px;
+            background: #fff;
+            background-color: #336600;
+            display: block; }
+          .container-fluid #main-content #campregister form#RegForm #Submit:hover, .container-fluid #main-content-comments #campregister form#RegForm #Submit:hover {
             color: #336600;
             background-color: #fff;
             color: #063;
             cursor: pointer; }
-        .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form span.bp-login-widget-register-link a {
-          font-size: 1em;
-          color: #fff;
-          background-color: #336600; }
-          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form span.bp-login-widget-register-link a:hover {
-            background-color: #fff;
-            color: #336600; }
-      .container-fluid aside#side-bar-left .side-bar-box aside#search-2 {
+      .container-fluid #main-content .error,
+      .container-fluid #main-content .notice,
+      .container-fluid #main-content .success, .container-fluid #main-content-comments .error,
+      .container-fluid #main-content-comments .notice,
+      .container-fluid #main-content-comments .success {
+        padding: 0.8em;
+        margin-bottom: 1em;
+        border: 2px solid #336600; }
+      .container-fluid #main-content .error, .container-fluid #main-content-comments .error {
+        background: #ffffff;
+        color: #336600;
+        border-color: #297F10;
         width: 100%; }
-        .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form {
-          padding: 1%;
-          width: 100%; }
-          .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form input[type="text"] {
-            display: inline-block;
-            margin-right: 10px;
-            width: 71%; }
-          .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form button.btn {
-            display: inline-block;
-            float: left;
-            width: 25%;
-            height: 35px; }
-      .container-fluid aside#side-bar-left .side-bar-box #newsletter form {
-        width: 100%;
-        margin: 0; }
-        .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group {
-          width: 80%;
-          margin: 4% auto;
+      .container-fluid #main-content .notice, .container-fluid #main-content-comments .notice {
+        background: #FFF6BF;
+        color: #336600;
+        border-color: #FFD324;
+        width: 100%; }
+      .container-fluid #main-content .success, .container-fluid #main-content-comments .success {
+        background: #E6EFC2;
+        color: #336600;
+        border-color: #C6D880;
+        width: 100%; }
+      .container-fluid #main-content section.searchformadvance, .container-fluid #main-content-comments section.searchformadvance {
+        margin: auto;
+        background-color: #336600;
+        padding: 0;
+        font-family: Candara, Arial, Helvetica, sans-serif;
+        height: auto;
+        width: 50%; }
+        .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 {
+          padding-top: 3%; }
+          .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7 img.ajax-loader, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 img.ajax-loader {
+            border: medium none;
+            vertical-align: middle;
+            height: 100px;
+            width: 10%;
+            display: block;
+            margin: 5% auto; }
+        .container-fluid #main-content section.searchformadvance form.wpcf7-form,
+        .container-fluid #main-content section.searchformadvance form#contactform,
+        .container-fluid #main-content section.searchformadvance form#login,
+        .container-fluid #main-content section.searchformadvance form#retrieve,
+        .container-fluid #main-content section.searchformadvance form#searchform, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form,
+        .container-fluid #main-content-comments section.searchformadvance form#contactform,
+        .container-fluid #main-content-comments section.searchformadvance form#login,
+        .container-fluid #main-content-comments section.searchformadvance form#retrieve,
+        .container-fluid #main-content-comments section.searchformadvance form#searchform {
+          height: auto;
+          width: 90%;
+          margin: 0 auto;
+          display: block; }
+          .container-fluid #main-content section.searchformadvance form.wpcf7-form label,
+          .container-fluid #main-content section.searchformadvance form#contactform label,
+          .container-fluid #main-content section.searchformadvance form#login label,
+          .container-fluid #main-content section.searchformadvance form#retrieve label,
+          .container-fluid #main-content section.searchformadvance form#searchform label, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form label,
+          .container-fluid #main-content-comments section.searchformadvance form#contactform label,
+          .container-fluid #main-content-comments section.searchformadvance form#login label,
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve label,
+          .container-fluid #main-content-comments section.searchformadvance form#searchform label {
+            color: #fff;
+            text-align: left;
+            width: 100%;
+            display: block;
+            letter-spacing: 0.1em;
+            font-size: 1em;
+            line-height: 35px;
+            font-weight: 100; }
+          .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="email"], .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="text"], .container-fluid #main-content section.searchformadvance form.wpcf7-form .textfield,
+          .container-fluid #main-content section.searchformadvance form#contactform input[type="email"],
+          .container-fluid #main-content section.searchformadvance form#contactform input[type="text"],
+          .container-fluid #main-content section.searchformadvance form#contactform .textfield,
+          .container-fluid #main-content section.searchformadvance form#login input[type="email"],
+          .container-fluid #main-content section.searchformadvance form#login input[type="text"],
+          .container-fluid #main-content section.searchformadvance form#login .textfield,
+          .container-fluid #main-content section.searchformadvance form#retrieve input[type="email"],
+          .container-fluid #main-content section.searchformadvance form#retrieve input[type="text"],
+          .container-fluid #main-content section.searchformadvance form#retrieve .textfield,
+          .container-fluid #main-content section.searchformadvance form#searchform input[type="email"],
+          .container-fluid #main-content section.searchformadvance form#searchform input[type="text"],
+          .container-fluid #main-content section.searchformadvance form#searchform .textfield, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="email"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="text"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form .textfield,
+          .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="email"],
+          .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="text"],
+          .container-fluid #main-content-comments section.searchformadvance form#contactform .textfield,
+          .container-fluid #main-content-comments section.searchformadvance form#login input[type="email"],
+          .container-fluid #main-content-comments section.searchformadvance form#login input[type="text"],
+          .container-fluid #main-content-comments section.searchformadvance form#login .textfield,
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="email"],
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="text"],
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve .textfield,
+          .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="email"],
+          .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="text"],
+          .container-fluid #main-content-comments section.searchformadvance form#searchform .textfield {
+            width: 100%;
+            height: 100%;
+            height: 35px;
+            color: #000;
+            border: 0;
+            outline: none; }
+          .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content section.searchformadvance form.wpcf7-form #Submit,
+          .container-fluid #main-content section.searchformadvance form#contactform input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#contactform #Submit,
+          .container-fluid #main-content section.searchformadvance form#login input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#login #Submit,
+          .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#retrieve #Submit,
+          .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#searchform #Submit, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit,
+          .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit,
+          .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#login #Submit,
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve #Submit,
+          .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#searchform #Submit {
+            width: 40%;
+            margin: auto;
+            font-size: 1em;
+            line-height: 30px;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 35px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            background-color: #336600;
+            display: block; }
+          .container-fluid #main-content section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content section.searchformadvance form.wpcf7-form #Submit:hover,
+          .container-fluid #main-content section.searchformadvance form#contactform input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#contactform #Submit:hover,
+          .container-fluid #main-content section.searchformadvance form#login input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#login #Submit:hover,
+          .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#retrieve #Submit:hover,
+          .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
+          .container-fluid #main-content section.searchformadvance form#searchform #Submit:hover, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit:hover,
+          .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit:hover,
+          .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#login #Submit:hover,
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#retrieve #Submit:hover,
+          .container-fluid #main-content-comments section.searchformadvance form#searchform input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form#searchform #Submit:hover {
+            background-color: #fff;
+            color: #063;
+            cursor: pointer; }
+      .container-fluid #main-content section#search_result, .container-fluid #main-content-comments section#search_result {
+        margin: auto;
+        font-size: 1em;
+        width: 90%;
+        height: auto;
+        padding: 0; }
+        .container-fluid #main-content section#search_result .result_s, .container-fluid #main-content-comments section#search_result .result_s {
+          height: auto;
+          width: 16%;
+          display: inline-block;
+          float: left;
+          margin: 0;
           padding: 0; }
-          .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group label#NewsLetter input {
+        .container-fluid #main-content section#search_result .result_s1, .container-fluid #main-content-comments section#search_result .result_s1 {
+          height: auto;
+          width: 34%;
+          display: block;
+          float: left;
+          margin: 0;
+          padding: 0; }
+        .container-fluid #main-content section#search_result .result_s li, .container-fluid #main-content-comments section#search_result .result_s li {
+          height: 30px;
+          line-height: 30px;
+          font-size: 0.8em;
+          padding: 0; }
+        .container-fluid #main-content section#search_result .result_s1 li, .container-fluid #main-content-comments section#search_result .result_s1 li {
+          height: 30px;
+          width: 100%;
+          line-height: 30px;
+          padding: 0;
+          font-size: 0.8em; }
+        .container-fluid #main-content section#search_result .resultmap, .container-fluid #main-content-comments section#search_result .resultmap {
+          float: right;
+          height: 420px;
+          width: 50%;
+          border: 2px solid #336600; }
+        .container-fluid #main-content section#search_result .resultimage, .container-fluid #main-content-comments section#search_result .resultimage {
+          max-height: 100%;
+          margin: 10px 0 0;
+          float: left;
+          width: 47%;
+          display: inline-block; }
+        .container-fluid #main-content section#search_result .resulttext, .container-fluid #main-content-comments section#search_result .resulttext {
+          width: 100%;
+          height: auto;
+          clear: both;
+          margin: 1% 0;
+          line-height: 1.5em;
+          display: inline-block; }
+      .container-fluid #main-content #pagination, .container-fluid #main-content-comments #pagination {
+        margin: 1% 0;
+        height: 30px; }
+        .container-fluid #main-content #pagination ul, .container-fluid #main-content-comments #pagination ul {
+          margin: 0;
+          padding: 0;
+          width: 50%;
+          height: 100%; }
+        .container-fluid #main-content #pagination ul li, .container-fluid #main-content-comments #pagination ul li {
+          width: auto;
+          display: inline-block;
+          float: left;
+          margin-right: 4%; }
+        .container-fluid #main-content #pagination ul li a, .container-fluid #main-content-comments #pagination ul li a {
+          display: block;
+          text-align: left;
+          text-decoration: none;
+          padding: 1%;
+          color: #000; }
+        .container-fluid #main-content #pagination ul li a:hover, .container-fluid #main-content-comments #pagination ul li a:hover {
+          color: #336600;
+          font-weight: bold; }
+      .container-fluid #main-content .count, .container-fluid #main-content-comments .count {
+        font-size: 0.95em; }
+    .container-fluid aside#side-bar-left {
+      height: auto;
+      background-color: #fff;
+      padding: 2%;
+      /* homepage text box*/ }
+      .container-fluid aside#side-bar-left ul#menu-front-menu {
+        list-style: none;
+        padding: 0; }
+        .container-fluid aside#side-bar-left ul#menu-front-menu li {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          margin: 0.5em 0;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 0.1em; }
+          .container-fluid aside#side-bar-left ul#menu-front-menu li a {
+            display: block;
+            text-decoration: none;
+            margin: 0 auto;
+            height: 100%;
+            width: 80%;
+            line-height: 40px;
+            letter-spacing: 0.2em;
+            font-size: 0.85em;
+            color: #fff;
+            text-align: center;
+            background-color: #336600;
+            -webkit-transform-origin: 0, 0;
+            -moz-transform-origin: 0, 0;
+            -o-transform-origin: 0, 0;
+            transform-origin: 0, 0;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear; }
+          .container-fluid aside#side-bar-left ul#menu-front-menu li a:hover {
+            font-size: 0.95em;
+            width: 80%;
+            background-color: #fff;
+            color: #336600;
+            text-decoration: none;
+            line-height: 40px;
+            font-weight: bold;
+            letter-spacing: 0.1em; }
+      .container-fluid aside#side-bar-left .side-bar-box {
+        height: auto;
+        text-decoration: none;
+        padding: 0;
+        margin: 0; }
+        .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form {
+          background-color: #336600;
+          color: #fff;
+          width: 80%;
+          padding: 2%;
+          margin: 2% auto; }
+          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-user-login,
+          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-user-pass {
             margin: 1em 0;
             display: block;
             font-weight: normal;
+            width: 100%;
+            color: #000; }
+          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-submit {
+            width: 100%;
+            height: 50px;
+            font-size: 0.9em;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            background: #fff;
+            background-color: #336600;
+            display: block; }
+            .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form input#bp-login-widget-submit:hover {
+              color: #336600;
+              background-color: #fff;
+              color: #063;
+              cursor: pointer; }
+          .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form span.bp-login-widget-register-link a {
+            font-size: 1em;
+            color: #fff;
+            background-color: #336600; }
+            .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form span.bp-login-widget-register-link a:hover {
+              background-color: #fff;
+              color: #336600; }
+        .container-fluid aside#side-bar-left .side-bar-box aside#search-2 {
+          width: 100%; }
+          .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form {
+            padding: 1%;
             width: 100%; }
-        .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"] {
-          margin: 0 auto;
+            .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form input[type="text"] {
+              display: inline-block;
+              margin-right: 10px;
+              width: 71%; }
+            .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form button.btn {
+              display: inline-block;
+              float: left;
+              width: 25%;
+              height: 35px; }
+        .container-fluid aside#side-bar-left .side-bar-box #newsletter form {
+          width: 100%;
+          margin: 0; }
+          .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group {
+            width: 80%;
+            margin: 4% auto;
+            padding: 0; }
+            .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group label#NewsLetter input {
+              margin: 1em 0;
+              display: block;
+              font-weight: normal;
+              width: 100%; }
+          .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"] {
+            margin: 0 auto;
+            display: block;
+            font-size: 0.9em;
+            line-height: 15px;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            font-family: Candara, Arial, Helvetica, sans-serif;
+            height: 30px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            line-height: 1.5em;
+            background: #063;
+            /*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
+            -webkit-transform-origin: 0, 0;
+            -moz-transform-origin: 0, 0;
+            -o-transform-origin: 0, 0;
+            transform-origin: 0, 0;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            background-color: #336600;
+            width: 40%; }
+          .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"]:hover {
+            background-color: #fff;
+            color: #336600; }
+        .container-fluid aside#side-bar-left .side-bar-box aside ul {
+          width: 100%;
           display: block;
-          font-size: 0.9em;
-          line-height: 15px;
-          color: #fff;
-          border: 1px solid #e5e5e5;
-          outline: 0;
-          font-family: Candara, Arial, Helvetica, sans-serif;
-          height: 30px;
-          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-          line-height: 1.5em;
-          background: #063;
-          /*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
-          -webkit-transform-origin: 0, 0;
-          -moz-transform-origin: 0, 0;
-          -o-transform-origin: 0, 0;
-          transform-origin: 0, 0;
+          padding: 0;
+          margin: 0; }
+          .container-fluid aside#side-bar-left .side-bar-box aside ul li {
+            width: 100%; }
+            .container-fluid aside#side-bar-left .side-bar-box aside ul li a {
+              color: #336600;
+              background-color: #fff;
+              display: block;
+              text-decoration: none;
+              margin: 0;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+              line-height: 50px;
+              letter-spacing: 0.2em; }
+        .container-fluid aside#side-bar-left .side-bar-box span {
+          width: 100%;
+          display: block;
+          height: 100%;
+          line-height: 50px;
+          font-size: 1.1em;
+          text-align: center; }
+          .container-fluid aside#side-bar-left .side-bar-box span:hover {
+            background-color: #e5e5e5; }
+          .container-fluid aside#side-bar-left .side-bar-box span a {
+            text-decoration: none;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            line-height: 50px;
+            letter-spacing: 0.2em;
+            font-size: 1.1em;
+            color: #336600;
+            text-align: center;
+            -webkit-transform-origin: 0, 0;
+            -moz-transform-origin: 0, 0;
+            -o-transform-origin: 0, 0;
+            transform-origin: 0, 0;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            display: block; }
+          .container-fluid aside#side-bar-left .side-bar-box span a:hover {
+            font-size: 1.2em;
+            color: #336600;
+            text-decoration: none;
+            line-height: 50px;
+            font-weight: bold;
+            letter-spacing: 0.3em; }
+        .container-fluid aside#side-bar-left .side-bar-box .media {
+          height: auto;
+          font-size: 0.75em;
+          margin: 0.5em 0;
+          padding: 0;
+          width: 100%;
+          list-style: none;
+          display: block; }
+        .container-fluid aside#side-bar-left .side-bar-box .media .media-left {
+          display: inline-block;
+          width: 46%;
+          padding: 1.5%;
+          margin: 0;
+          border: 0;
+          text-decoration: none;
+          overflow: hidden;
+          cursor: pointer; }
+        .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object {
+          -webkit-transform-origin: 50%, 50%;
+          -moz-transform-origin: 50%, 50%;
+          -o-transform-origin: 50%, 50%;
+          transform-origin: 50%, 50%;
           -webkit-animation-fill-mode: both;
           -moz-animation-fill-mode: both;
           -o-animation-fill-mode: both;
@@ -1635,285 +1736,192 @@ ul {
           -moz-transition: all 0.2s ease-out;
           -o-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
+          opacity: 0.9; }
+        .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object:hover {
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -o-transform: scale(1.05);
+          transform: scale(1.05);
+          opacity: 1; }
+        .container-fluid aside#side-bar-left .side-bar-box .media .media-body {
+          width: 50%;
+          display: inline-block; }
+          .container-fluid aside#side-bar-left .side-bar-box .media .media-body h3 {
+            font-size: 1.3em;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6em; }
+          .container-fluid aside#side-bar-left .side-bar-box .media .media-body p {
+            width: 100%;
+            line-height: 1.6em;
+            margin: 0;
+            font-size: 1em;
+            text-align: left; }
+        .container-fluid aside#side-bar-left .side-bar-box h2 {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          margin: 0;
+          font-weight: bold;
+          font-size: 1em;
           background-color: #336600;
-          width: 40%; }
-        .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"]:hover {
+          text-align: center;
+          letter-spacing: 0.1em; }
+    .container-fluid .home-page-text {
+      letter-spacing: 0.1em;
+      width: 100%;
+      padding-top: 1em;
+      height: auto;
+      margin: 1em 0;
+      padding: 0 1em 1em;
+      background-color: #fff; }
+      .container-fluid .home-page-text h1 {
+        color: #336600;
+        margin: 0;
+        font-size: 2.1em;
+        text-align: center;
+        width: 100%;
+        display: block;
+        line-height: 60px; }
+      .container-fluid .home-page-text h2 {
+        margin: 0;
+        line-height: 30px;
+        height: 30px;
+        display: block;
+        font-size: 1.1em;
+        font-weight: bold; }
+      .container-fluid .home-page-text p {
+        width: 98%;
+        font-size: 0.85em;
+        margin: 0;
+        display: block;
+        line-height: 1.8em; }
+    .container-fluid .textboxes {
+      letter-spacing: 0.1em;
+      width: 100%;
+      padding-top: 1em;
+      height: auto;
+      margin-bottom: 5px;
+      padding: 1% 0 0 1%;
+      line-height: 1.5em;
+      background-color: #fff; }
+      .container-fluid .textboxes h2 {
+        line-height: 30px;
+        height: 30px;
+        display: block;
+        font-size: 1em;
+        font-weight: bold; }
+      .container-fluid .textboxes div.media .media-left {
+        width: 17%;
+        margin: 0 2% 0 0; }
+        .container-fluid .textboxes div.media .media-left img.media-object {
+          width: 100%; }
+      .container-fluid .textboxes .media-body h4.media-heading {
+        margin: 0;
+        font-size: 1.15em;
+        text-align: left;
+        width: 100%;
+        display: block;
+        line-height: 30px;
+        font-weight: bold; }
+      .container-fluid .textboxes .media-body p {
+        width: 98%;
+        font-size: 0.80em;
+        margin: 0;
+        display: block;
+        line-height: 1.5em; }
+      .container-fluid .textboxes .media-body p:last-of-type {
+        margin: 0 0 2%; }
+    .container-fluid #right_side {
+      height: auto;
+      width: 777px;
+      float: left;
+      margin-bottom: 5px;
+      padding-left: 0;
+      font-size: 1em;
+      font-family: Candara, Arial, Helvetica, sans-serif;
+      /*Privacy page*/ }
+      .container-fluid #right_side p {
+        font-size: 0.9em;
+        font-family: Candara, Arial, Helvetica, sans-serif; }
+      .container-fluid #right_side .privacy p {
+        font-size: 1em;
+        width: 85%;
+        margin: 5px 0 5px 7%;
+        line-height: 1.3em; }
+        .container-fluid #right_side .privacy p h3 {
+          text-indent: 7%;
+          font-size: 100%; }
+        .container-fluid #right_side .privacy p ul {
+          width: 80%;
+          margin-left: 10%;
+          font-size: 1em;
+          letter-spacing: 0.1em; }
+    .container-fluid footer#site-footer {
+      height: 40px;
+      margin-top: 5px;
+      background-color: #336600;
+      padding: 0;
+      clear: both;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      font-family: Candara, Arial, Helvetica, sans-serif; }
+      .container-fluid footer#site-footer ul#menu-secondary {
+        padding: 0;
+        width: 50%;
+        height: 40px;
+        list-style: none;
+        margin: auto; }
+        .container-fluid footer#site-footer ul#menu-secondary li {
+          font-family: Candara, Arial, Helvetica, sans-serif;
+          float: left;
+          width: 25%;
+          text-align: center;
+          height: 40px;
+          line-height: 40px;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+          transition: all 0.2s linear; }
+          .container-fluid footer#site-footer ul#menu-secondary li a {
+            line-height: 40px;
+            height: 40px;
+            font-size: 0.85em;
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            display: block; }
+          .container-fluid footer#site-footer ul#menu-secondary li a:active {
+            color: #FF0; }
+          .container-fluid footer#site-footer ul#menu-secondary li a:hover {
+            font-weight: bold;
+            color: #336600; }
+        .container-fluid footer#site-footer ul#menu-secondary li:hover {
           background-color: #fff;
           color: #336600; }
-      .container-fluid aside#side-bar-left .side-bar-box aside ul {
-        width: 100%;
-        display: block;
-        padding: 0;
-        margin: 0; }
-        .container-fluid aside#side-bar-left .side-bar-box aside ul li {
-          width: 100%; }
-          .container-fluid aside#side-bar-left .side-bar-box aside ul li a {
-            color: #336600;
-            background-color: #fff;
-            display: block;
-            text-decoration: none;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            line-height: 50px;
-            letter-spacing: 0.2em; }
-      .container-fluid aside#side-bar-left .side-bar-box span {
-        width: 100%;
-        display: block;
-        height: 100%;
-        line-height: 50px;
-        font-size: 1.1em;
-        text-align: center; }
-        .container-fluid aside#side-bar-left .side-bar-box span:hover {
-          background-color: #e5e5e5; }
-        .container-fluid aside#side-bar-left .side-bar-box span a {
-          text-decoration: none;
-          margin: 0;
-          height: 100%;
-          width: 100%;
-          line-height: 50px;
-          letter-spacing: 0.2em;
-          font-size: 1.1em;
-          color: #336600;
-          text-align: center;
-          -webkit-transform-origin: 0, 0;
-          -moz-transform-origin: 0, 0;
-          -o-transform-origin: 0, 0;
-          transform-origin: 0, 0;
-          -webkit-animation-fill-mode: both;
-          -moz-animation-fill-mode: both;
-          -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-          -webkit-transition: all 0.2s linear;
-          -moz-transition: all 0.2s linear;
-          -o-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-          display: block; }
-        .container-fluid aside#side-bar-left .side-bar-box span a:hover {
-          font-size: 1.2em;
-          color: #336600;
-          text-decoration: none;
-          line-height: 50px;
-          font-weight: bold;
-          letter-spacing: 0.3em; }
-      .container-fluid aside#side-bar-left .side-bar-box .media {
-        height: auto;
-        font-size: 0.75em;
-        margin: 0.5em 0;
-        padding: 0;
-        width: 100%;
-        list-style: none;
-        display: block; }
-      .container-fluid aside#side-bar-left .side-bar-box .media .media-left {
-        display: inline-block;
-        width: 46%;
-        padding: 1.5%;
-        margin: 0;
-        border: 0;
-        text-decoration: none;
-        overflow: hidden;
-        cursor: pointer; }
-      .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object {
-        -webkit-transform-origin: 50%, 50%;
-        -moz-transform-origin: 50%, 50%;
-        -o-transform-origin: 50%, 50%;
-        transform-origin: 50%, 50%;
-        -webkit-animation-fill-mode: both;
-        -moz-animation-fill-mode: both;
-        -o-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out;
-        opacity: 0.9; }
-      .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object:hover {
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        transform: scale(1.05);
-        opacity: 1; }
-      .container-fluid aside#side-bar-left .side-bar-box .media .media-body {
-        width: 50%;
-        display: inline-block; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-body h3 {
-          font-size: 1.3em;
-          font-weight: bold;
-          font-style: italic;
-          margin: 0;
-          padding: 0;
-          line-height: 1.6em; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-body p {
-          width: 100%;
-          line-height: 1.6em;
-          margin: 0;
-          font-size: 1em;
-          text-align: left; }
-      .container-fluid aside#side-bar-left .side-bar-box h2 {
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        color: #fff;
-        margin: 0;
-        font-weight: bold;
-        font-size: 1em;
-        background-color: #336600;
-        text-align: center;
-        letter-spacing: 0.1em; }
-  .container-fluid .home-page-text {
-    letter-spacing: 0.1em;
-    width: 100%;
-    padding-top: 1em;
-    height: auto;
-    margin: 1em 0;
-    padding: 0 1em 1em;
-    background-color: #fff; }
-    .container-fluid .home-page-text h1 {
-      color: #336600;
-      margin: 0;
-      font-size: 2.1em;
-      text-align: center;
-      width: 100%;
-      display: block;
-      line-height: 60px; }
-    .container-fluid .home-page-text h2 {
-      margin: 0;
-      line-height: 30px;
-      height: 30px;
-      display: block;
-      font-size: 1.1em;
-      font-weight: bold; }
-    .container-fluid .home-page-text p {
-      width: 98%;
-      font-size: 0.85em;
-      margin: 0;
-      display: block;
-      line-height: 1.8em; }
-  .container-fluid .textboxes {
-    letter-spacing: 0.1em;
-    width: 100%;
-    padding-top: 1em;
-    height: auto;
-    margin-bottom: 5px;
-    padding: 1% 0 0 1%;
-    line-height: 1.5em;
-    background-color: #fff; }
-    .container-fluid .textboxes h2 {
-      line-height: 30px;
-      height: 30px;
-      display: block;
-      font-size: 1em;
-      font-weight: bold; }
-    .container-fluid .textboxes div.media .media-left {
-      width: 17%;
-      margin: 0 2% 0 0; }
-      .container-fluid .textboxes div.media .media-left img.media-object {
-        width: 100%; }
-    .container-fluid .textboxes .media-body h4.media-heading {
-      margin: 0;
-      font-size: 1.15em;
-      text-align: left;
-      width: 100%;
-      display: block;
-      line-height: 30px;
-      font-weight: bold; }
-    .container-fluid .textboxes .media-body p {
-      width: 98%;
-      font-size: 0.80em;
-      margin: 0;
-      display: block;
-      line-height: 1.5em; }
-    .container-fluid .textboxes .media-body p:last-of-type {
-      margin: 0 0 2%; }
-  .container-fluid #right_side {
-    height: auto;
-    width: 777px;
-    float: left;
-    margin-bottom: 5px;
-    padding-left: 0;
-    font-size: 1em;
-    font-family: Candara, Arial, Helvetica, sans-serif;
-    /*Privacy page*/ }
-    .container-fluid #right_side p {
-      font-size: 0.9em;
-      font-family: Candara, Arial, Helvetica, sans-serif; }
-    .container-fluid #right_side .privacy p {
-      font-size: 1em;
-      width: 85%;
-      margin: 5px 0 5px 7%;
-      line-height: 1.3em; }
-      .container-fluid #right_side .privacy p h3 {
-        text-indent: 7%;
-        font-size: 100%; }
-      .container-fluid #right_side .privacy p ul {
-        width: 80%;
-        margin-left: 10%;
-        font-size: 1em;
-        letter-spacing: 0.1em; }
-  .container-fluid footer#site-footer {
-    height: 40px;
-    margin-top: 5px;
-    background-color: #336600;
-    padding: 0;
-    clear: both;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    font-family: Candara, Arial, Helvetica, sans-serif; }
-    .container-fluid footer#site-footer ul#menu-secondary {
-      padding: 0;
-      width: 50%;
-      height: 40px;
-      list-style: none;
-      margin: auto; }
-      .container-fluid footer#site-footer ul#menu-secondary li {
-        font-family: Candara, Arial, Helvetica, sans-serif;
-        float: left;
-        width: 25%;
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        transition: all 0.2s linear; }
-        .container-fluid footer#site-footer ul#menu-secondary li a {
-          line-height: 40px;
-          height: 40px;
-          font-size: 0.85em;
-          color: #fff;
-          text-decoration: none;
-          -webkit-transition: all 0.2s linear;
-          -moz-transition: all 0.2s linear;
-          -o-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-          display: block; }
-        .container-fluid footer#site-footer ul#menu-secondary li a:active {
-          color: #FF0; }
-        .container-fluid footer#site-footer ul#menu-secondary li a:hover {
-          font-weight: bold;
-          color: #336600; }
-      .container-fluid footer#site-footer ul#menu-secondary li:hover {
-        background-color: #fff;
-        color: #336600; }
 
-.setloglink a {
-  font-size: 1.2em; }
+  .setloglink a {
+    font-size: 1.2em; }
 
-.setloglink a:hover {
-  color: #000;
-  font-weight: bold; }
+  .setloglink a:hover {
+    color: #000;
+    font-weight: bold; }
 
-.copyright {
-  margin: 2% auto;
-  color: #000;
-  font-size: 10px;
-  width: 84%;
-  display: block;
-  height: 50px; }
-
+  .copyright {
+    margin: 2% auto;
+    color: #000;
+    font-size: 10px;
+    width: 84%;
+    display: block;
+    height: 50px; } }
 /* Large desktop */
 @media all and (max-width: 1024px) {
   .container-fluid {
