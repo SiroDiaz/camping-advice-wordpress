@@ -23,7 +23,9 @@
     width: 20%;
 }
 
-#bbpress-forums li.bbp-header .bbp-reply-content{
+#bbpress-forums,
+li.bbp-header,
+.bbp-reply-content{
 	margin-left: 213px;
 
 }
@@ -373,57 +375,13 @@
     }
 }
 
-#bbpress-forums div.bbp-reply-author a.bbp-author-name {
+#bbpress-forums,
+div.bbp-reply-author,
+a.bbp-author-name {
     margin: 0 ;
 }
 
-//widgets area
-
-.widget.buddypress .item-avatar a {
-
-    width: 22%;
-}
-.widget.buddypress div.item-avatar img.avatar {
-  margin: 15%;
-
-}
-
-.widget.buddypress .bp-login-widget-user-avatar {
-    margin: 3%;
-}
-
-.widget.buddypress div.item {
-
-}
-
-.widget.buddypress div.item-options {
-    font-size: 100%;
-    a#newest-members, a#recently-active-members {
-        display: block;
-        text-decoration: none;
-        margin: 2% auto;
-        height: 100%;
-        width: 80%;
-        line-height: 30px;
-        letter-spacing: 0.2em;
-        font-size: 0.8em;
-        color: $color2;
-        text-align: center;
-        background-color: $color1;
-        @include TransOrigin( 0,0 );
-        @include FillUp( both );
-        @include TranSition( all 0.2s linear);
-    }
-
-}
-
-.widget.buddypress ul.item-list img.avatar {margin:2%;}
-
 //bbp template notice -index-bbpress page
-
-#buddypress #members-list li{
-	width: 16%;
-}
 
 div.bbp-template-notice.info {
 	
@@ -481,18 +439,86 @@ div.bbp-submit-wrapper {
 
 div.bbp-template-notice.info {
     clear: both;
+	width:30%;
+	p.bbp-forum-description{
+		font-size:1em;
+		a.bbp-author-avatar{
+			
+			img.avatar{
+				width:14%;
+			}
+		}
+		a.bbp-author-name{
+			font-size:0.9em;
+		}
+		a{
+			font-size:0.9em;
+		
+		}
+	
+	}
+	
 }
 
-div.bbp-template-notice, div.indicator-hint {
+
+div.bbp-template-notice, 
+div.indicator-hint {
 
 }
 
-div.bbp-breadcrumb, div.bbp-topic-tags {
+div.bbp-breadcrumb, 
+div.bbp-topic-tags {
     font-size: 0.9em;
     width: 54%;
 }
 
 //buddypress
+
+//widgets area
+
+.widget.buddypress .item-avatar a {
+
+    width: 22%;
+}
+.widget.buddypress div.item-avatar img.avatar {
+  margin: 15%;
+
+}
+
+.widget.buddypress .bp-login-widget-user-avatar {
+    margin: 3%;
+}
+
+.widget.buddypress div.item {
+
+}
+
+.widget.buddypress div.item-options {
+    font-size: 100%;
+    a#newest-members, a#recently-active-members {
+        display: block;
+        text-decoration: none;
+        margin: 2% auto;
+        height: 100%;
+        width: 80%;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
+        color: $color2;
+        text-align: center;
+        background-color: $color1;
+        @include TransOrigin( 0,0 );
+        @include FillUp( both );
+        @include TranSition( all 0.2s linear);
+    }
+
+}
+
+.widget.buddypress ul.item-list img.avatar {margin:2%;}
+
+#buddypress #members-list li{
+	width: 16%;
+}
 
 #buddypress form#whats-new-form{
 
