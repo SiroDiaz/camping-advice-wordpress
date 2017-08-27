@@ -12,6 +12,16 @@
       width: 100%;
       height: 100%; }
 
+#bbpress-forums div.bbp-forum-author,
+#bbpress-forums div.bbp-topic-author,
+#bbpress-forums div.bbp-reply-author {
+  float: left;
+  text-align: center;
+  width: 20%; }
+
+#bbpress-forums li.bbp-header .bbp-reply-content {
+  margin-left: 213px; }
+
 #bbpress-forums ul {
   width: 100%; }
 #bbpress-forums div.bbp-breadcrumb, #bbpress-forums div.bbp-topic-tags {
@@ -70,21 +80,26 @@
 #bbpress-forums ul.bbp-forums {
   width: 100%; }
   #bbpress-forums ul.bbp-forums .bbp-header {
-    width: 22%;
+    width: 100%;
     display: inline-block;
     float: left;
     background-color: #336600; }
-    #bbpress-forums ul.bbp-forums .bbp-header ul {
+    #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles {
       width: 100%;
       margin: 0;
       padding: 0; }
-      #bbpress-forums ul.bbp-forums .bbp-header ul li {
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li {
         font-size: 1.2em;
         text-align: left;
         color: #fff;
         letter-spacing: 0.1em; }
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-info,
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-topic-count,
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-reply-count,
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-freshness {
+        width: 25%; }
   #bbpress-forums ul.bbp-forums .bbp-body {
-    width: 73%;
+    width: 100%;
     display: inline-block; }
     #bbpress-forums ul.bbp-forums .bbp-body ul {
       width: 100%;
@@ -99,68 +114,56 @@
           display: inline-block;
           width: 100%;
           height: 100%; }
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-info,
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-topic-count,
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-reply-count,
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-freshness {
+        width: 25%; }
     #bbpress-forums ul.bbp-forums .bbp-body li.bbp-topic-title {
       float: left;
       width: 20%; }
 #bbpress-forums ul.bbp-topics li.bbp-header {
-  float: left;
   display: block;
-  width: 20%;
+  width: 100%;
   background-color: #336600;
-  color: #fff;
-  padding: 8px;
-  text-indent: 5%; }
-  #bbpress-forums ul.bbp-topics li.bbp-header ul {
-    overflow: hidden;
-    margin: 0; }
-    #bbpress-forums ul.bbp-topics li.bbp-header ul li {
+  color: #fff; }
+  #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles {
+    margin: 0.5em 0;
+    overflow: hidden; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li {
       letter-spacing: 0.1em;
-      line-height: 35px;
-      font-size: 1em; }
-    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-title {
-<<<<<<< HEAD
-      line-height: 40px; }
-=======
-      color: #336600;
-      background-color: #fff;
-      line-height: 67px; }
-    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-voice-count {
-      color: #336600;
-      background-color: #fff; }
-    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-reply-count {
-      color: #336600;
-      background-color: #fff; }
-    #bbpress-forums ul.bbp-topics li.bbp-header ul li.bbp-topic-freshness {
-      color: #336600;
-      background-color: #fff; }
->>>>>>> 385738f109bc65bb942701216540152f38404459
+      line-height: 40x;
+      font-size: 1em;
+      text-align: center; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-title {
+      width: 40%; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-voice-count,
+    #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-reply-count {
+      width: 10%; }
+    #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-freshness {
+      line-height: 40px;
+      width: 40%; }
 #bbpress-forums ul.bbp-topics li.bbp-body {
-  width: 80%;
+  width: 100%;
   display: inline-block;
   line-height: auto; }
   #bbpress-forums ul.bbp-topics li.bbp-body ul.topic {
     height: auto;
-    padding: 8px;
-    background-color: #336600;
-    text-indent: 5%; }
+    padding: 12.25px; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title {
+      width: 40%;
       font-size: 1em; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title a.bbp-topic-permalink {
         display: inline-block;
-        width: 40%;
+        width: 30%;
         float: left;
-<<<<<<< HEAD
         line-height: 40px; }
-=======
-        line-height: 67px;
-        color: #336600;
-        background-color: #fff; }
->>>>>>> 385738f109bc65bb942701216540152f38404459
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta {
-        width: auto;
+        width: 70%;
         height: auto;
         display: inline-block;
-        float: left; }
+        float: left;
+        font-size: 0.9em; }
         #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta img.avatar {
           width: 20%;
           margin: 0; }
@@ -168,11 +171,9 @@
           white-space: normal;
           display: block;
           height: 35px;
-          line-height: 35px;
-          color: #336600;
-          background-color: #fff; }
+          line-height: 35px; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-by a.bbp-author-avatar {
-            width: 8%;
+            width: 10%;
             margin: 0; }
             #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-by a.bbp-author-avatar img.avatar {
               width: 100%;
@@ -182,22 +183,18 @@
             width: 53%;
             font-size: 0.95em; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-voice-count {
-      width: 100%;
-      color: #336600;
-      background-color: #fff; }
+      width: 10%;
+      text-align: center; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-reply-count {
-      width: 100%;
-      color: #336600;
-      background-color: #fff; }
+      width: 10%;
+      text-align: center; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness {
-      width: 100%;
-      color: #336600;
-      background-color: #fff; }
+      width: 40%; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness a {
         width: 40%;
         float: left; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta {
-        width: auto;
+        width: 60%;
         display: inline-block; }
         #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span {
           width: 100%;
@@ -205,22 +202,14 @@
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span #text {
             display: block; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-avatar {
-            width: 15%; }
+            width: 10%; }
             #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-avatar img.avatar {
               width: 100%;
               margin: 0; }
           #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span a.bbp-author-name {
             font-size: 0.95em;
-            width: 100%;
+            width: 56%;
             float: none; }
-#bbpress-forums li.bbp-header ul li {
-  letter-spacing: 0.1em;
-  width: 100%;
-  text-align: left;
-  line-height: auto;
-  display: block;
-  font-style: italic;
-  font-size: 1em; }
 #bbpress-forums fieldset.bbp-form p {
   width: 100%; }
 #bbpress-forums fieldset.bbp-form legend {
@@ -251,13 +240,6 @@
   color: #000;
   border: 0;
   outline: none; }
-#bbpress-forums div.bbp-template-notice img.avatar {
-<<<<<<< HEAD
-  width: 8%;
-=======
-  width: 5%;
->>>>>>> 385738f109bc65bb942701216540152f38404459
-  margin-top: 2%; }
 #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar input.ed_button {
   width: 9%; }
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
@@ -322,14 +304,25 @@
 .widget.buddypress ul.item-list img.avatar {
   margin: 2%; }
 
+#buddypress #members-list li {
+  width: 16%; }
+
 div.bbp-template-notice.info p.bbp-topic-description {
   width: 100%; }
   div.bbp-template-notice.info p.bbp-topic-description .bbp-author-avatar {
-    display: block; }
+    display: inline-block;
+    width: 4%;
+    clear: both;
+    height: 40px;
+    margin: 0 0.5em; }
+    div.bbp-template-notice.info p.bbp-topic-description .bbp-author-avatar img.avatar {
+      width: 100%; }
   div.bbp-template-notice.info p.bbp-topic-description .bbp-author-name {
-    display: block; }
+    display: inline-block;
+    width: 35%; }
   div.bbp-template-notice.info p.bbp-topic-description a {
-    display: block; }
+    display: inline-block;
+    width: 30%; }
 
 div.bbp-submit-wrapper button#bbp_topic_submit {
   display: block;
@@ -387,7 +380,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 #buddypress #item-header-cover-image #item-header-avatar {
   margin-top: 1.5em;
-  width: 12%; }
+  width: 17%; }
 
 #buddypress div.item-list-tabs ul li.selected a {
   background-color: #336600;
@@ -417,7 +410,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 #buddypress #header-cover-image {
   background-color: #336600;
-  height: 135px; }
+  height: 175px; }
 
 #buddypress #item-header-cover-image #item-header-avatar img.avatar {
   display: block; }
@@ -537,7 +530,7 @@ div.bbp-breadcrumb, div.bbp-topic-tags {
 
 .bp-user #buddypress #item-header {
   padding-top: 0;
-  height: 140px; }
+  height: 180px; }
 
 .bp_members,
 .forum {
@@ -1012,7 +1005,6 @@ ul {
       .container-fluid .error-box h1 {
         font-size: 1.5em;
         line-height: 40px;
-<<<<<<< HEAD
         display: block; }
       .container-fluid .error-box h1 a {
         text-decoration: none;
@@ -1033,28 +1025,15 @@ ul {
         background-color: #fff;
         color: #063;
         cursor: pointer; }
-    .container-fluid #main-content, .container-fluid #main-content-comments {
+    .container-fluid #main-content,
+    .container-fluid #main-content-comments {
       height: auto;
       min-height: 600px;
-=======
-        letter-spacing: 0.2em;
-        font-size: 2em;
-        color: #336600;
-        text-align: center; }
-    .container-fluid #main-content p.bbp-topic-meta, .container-fluid #main-content-comments p.bbp-topic-meta {
-      width: 75%;
-      font-size: 0.9em;
-      display: inline-block;
-      min-height: 30px;
-      line-height: 30px; }
-      .container-fluid #main-content p.bbp-topic-meta img.avatar, .container-fluid #main-content-comments p.bbp-topic-meta img.avatar {
-        width: 7%; }
-    .container-fluid #main-content p, .container-fluid #main-content-comments p {
->>>>>>> 385738f109bc65bb942701216540152f38404459
       width: 96%;
       margin: 0 auto;
       background-color: #fff;
-      padding: 0 2.5%;
+      padding: 0 1em;
+      margin-bottom: 1em;
       /*#main-content { float: left;  height: auto; width: 340px;}*/
       /*register Form*/
       /*search form*/
@@ -1063,7 +1042,8 @@ ul {
       /*search count*/
       /*images column*/
       /*#right_side #pic_col {float: left;height: auto; width: 345px;}*/ }
-      .container-fluid #main-content h1, .container-fluid #main-content-comments h1 {
+      .container-fluid #main-content h1,
+      .container-fluid #main-content-comments h1 {
         display: block;
         margin: 0;
         color: #336600;
@@ -1071,7 +1051,8 @@ ul {
         font-size: 2em;
         width: 100%;
         line-height: 60px; }
-      .container-fluid #main-content h2, .container-fluid #main-content-comments h2 {
+      .container-fluid #main-content h2,
+      .container-fluid #main-content-comments h2 {
         margin: 1% 0;
         width: 100%;
         color: #336600;
@@ -1081,7 +1062,8 @@ ul {
         font-size: 1.4em;
         text-align: left;
         display: block; }
-        .container-fluid #main-content h2 a, .container-fluid #main-content-comments h2 a {
+        .container-fluid #main-content h2 a,
+        .container-fluid #main-content-comments h2 a {
           display: block;
           text-decoration: none;
           margin: 0 auto;
@@ -1092,21 +1074,25 @@ ul {
           font-size: 2em;
           color: #336600;
           text-align: center; }
-      .container-fluid #main-content p, .container-fluid #main-content-comments p {
+      .container-fluid #main-content p,
+      .container-fluid #main-content-comments p {
         width: 96%;
         margin: 0;
         font-size: 1em;
         line-height: 1.7em;
         color: #333; }
-        .container-fluid #main-content p a, .container-fluid #main-content-comments p a {
+        .container-fluid #main-content p a,
+        .container-fluid #main-content-comments p a {
           color: #336600;
           font-size: 1.2em; }
-      .container-fluid #main-content ul, .container-fluid #main-content-comments ul {
+      .container-fluid #main-content ul,
+      .container-fluid #main-content-comments ul {
         list-style: none;
         margin: 2% 0;
         font-size: 1.1em;
         width: auto; }
-        .container-fluid #main-content ul li, .container-fluid #main-content-comments ul li {
+        .container-fluid #main-content ul li,
+        .container-fluid #main-content-comments ul li {
           letter-spacing: 0.1em;
           width: 100%;
           text-align: left;
@@ -1114,17 +1100,24 @@ ul {
           display: block;
           font-style: italic;
           font-size: 0.9em; }
-          .container-fluid #main-content ul li span, .container-fluid #main-content-comments ul li span {
+          .container-fluid #main-content ul li span,
+          .container-fluid #main-content-comments ul li span {
             height: 100%;
             color: #336600; }
-      .container-fluid #main-content .post header.entry-header, .container-fluid #main-content-comments .post header.entry-header {
+      .container-fluid #main-content .post h1.post-title,
+      .container-fluid #main-content-comments .post h1.post-title {
+        font-size: 2em; }
+      .container-fluid #main-content .post header.entry-header,
+      .container-fluid #main-content-comments .post header.entry-header {
         height: 60px; }
-      .container-fluid #main-content .post p.right, .container-fluid #main-content-comments .post p.right {
+      .container-fluid #main-content .post p.right,
+      .container-fluid #main-content-comments .post p.right {
         float: right;
         width: 10%;
         display: block;
         text-align: center; }
-      .container-fluid #main-content .post a.read_more, .container-fluid #main-content-comments .post a.read_more {
+      .container-fluid #main-content .post a.read_more,
+      .container-fluid #main-content-comments .post a.read_more {
         display: block;
         width: 15%;
         background-color: #336600;
@@ -1132,31 +1125,38 @@ ul {
         height: 35px;
         line-height: 35px;
         text-align: center; }
-        .container-fluid #main-content .post a.read_more:hover, .container-fluid #main-content-comments .post a.read_more:hover {
+        .container-fluid #main-content .post a.read_more:hover,
+        .container-fluid #main-content-comments .post a.read_more:hover {
           background-color: #6ab866;
           color: #336600; }
-      .container-fluid #main-content .post .featuredImage, .container-fluid #main-content-comments .post .featuredImage {
+      .container-fluid #main-content .post .featuredImage,
+      .container-fluid #main-content-comments .post .featuredImage {
         width: 70%;
         margin: 2% auto; }
-      .container-fluid #main-content #summary, .container-fluid #main-content-comments #summary {
+      .container-fluid #main-content #summary,
+      .container-fluid #main-content-comments #summary {
         display: none;
         width: 100%;
         height: 100px;
         font-size: 1em;
         background-color: #336600;
         color: #fff; }
-      .container-fluid #main-content .panel, .container-fluid #main-content-comments .panel {
+      .container-fluid #main-content .panel,
+      .container-fluid #main-content-comments .panel {
         border-color: #336600; }
-        .container-fluid #main-content .panel .panel-heading, .container-fluid #main-content-comments .panel .panel-heading {
+        .container-fluid #main-content .panel .panel-heading,
+        .container-fluid #main-content-comments .panel .panel-heading {
           border-color: #336600;
           background-color: #F0F7E8; }
-          .container-fluid #main-content .panel .panel-heading h3.panel-title, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title {
+          .container-fluid #main-content .panel .panel-heading h3.panel-title,
+          .container-fluid #main-content-comments .panel .panel-heading h3.panel-title {
             font-size: 1.5em;
             height: 30px;
             line-height: 1.3em;
             margin-top: 5px;
             color: #336600; }
-            .container-fluid #main-content .panel .panel-heading h3.panel-title span, .container-fluid #main-content-comments .panel .panel-heading h3.panel-title span {
+            .container-fluid #main-content .panel .panel-heading h3.panel-title span,
+            .container-fluid #main-content-comments .panel .panel-heading h3.panel-title span {
               color: #336600;
               margin: 0 0.5% 0 0;
               display: inline-block;
@@ -1167,7 +1167,8 @@ ul {
         .container-fluid #main-content .panel .panel-body .equip1_img,
         .container-fluid #main-content .panel .panel-body .equip2_img,
         .container-fluid #main-content .panel .panel-body .equip_img,
-        .container-fluid #main-content .panel .panel-body .trav_img, .container-fluid #main-content-comments .panel .panel-body .activ_img,
+        .container-fluid #main-content .panel .panel-body .trav_img,
+        .container-fluid #main-content-comments .panel .panel-body .activ_img,
         .container-fluid #main-content-comments .panel .panel-body .cook_img,
         .container-fluid #main-content-comments .panel .panel-body .equip1_img,
         .container-fluid #main-content-comments .panel .panel-body .equip2_img,
@@ -1177,29 +1178,34 @@ ul {
           width: 15%;
           display: inline-block;
           float: left; }
-        .container-fluid #main-content .panel .panel-body p, .container-fluid #main-content-comments .panel .panel-body p {
+        .container-fluid #main-content .panel .panel-body p,
+        .container-fluid #main-content-comments .panel .panel-body p {
           width: 100%;
           margin: 0 0 1%;
           font-size: 1em;
           line-height: 1.5em;
           color: #333; }
-        .container-fluid #main-content .panel .panel-body p a, .container-fluid #main-content-comments .panel .panel-body p a {
+        .container-fluid #main-content .panel .panel-body p a,
+        .container-fluid #main-content-comments .panel .panel-body p a {
           color: #336600;
           font-size: 1.2em; }
-      .container-fluid #main-content section#account-box, .container-fluid #main-content-comments section#account-box {
+      .container-fluid #main-content section#account-box,
+      .container-fluid #main-content-comments section#account-box {
         width: 80%;
         margin: 0 auto;
         display: block;
         border: 1px #ccc solid;
         padding: 2%; }
-      .container-fluid #main-content .nav-tabs, .container-fluid #main-content-comments .nav-tabs {
+      .container-fluid #main-content .nav-tabs,
+      .container-fluid #main-content-comments .nav-tabs {
         list-style: none;
         margin: 0;
         font-size: 1.1em;
         width: 100%;
         height: 50px;
         background-color: #fff; }
-        .container-fluid #main-content .nav-tabs li, .container-fluid #main-content-comments .nav-tabs li {
+        .container-fluid #main-content .nav-tabs li,
+        .container-fluid #main-content-comments .nav-tabs li {
           letter-spacing: 0.1em;
           width: 24%;
           text-align: center;
@@ -1209,12 +1215,15 @@ ul {
           font-size: 0.9em;
           height: auto;
           margin-right: 1%; }
-          .container-fluid #main-content .nav-tabs li span, .container-fluid #main-content-comments .nav-tabs li span {
+          .container-fluid #main-content .nav-tabs li span,
+          .container-fluid #main-content-comments .nav-tabs li span {
             height: 100%;
             color: #336600; }
-      .container-fluid #main-content div.tab-content h3, .container-fluid #main-content-comments div.tab-content h3 {
+      .container-fluid #main-content div.tab-content h3,
+      .container-fluid #main-content-comments div.tab-content h3 {
         margin: 0; }
-      .container-fluid #main-content div.tab-content .media, .container-fluid #main-content-comments div.tab-content .media {
+      .container-fluid #main-content div.tab-content .media,
+      .container-fluid #main-content-comments div.tab-content .media {
         height: auto;
         font-size: 0.75em;
         margin: 0.5em 0;
@@ -1222,7 +1231,8 @@ ul {
         width: 100%;
         list-style: none;
         display: block; }
-      .container-fluid #main-content div.tab-content .media .media-left, .container-fluid #main-content-comments div.tab-content .media .media-left {
+      .container-fluid #main-content div.tab-content .media .media-left,
+      .container-fluid #main-content-comments div.tab-content .media .media-left {
         display: inline-block;
         width: 20%;
         padding: 0;
@@ -1231,54 +1241,65 @@ ul {
         text-decoration: none;
         overflow: hidden;
         cursor: pointer; }
-      .container-fluid #main-content div.tab-content .media .media-body, .container-fluid #main-content-comments div.tab-content .media .media-body {
+      .container-fluid #main-content div.tab-content .media .media-body,
+      .container-fluid #main-content-comments div.tab-content .media .media-body {
         width: 79%;
         display: inline-block; }
-        .container-fluid #main-content div.tab-content .media .media-body h3, .container-fluid #main-content-comments div.tab-content .media .media-body h3 {
+        .container-fluid #main-content div.tab-content .media .media-body h3,
+        .container-fluid #main-content-comments div.tab-content .media .media-body h3 {
           font-size: 1.3em;
           font-weight: bold;
           font-style: italic;
           margin: 0;
           padding: 0;
           line-height: 1.6em; }
-        .container-fluid #main-content div.tab-content .media .media-body p, .container-fluid #main-content-comments div.tab-content .media .media-body p {
+        .container-fluid #main-content div.tab-content .media .media-body p,
+        .container-fluid #main-content-comments div.tab-content .media .media-body p {
           width: 100%;
           line-height: 1.6em;
           margin: 0;
           font-size: 1.1em;
           text-align: left; }
-        .container-fluid #main-content div.tab-content .media .media-body ul.list-group, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group {
+        .container-fluid #main-content div.tab-content .media .media-body ul.list-group,
+        .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group {
           width: 98%;
           margin: 0;
           padding: 0 1% 0 0; }
-          .container-fluid #main-content div.tab-content .media .media-body ul.list-group li, .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group li {
+          .container-fluid #main-content div.tab-content .media .media-body ul.list-group li,
+          .container-fluid #main-content-comments div.tab-content .media .media-body ul.list-group li {
             width: 100%;
             display: inline-block;
             margin: 0 0 0.5em; }
-      .container-fluid #main-content div.tab-content ul.list-group, .container-fluid #main-content-comments div.tab-content ul.list-group {
+      .container-fluid #main-content div.tab-content ul.list-group,
+      .container-fluid #main-content-comments div.tab-content ul.list-group {
         width: 98%;
         margin: 0;
         padding: 0 1% 0 0; }
-        .container-fluid #main-content div.tab-content ul.list-group li, .container-fluid #main-content-comments div.tab-content ul.list-group li {
+        .container-fluid #main-content div.tab-content ul.list-group li,
+        .container-fluid #main-content-comments div.tab-content ul.list-group li {
           width: 100%;
           display: inline-block;
           margin: 0 0 0.5em; }
-      .container-fluid #main-content #campregister, .container-fluid #main-content-comments #campregister {
+      .container-fluid #main-content #campregister,
+      .container-fluid #main-content-comments #campregister {
         margin: auto;
         background-color: #336600;
         padding: 0;
         font-family: Candara, Arial, Helvetica, sans-serif;
         height: auto;
         width: 50%; }
-        .container-fluid #main-content #campregister form#RegForm, .container-fluid #main-content-comments #campregister form#RegForm {
+        .container-fluid #main-content #campregister form#RegForm,
+        .container-fluid #main-content-comments #campregister form#RegForm {
           margin: auto;
           background-color: #336600;
           width: 90%;
           height: auto; }
-          .container-fluid #main-content #campregister form#RegForm img, .container-fluid #main-content-comments #campregister form#RegForm img {
+          .container-fluid #main-content #campregister form#RegForm img,
+          .container-fluid #main-content-comments #campregister form#RegForm img {
             width: 25%;
             height: 40px; }
-          .container-fluid #main-content #campregister form#RegForm label, .container-fluid #main-content-comments #campregister form#RegForm label {
+          .container-fluid #main-content #campregister form#RegForm label,
+          .container-fluid #main-content-comments #campregister form#RegForm label {
             color: #fff;
             text-align: left;
             line-height: 35px;
@@ -1287,25 +1308,29 @@ ul {
             letter-spacing: 0.1em;
             font-size: 1em;
             font-weight: 100; }
-          .container-fluid #main-content #campregister form#RegForm .verifybox, .container-fluid #main-content-comments #campregister form#RegForm .verifybox {
+          .container-fluid #main-content #campregister form#RegForm .verifybox,
+          .container-fluid #main-content-comments #campregister form#RegForm .verifybox {
             width: 72%;
             height: 100%;
             font-size: 1em;
             color: #000;
             float: left;
             display: inline-block; }
-          .container-fluid #main-content #campregister form#RegForm .textfield, .container-fluid #main-content-comments #campregister form#RegForm .textfield {
+          .container-fluid #main-content #campregister form#RegForm .textfield,
+          .container-fluid #main-content-comments #campregister form#RegForm .textfield {
             width: 100%;
             height: 100%;
             font-size: 1em;
             color: #000; }
-          .container-fluid #main-content #campregister form#RegForm #select8, .container-fluid #main-content-comments #campregister form#RegForm #select8 {
+          .container-fluid #main-content #campregister form#RegForm #select8,
+          .container-fluid #main-content-comments #campregister form#RegForm #select8 {
             width: 100%;
             font-size: 1em;
             color: #336600;
             height: 40px;
             display: block; }
-          .container-fluid #main-content #campregister form#RegForm #Submit, .container-fluid #main-content-comments #campregister form#RegForm #Submit {
+          .container-fluid #main-content #campregister form#RegForm #Submit,
+          .container-fluid #main-content-comments #campregister form#RegForm #Submit {
             width: 40%;
             margin: auto;
             font-size: 0.9em;
@@ -1321,44 +1346,52 @@ ul {
             background: #fff;
             background-color: #336600;
             display: block; }
-          .container-fluid #main-content #campregister form#RegForm #Submit:hover, .container-fluid #main-content-comments #campregister form#RegForm #Submit:hover {
+          .container-fluid #main-content #campregister form#RegForm #Submit:hover,
+          .container-fluid #main-content-comments #campregister form#RegForm #Submit:hover {
             color: #336600;
             background-color: #fff;
             color: #063;
             cursor: pointer; }
       .container-fluid #main-content .error,
       .container-fluid #main-content .notice,
-      .container-fluid #main-content .success, .container-fluid #main-content-comments .error,
+      .container-fluid #main-content .success,
+      .container-fluid #main-content-comments .error,
       .container-fluid #main-content-comments .notice,
       .container-fluid #main-content-comments .success {
         padding: 0.8em;
         margin-bottom: 1em;
         border: 2px solid #336600; }
-      .container-fluid #main-content .error, .container-fluid #main-content-comments .error {
+      .container-fluid #main-content .error,
+      .container-fluid #main-content-comments .error {
         background: #ffffff;
         color: #336600;
         border-color: #297F10;
         width: 100%; }
-      .container-fluid #main-content .notice, .container-fluid #main-content-comments .notice {
+      .container-fluid #main-content .notice,
+      .container-fluid #main-content-comments .notice {
         background: #FFF6BF;
         color: #336600;
         border-color: #FFD324;
         width: 100%; }
-      .container-fluid #main-content .success, .container-fluid #main-content-comments .success {
+      .container-fluid #main-content .success,
+      .container-fluid #main-content-comments .success {
         background: #E6EFC2;
         color: #336600;
         border-color: #C6D880;
         width: 100%; }
-      .container-fluid #main-content section.searchformadvance, .container-fluid #main-content-comments section.searchformadvance {
+      .container-fluid #main-content section.searchformadvance,
+      .container-fluid #main-content-comments section.searchformadvance {
         margin: auto;
         background-color: #336600;
         padding: 0;
         font-family: Candara, Arial, Helvetica, sans-serif;
         height: auto;
         width: 50%; }
-        .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 {
+        .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7,
+        .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 {
           padding-top: 3%; }
-          .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7 img.ajax-loader, .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 img.ajax-loader {
+          .container-fluid #main-content section.searchformadvance .textwidget div.wpcf7 img.ajax-loader,
+          .container-fluid #main-content-comments section.searchformadvance .textwidget div.wpcf7 img.ajax-loader {
             border: medium none;
             vertical-align: middle;
             height: 100px;
@@ -1369,7 +1402,8 @@ ul {
         .container-fluid #main-content section.searchformadvance form#contactform,
         .container-fluid #main-content section.searchformadvance form#login,
         .container-fluid #main-content section.searchformadvance form#retrieve,
-        .container-fluid #main-content section.searchformadvance form#searchform, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form,
+        .container-fluid #main-content section.searchformadvance form#searchform,
+        .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form,
         .container-fluid #main-content-comments section.searchformadvance form#contactform,
         .container-fluid #main-content-comments section.searchformadvance form#login,
         .container-fluid #main-content-comments section.searchformadvance form#retrieve,
@@ -1382,7 +1416,8 @@ ul {
           .container-fluid #main-content section.searchformadvance form#contactform label,
           .container-fluid #main-content section.searchformadvance form#login label,
           .container-fluid #main-content section.searchformadvance form#retrieve label,
-          .container-fluid #main-content section.searchformadvance form#searchform label, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form label,
+          .container-fluid #main-content section.searchformadvance form#searchform label,
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form label,
           .container-fluid #main-content-comments section.searchformadvance form#contactform label,
           .container-fluid #main-content-comments section.searchformadvance form#login label,
           .container-fluid #main-content-comments section.searchformadvance form#retrieve label,
@@ -1407,7 +1442,10 @@ ul {
           .container-fluid #main-content section.searchformadvance form#retrieve .textfield,
           .container-fluid #main-content section.searchformadvance form#searchform input[type="email"],
           .container-fluid #main-content section.searchformadvance form#searchform input[type="text"],
-          .container-fluid #main-content section.searchformadvance form#searchform .textfield, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="email"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="text"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form .textfield,
+          .container-fluid #main-content section.searchformadvance form#searchform .textfield,
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="email"],
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="text"],
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form .textfield,
           .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="email"],
           .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="text"],
           .container-fluid #main-content-comments section.searchformadvance form#contactform .textfield,
@@ -1434,7 +1472,9 @@ ul {
           .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
           .container-fluid #main-content section.searchformadvance form#retrieve #Submit,
           .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
-          .container-fluid #main-content section.searchformadvance form#searchform #Submit, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit,
+          .container-fluid #main-content section.searchformadvance form#searchform #Submit,
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit,
           .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
           .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit,
           .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
@@ -1465,7 +1505,9 @@ ul {
           .container-fluid #main-content section.searchformadvance form#retrieve input[type="submit"],
           .container-fluid #main-content section.searchformadvance form#retrieve #Submit:hover,
           .container-fluid #main-content section.searchformadvance form#searchform input[type="submit"],
-          .container-fluid #main-content section.searchformadvance form#searchform #Submit:hover, .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"], .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit:hover,
+          .container-fluid #main-content section.searchformadvance form#searchform #Submit:hover,
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form input[type="submit"],
+          .container-fluid #main-content-comments section.searchformadvance form.wpcf7-form #Submit:hover,
           .container-fluid #main-content-comments section.searchformadvance form#contactform input[type="submit"],
           .container-fluid #main-content-comments section.searchformadvance form#contactform #Submit:hover,
           .container-fluid #main-content-comments section.searchformadvance form#login input[type="submit"],
@@ -1477,83 +1519,98 @@ ul {
             background-color: #fff;
             color: #063;
             cursor: pointer; }
-      .container-fluid #main-content section#search_result, .container-fluid #main-content-comments section#search_result {
+      .container-fluid #main-content section#search_result,
+      .container-fluid #main-content-comments section#search_result {
         margin: auto;
         font-size: 1em;
         width: 90%;
         height: auto;
         padding: 0; }
-        .container-fluid #main-content section#search_result .result_s, .container-fluid #main-content-comments section#search_result .result_s {
+        .container-fluid #main-content section#search_result .result_s,
+        .container-fluid #main-content-comments section#search_result .result_s {
           height: auto;
           width: 16%;
           display: inline-block;
           float: left;
           margin: 0;
           padding: 0; }
-        .container-fluid #main-content section#search_result .result_s1, .container-fluid #main-content-comments section#search_result .result_s1 {
+        .container-fluid #main-content section#search_result .result_s1,
+        .container-fluid #main-content-comments section#search_result .result_s1 {
           height: auto;
           width: 34%;
           display: block;
           float: left;
           margin: 0;
           padding: 0; }
-        .container-fluid #main-content section#search_result .result_s li, .container-fluid #main-content-comments section#search_result .result_s li {
+        .container-fluid #main-content section#search_result .result_s li,
+        .container-fluid #main-content-comments section#search_result .result_s li {
           height: 30px;
           line-height: 30px;
           font-size: 0.8em;
           padding: 0; }
-        .container-fluid #main-content section#search_result .result_s1 li, .container-fluid #main-content-comments section#search_result .result_s1 li {
+        .container-fluid #main-content section#search_result .result_s1 li,
+        .container-fluid #main-content-comments section#search_result .result_s1 li {
           height: 30px;
           width: 100%;
           line-height: 30px;
           padding: 0;
           font-size: 0.8em; }
-        .container-fluid #main-content section#search_result .resultmap, .container-fluid #main-content-comments section#search_result .resultmap {
+        .container-fluid #main-content section#search_result .resultmap,
+        .container-fluid #main-content-comments section#search_result .resultmap {
           float: right;
           height: 420px;
           width: 50%;
           border: 2px solid #336600; }
-        .container-fluid #main-content section#search_result .resultimage, .container-fluid #main-content-comments section#search_result .resultimage {
+        .container-fluid #main-content section#search_result .resultimage,
+        .container-fluid #main-content-comments section#search_result .resultimage {
           max-height: 100%;
           margin: 10px 0 0;
           float: left;
           width: 47%;
           display: inline-block; }
-        .container-fluid #main-content section#search_result .resulttext, .container-fluid #main-content-comments section#search_result .resulttext {
+        .container-fluid #main-content section#search_result .resulttext,
+        .container-fluid #main-content-comments section#search_result .resulttext {
           width: 100%;
           height: auto;
           clear: both;
           margin: 1% 0;
           line-height: 1.5em;
           display: inline-block; }
-      .container-fluid #main-content #pagination, .container-fluid #main-content-comments #pagination {
+      .container-fluid #main-content #pagination,
+      .container-fluid #main-content-comments #pagination {
         margin: 1% 0;
         height: 30px; }
-        .container-fluid #main-content #pagination ul, .container-fluid #main-content-comments #pagination ul {
+        .container-fluid #main-content #pagination ul,
+        .container-fluid #main-content-comments #pagination ul {
           margin: 0;
           padding: 0;
           width: 50%;
           height: 100%; }
-        .container-fluid #main-content #pagination ul li, .container-fluid #main-content-comments #pagination ul li {
+        .container-fluid #main-content #pagination ul li,
+        .container-fluid #main-content-comments #pagination ul li {
           width: auto;
           display: inline-block;
           float: left;
           margin-right: 4%; }
-        .container-fluid #main-content #pagination ul li a, .container-fluid #main-content-comments #pagination ul li a {
+        .container-fluid #main-content #pagination ul li a,
+        .container-fluid #main-content-comments #pagination ul li a {
           display: block;
           text-align: left;
           text-decoration: none;
           padding: 1%;
           color: #000; }
-        .container-fluid #main-content #pagination ul li a:hover, .container-fluid #main-content-comments #pagination ul li a:hover {
+        .container-fluid #main-content #pagination ul li a:hover,
+        .container-fluid #main-content-comments #pagination ul li a:hover {
           color: #336600;
           font-weight: bold; }
-      .container-fluid #main-content .count, .container-fluid #main-content-comments .count {
+      .container-fluid #main-content .count,
+      .container-fluid #main-content-comments .count {
         font-size: 0.95em; }
     .container-fluid aside#side-bar-left {
       height: auto;
       background-color: #fff;
-      padding: 2%;
+      padding: 0.5em 0;
+      display: block;
       /* homepage text box*/ }
       .container-fluid aside#side-bar-left ul#menu-front-menu {
         list-style: none;
@@ -1603,7 +1660,22 @@ ul {
         height: auto;
         text-decoration: none;
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        float: left;
+        display: inline-block;
+        margin: 0.2em;
+        width: 30%; }
+        .container-fluid aside#side-bar-left .side-bar-box h2 {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          margin: 0;
+          font-weight: bold;
+          font-size: 1em;
+          background-color: #336600;
+          text-align: center;
+          letter-spacing: 0.1em; }
         .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form {
           background-color: #336600;
           color: #fff;
@@ -1657,52 +1729,6 @@ ul {
               float: left;
               width: 25%;
               height: 35px; }
-        .container-fluid aside#side-bar-left .side-bar-box #newsletter form {
-          width: 100%;
-          margin: 0; }
-          .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group {
-            width: 80%;
-            margin: 4% auto;
-            padding: 0; }
-            .container-fluid aside#side-bar-left .side-bar-box #newsletter form .form-group label#NewsLetter input {
-              margin: 1em 0;
-              display: block;
-              font-weight: normal;
-              width: 100%; }
-          .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"] {
-            margin: 0 auto;
-            display: block;
-            font-size: 0.9em;
-            line-height: 15px;
-            color: #fff;
-            border: 1px solid #e5e5e5;
-            outline: 0;
-            font-family: Candara, Arial, Helvetica, sans-serif;
-            height: 30px;
-            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
-            line-height: 1.5em;
-            background: #063;
-            /*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
-            -webkit-transform-origin: 0, 0;
-            -moz-transform-origin: 0, 0;
-            -o-transform-origin: 0, 0;
-            transform-origin: 0, 0;
-            -webkit-animation-fill-mode: both;
-            -moz-animation-fill-mode: both;
-            -o-animation-fill-mode: both;
-            animation-fill-mode: both;
-            -webkit-transition: all 0.2s ease-out;
-            -moz-transition: all 0.2s ease-out;
-            -o-transition: all 0.2s ease-out;
-            transition: all 0.2s ease-out;
-            background-color: #336600;
-            width: 40%; }
-          .container-fluid aside#side-bar-left .side-bar-box #newsletter form button[type="submit"]:hover {
-            background-color: #fff;
-            color: #336600; }
         .container-fluid aside#side-bar-left .side-bar-box aside ul {
           width: 100%;
           display: block;
@@ -1753,67 +1779,16 @@ ul {
             -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
             display: block; }
-          .container-fluid aside#side-bar-left .side-bar-box span a:hover {
-            font-size: 1.2em;
-            color: #336600;
-            text-decoration: none;
-            line-height: 50px;
-            font-weight: bold;
-            letter-spacing: 0.3em; }
-        .container-fluid aside#side-bar-left .side-bar-box .media {
-          height: auto;
-          font-size: 0.75em;
-          margin: 0.5em 0;
-          padding: 0;
-          width: 100%;
-          list-style: none;
-          display: block; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-left {
-          display: inline-block;
-          width: 46%;
-          padding: 1.5%;
-          margin: 0;
-          border: 0;
-          text-decoration: none;
-          overflow: hidden;
-          cursor: pointer; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object {
-          -webkit-transform-origin: 50%, 50%;
-          -moz-transform-origin: 50%, 50%;
-          -o-transform-origin: 50%, 50%;
-          transform-origin: 50%, 50%;
-          -webkit-animation-fill-mode: both;
-          -moz-animation-fill-mode: both;
-          -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-          -webkit-transition: all 0.2s ease-out;
-          -moz-transition: all 0.2s ease-out;
-          -o-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-          opacity: 0.9; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-left .media-object:hover {
-          -webkit-transform: scale(1.05);
-          -moz-transform: scale(1.05);
-          -o-transform: scale(1.05);
-          transform: scale(1.05);
-          opacity: 1; }
-        .container-fluid aside#side-bar-left .side-bar-box .media .media-body {
-          width: 50%;
-          display: inline-block; }
-          .container-fluid aside#side-bar-left .side-bar-box .media .media-body h3 {
-            font-size: 1.3em;
-            font-weight: bold;
-            font-style: italic;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6em; }
-          .container-fluid aside#side-bar-left .side-bar-box .media .media-body p {
-            width: 100%;
-            line-height: 1.6em;
-            margin: 0;
-            font-size: 1em;
-            text-align: left; }
-        .container-fluid aside#side-bar-left .side-bar-box h2 {
+            .container-fluid aside#side-bar-left .side-bar-box span a:hover {
+              font-size: 1.2em;
+              color: #336600;
+              text-decoration: none;
+              line-height: 50px;
+              font-weight: bold;
+              letter-spacing: 0.3em; }
+      .container-fluid aside#side-bar-left .side-bar-box-front {
+        width: 100%; }
+        .container-fluid aside#side-bar-left .side-bar-box-front h2 {
           width: 100%;
           height: 40px;
           line-height: 40px;
@@ -1824,6 +1799,105 @@ ul {
           background-color: #336600;
           text-align: center;
           letter-spacing: 0.1em; }
+        .container-fluid aside#side-bar-left .side-bar-box-front .media {
+          height: auto;
+          font-size: 0.75em;
+          margin: 0.5em 0;
+          padding: 0;
+          width: 100%;
+          list-style: none;
+          display: block; }
+          .container-fluid aside#side-bar-left .side-bar-box-front .media .media-left {
+            display: inline-block;
+            width: 46%;
+            padding: 1.5%;
+            margin: 0;
+            border: 0;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer; }
+            .container-fluid aside#side-bar-left .side-bar-box-front .media .media-left .media-object {
+              -webkit-transform-origin: 50%, 50%;
+              -moz-transform-origin: 50%, 50%;
+              -o-transform-origin: 50%, 50%;
+              transform-origin: 50%, 50%;
+              -webkit-animation-fill-mode: both;
+              -moz-animation-fill-mode: both;
+              -o-animation-fill-mode: both;
+              animation-fill-mode: both;
+              -webkit-transition: all 0.2s ease-out;
+              -moz-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+              opacity: 0.9; }
+              .container-fluid aside#side-bar-left .side-bar-box-front .media .media-left .media-object:hover {
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -o-transform: scale(1.05);
+                transform: scale(1.05);
+                opacity: 1; }
+          .container-fluid aside#side-bar-left .side-bar-box-front .media .media-body {
+            width: 50%;
+            display: inline-block; }
+            .container-fluid aside#side-bar-left .side-bar-box-front .media .media-body h3 {
+              font-size: 1.3em;
+              font-weight: bold;
+              font-style: italic;
+              margin: 0;
+              padding: 0;
+              line-height: 1.6em; }
+            .container-fluid aside#side-bar-left .side-bar-box-front .media .media-body p {
+              width: 100%;
+              line-height: 1.6em;
+              margin: 0;
+              font-size: 1em;
+              text-align: left; }
+        .container-fluid aside#side-bar-left .side-bar-box-front #newsletter form {
+          width: 100%;
+          margin: 0; }
+          .container-fluid aside#side-bar-left .side-bar-box-front #newsletter form .form-group {
+            width: 80%;
+            margin: 4% auto;
+            padding: 0; }
+            .container-fluid aside#side-bar-left .side-bar-box-front #newsletter form .form-group label#NewsLetter input {
+              margin: 1em 0;
+              display: block;
+              font-weight: normal;
+              width: 100%; }
+          .container-fluid aside#side-bar-left .side-bar-box-front #newsletter form button[type="submit"] {
+            margin: 0 auto;
+            display: block;
+            font-size: 0.9em;
+            line-height: 15px;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            font-family: Candara, Arial, Helvetica, sans-serif;
+            height: 30px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            line-height: 1.5em;
+            background: #063;
+            /*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
+            -webkit-transform-origin: 0, 0;
+            -moz-transform-origin: 0, 0;
+            -o-transform-origin: 0, 0;
+            transform-origin: 0, 0;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            background-color: #336600;
+            width: 40%; }
+          .container-fluid aside#side-bar-left .side-bar-box-front #newsletter form button[type="submit"]:hover {
+            background-color: #fff;
+            color: #336600; }
     .container-fluid .home-page-text {
       letter-spacing: 0.1em;
       width: 100%;

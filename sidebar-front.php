@@ -1,21 +1,16 @@
 
 
-<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6">  
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9">  
 <!---Left Side Bar-->
                 <aside id="side-bar-left">
        
 
- <article class="side-bar-box">
+ <article class="side-bar-box-front ">
      <h2>Links</h2>         
-<?php get_template_part( 'navigation', 'front' ); ?>
-                    </article>
-
-                    <article class="side-bar-box">
-    
-                    </article>
+<?php get_template_part( 'template-parts/navigation', 'front' ); ?>
+ </article>
                     
-                    
- <article class="side-bar-box">
+ <article class="side-bar-box-front">
                         <h2>Popular Campsites</h2>
 
                         <div class="media">
@@ -59,7 +54,7 @@
                         </div>
 
                     </article>
-                    <article class="side-bar-box">
+                    <article class="side-bar-box-front">
                         <h2>Weather</h2>
                         <div id="weather">
                             <a href="http://www.accuweather.com/en/gb/london/ec4a-2/weather-forecast/328328" class="aw-widget-legal">

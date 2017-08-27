@@ -1,5 +1,45 @@
 <?php
 
+
+remove_action( 'bbp_before_main_content',  'before_main_content'  ); // Top wrapper HTML
+remove_action( 'bbp_after_main_content',   'after_main_content'  ); // Bottom wrapper 
+
+
+add_action( 'bbp_before_main_content',  'before_main_content' ); // Top wrapper HTML
+	/**
+	 * Inserts HTML at the top of the main content area to be compatible with
+	 * the Twenty Twelve theme.
+	 *
+	 * @since bbPress (r3732)
+	 */
+	function before_main_content() {
+	?>
+
+		<article id="main-content">
+
+	<?php
+	}
+
+
+
+add_action( 'bbp_before_main_content',  'before_main_content'  ); // Top wrapper HTML
+	/**
+	 * Inserts HTML at the bottom of the main content area to be compatible with
+	 * the Twenty Twelve theme.
+	 *
+	 * @since bbPress (r3732)
+	 */
+	function after_main_content() {
+	?>
+
+			</article><!-- #bbp-content -->
+		
+
+	<?php
+	}
+
+
+
 add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 add_theme_support('menus');
 add_theme_support( 'post-thumbnails' );
@@ -26,8 +66,8 @@ if ( ! function_exists( 'bootstrap_four_widgets_init' ) ) :
       'name' => __( 'Right Sidebar', 'bootstrap-four' ),
       'id' => 'right-sidebar',
       'description' => __( 'The Right Sidebar widget area', 'bootstrap-four' ),
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget' => '</aside>',
+      'before_widget' => '<article class="side-bar-box">',
+      'after_widget' => '</article>',
       'before_title' => '<h2>',
       'after_title' => '</h2>',
     ) );

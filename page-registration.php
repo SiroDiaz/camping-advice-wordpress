@@ -15,14 +15,9 @@
                 
              <?php if ( is_bbpress() ) : ?>
              
-             <?php bbp_breadcrumb(); ?>
-				
-                    <?php bbp_get_template_part( 'content', 'single-user' ); ?>
+         <?php the_content(); ?>
                                
-                <?php else : ?>
-          
- 					<?php get_template_part('template-parts/loop','single'); ?>
- 					
+               					
  						<?php endif; ?>
 
                 <?php do_action( 'bbp_after_main_content' ); ?>

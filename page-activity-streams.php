@@ -9,7 +9,7 @@
             <!---Right side content area with slider and intro text and links-->
             
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              
+              activity
                <?php do_action( 'bbp_before_main_content' ); ?>
                
                 

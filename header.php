@@ -77,4 +77,4 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
             <!--Header end-->
                 </div>
         
-<?php get_template_part( 'navigation', 'default' ); ?>
+<?php get_template_part( 'template-parts/navigation', 'default' ); ?>

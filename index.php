@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <div class="row">
-
-    <div class=" col-lg-9 col-md-9 col-sm-9 col-xs-12">
+index
+    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <!--slider section-->
         <div class="row">
            <article id="main-content">
@@ -15,7 +15,9 @@
     </div><!-- .row -->
 
   </div><!-- .col -->
- <?php get_sidebar('blog'); ?>
+
 </div><!-- .row -->
 
+ <?php get_sidebar('blog'); ?>
+ 
 <?php get_footer(); ?>
