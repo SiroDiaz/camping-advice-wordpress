@@ -95,11 +95,13 @@ li.bbp-header,
         text-align: left;
         color: #fff;
         letter-spacing: 0.1em; }
-      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-info,
-      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-topic-count,
-      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-reply-count,
-      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-freshness {
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-info {
         width: 25%; }
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-topic-count,
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-reply-count {
+        width: 15%; }
+      #bbpress-forums ul.bbp-forums .bbp-header ul.forum-titles li.bbp-forum-freshness {
+        width: 45%; }
   #bbpress-forums ul.bbp-forums .bbp-body {
     width: 100%;
     display: inline-block; }
@@ -116,11 +118,20 @@ li.bbp-header,
           display: inline-block;
           width: 100%;
           height: 100%; }
-      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-info,
       #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-topic-count,
-      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-reply-count,
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-reply-count {
+        width: 15%; }
+      #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-info {
+        width: 25%;
+        font-size: 0.9em; }
       #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-freshness {
-        width: 25%; }
+        width: 45%; }
+        #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-freshness a {
+          display: inline-block; }
+        #bbpress-forums ul.bbp-forums .bbp-body ul li.bbp-forum-freshness p.bbp-topic-meta {
+          width: 58%;
+          display: inline-block;
+          font-size: 0.9em; }
     #bbpress-forums ul.bbp-forums .bbp-body li.bbp-topic-title {
       float: left;
       width: 20%; }
@@ -136,7 +147,7 @@ li.bbp-header,
       letter-spacing: 0.1em;
       line-height: 40x;
       font-size: 1em;
-      text-align: center; }
+      text-align: left; }
     #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-title {
       width: 40%; }
     #bbpress-forums ul.bbp-topics li.bbp-header ul.forum-titles li.bbp-topic-voice-count,
@@ -186,10 +197,10 @@ li.bbp-header,
             font-size: 0.95em; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-voice-count {
       width: 10%;
-      text-align: center; }
+      text-align: left; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-reply-count {
       width: 10%;
-      text-align: center; }
+      text-align: left; }
     #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness {
       width: 40%; }
       #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness a {
@@ -248,14 +259,14 @@ li.bbp-header,
   background-color: #F0F7E8; }
 
 #members-dir-search {
-  padding: 3%; }
-  #members-dir-search div input[type="text"] {
+  padding: 0.5em; }
+  #members-dir-search #search-members-form input[type="text"] {
     width: 62%;
     float: left;
     display: inline-block;
     margin-right: 10px;
-    line-height: 25px; }
-  #members-dir-search div input[type="submit"] {
+    line-height: 35px; }
+  #members-dir-search #search-members-form input[type="submit"] {
     width: 32%;
     display: inline-block;
     color: #fff;
@@ -373,8 +384,34 @@ div.bbp-topic-tags {
 .widget.buddypress ul.item-list img.avatar {
   margin: 2%; }
 
-#buddypress #members-list li {
+#buddypress #members-list li,
+#buddypress ul.item-list {
   width: 16%; }
+  #buddypress #members-list li .item-avatar,
+  #buddypress ul.item-list .item-avatar {
+    width: 20%; }
+    #buddypress #members-list li .item-avatar a,
+    #buddypress ul.item-list .item-avatar a {
+      display: block; }
+  #buddypress #members-list li .item,
+  #buddypress ul.item-list .item {
+    display: inline-block;
+    width: 100%; }
+    #buddypress #members-list li .item .item-title,
+    #buddypress ul.item-list .item .item-title {
+      background-color: #c90;
+      text-align: center;
+      width: 100%; }
+    #buddypress #members-list li .item .item-meta,
+    #buddypress ul.item-list .item .item-meta {
+      background-color: #c30;
+      text-align: center;
+      width: 100%; }
+
+#buddypress ul.item-list li h3,
+#buddypress ul.item-list li h4 {
+  width: 100%;
+  display: inline-block; }
 
 #buddypress form#whats-new-form #whats-new-avatar {
   width: 6%; }
@@ -857,8 +894,6 @@ ul {
     /*end of right side*/
     /*Footer*/
     /* end of Footer*/ }
-    .container-fluid .comment-meta img.avatar {
-      width: 4%; }
     .container-fluid header {
       width: 100%;
       height: auto;
@@ -1054,8 +1089,7 @@ ul {
       /* results page*/
       /*search pagination*/
       /*search count*/
-      /*images column*/
-      /*#right_side #pic_col {float: left;height: auto; width: 345px;}*/ }
+      /*images column*/ }
       .container-fluid #main-content h1,
       .container-fluid #main-content-comments h1 {
         display: block;
@@ -1620,12 +1654,113 @@ ul {
       .container-fluid #main-content .count,
       .container-fluid #main-content-comments .count {
         font-size: 0.95em; }
+      .container-fluid #main-content ol.commentlist,
+      .container-fluid #main-content-comments ol.commentlist {
+        margin: 0;
+        padding: 0; }
+        .container-fluid #main-content ol.commentlist li.comment,
+        .container-fluid #main-content-comments ol.commentlist li.comment {
+          display: block; }
+          .container-fluid #main-content ol.commentlist li.comment article.comment-body,
+          .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body {
+            font-size: 1em; }
+            .container-fluid #main-content ol.commentlist li.comment article.comment-body footer.comment-meta,
+            .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body footer.comment-meta {
+              padding: 0.5em 0;
+              background-color: #336600;
+              color: #fff; }
+              .container-fluid #main-content ol.commentlist li.comment article.comment-body footer.comment-meta .comment-author,
+              .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body footer.comment-meta .comment-author {
+                font-size: 1em; }
+                .container-fluid #main-content ol.commentlist li.comment article.comment-body footer.comment-meta .comment-author img.avatar,
+                .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body footer.comment-meta .comment-author img.avatar {
+                  display: block;
+                  background-color: #c90;
+                  width: 40px;
+                  height: 40px;
+                  margin-right: 0.5em;
+                  float: left; }
+              .container-fluid #main-content ol.commentlist li.comment article.comment-body footer.comment-meta .comment-metadata a,
+              .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body footer.comment-meta .comment-metadata a {
+                color: #fff; }
+            .container-fluid #main-content ol.commentlist li.comment article.comment-body div.comment-content,
+            .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body div.comment-content {
+              width: 98%;
+              margin: auto;
+              padding: 0.5em; }
+            .container-fluid #main-content ol.commentlist li.comment article.comment-body div.reply,
+            .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body div.reply {
+              display: block;
+              width: 15%;
+              background-color: #336600;
+              color: #fff;
+              height: 35px;
+              line-height: 35px;
+              text-align: center; }
+              .container-fluid #main-content ol.commentlist li.comment article.comment-body div.reply:hover,
+              .container-fluid #main-content-comments ol.commentlist li.comment article.comment-body div.reply:hover {
+                background-color: #6ab866;
+                color: #336600; }
+      .container-fluid #main-content .nav-links,
+      .container-fluid #main-content-comments .nav-links {
+        margin: 0.5em 0; }
+        .container-fluid #main-content .nav-links .nav-previous,
+        .container-fluid #main-content .nav-links .nav-next,
+        .container-fluid #main-content-comments .nav-links .nav-previous,
+        .container-fluid #main-content-comments .nav-links .nav-next {
+          height: 30px;
+          width: 50%;
+          display: block;
+          float: left;
+          background-color: #c90; }
+      .container-fluid #main-content .card,
+      .container-fluid #main-content-comments .card {
+        clear: both; }
+        .container-fluid #main-content .card #respond form.comment-form p.looged-in-as,
+        .container-fluid #main-content-comments .card #respond form.comment-form p.looged-in-as {
+          font-size: 0.9em; }
+        .container-fluid #main-content .card #respond form.comment-form p,
+        .container-fluid #main-content-comments .card #respond form.comment-form p {
+          padding: 0; }
+          .container-fluid #main-content .card #respond form.comment-form p textarea,
+          .container-fluid #main-content-comments .card #respond form.comment-form p textarea {
+            margin: 0.5em 0; }
+        .container-fluid #main-content .card #respond form.comment-form p.form-submit input[type="submit"],
+        .container-fluid #main-content .card #respond form.comment-form p.form-submit #submit,
+        .container-fluid #main-content-comments .card #respond form.comment-form p.form-submit input[type="submit"],
+        .container-fluid #main-content-comments .card #respond form.comment-form p.form-submit #submit {
+          display: block;
+          width: 15%;
+          background-color: #336600;
+          color: #fff;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          padding: 0;
+          border-color: darkgreen; }
+          .container-fluid #main-content .card #respond form.comment-form p.form-submit input[type="submit"]:hover,
+          .container-fluid #main-content .card #respond form.comment-form p.form-submit #submit:hover,
+          .container-fluid #main-content-comments .card #respond form.comment-form p.form-submit input[type="submit"]:hover,
+          .container-fluid #main-content-comments .card #respond form.comment-form p.form-submit #submit:hover {
+            background-color: #6ab866;
+            color: #336600; }
     .container-fluid aside#side-bar-left {
       height: auto;
       background-color: #fff;
       padding: 0.5em 0;
       display: block;
       /* homepage text box*/ }
+      .container-fluid aside#side-bar-left ul {
+        padding: 0;
+        margin: 0; }
+        .container-fluid aside#side-bar-left ul li {
+          height: auto; }
+          .container-fluid aside#side-bar-left ul li a {
+            display: block;
+            width: 100%;
+            line-height: 35px;
+            color: #336600;
+            text-align: center; }
       .container-fluid aside#side-bar-left ul#menu-front-menu {
         list-style: none;
         padding: 0; }
@@ -1678,7 +1813,7 @@ ul {
         float: left;
         display: inline-block;
         margin: 0.2em;
-        width: 30%; }
+        width: 32.5%; }
         .container-fluid aside#side-bar-left .side-bar-box h2 {
           width: 100%;
           height: 40px;
@@ -1729,6 +1864,48 @@ ul {
             .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form span.bp-login-widget-register-link a:hover {
               background-color: #fff;
               color: #336600; }
+        .container-fluid aside#side-bar-left .side-bar-box form#bbp-search-form {
+          font-size: 1em; }
+          .container-fluid aside#side-bar-left .side-bar-box form#bbp-search-form div {
+            display: block;
+            padding: 1em 0; }
+          .container-fluid aside#side-bar-left .side-bar-box form#bbp-search-form input[type="text"] {
+            display: inline-block;
+            float: left; }
+          .container-fluid aside#side-bar-left .side-bar-box form#bbp-search-form input#bbp_search_submit {
+            margin: 0 auto;
+            display: block;
+            font-size: 0.9em;
+            line-height: 15px;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            font-family: Candara, Arial, Helvetica, sans-serif;
+            height: 30px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            line-height: 1.5em;
+            background: #063;
+            /*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
+            -webkit-transform-origin: 0, 0;
+            -moz-transform-origin: 0, 0;
+            -o-transform-origin: 0, 0;
+            transform-origin: 0, 0;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            background-color: #336600;
+            width: 40%; }
+            .container-fluid aside#side-bar-left .side-bar-box form#bbp-search-form input#bbp_search_submit:hover {
+              background-color: #fff;
+              color: #336600; }
         .container-fluid aside#side-bar-left .side-bar-box aside#search-2 {
           width: 100%; }
           .container-fluid aside#side-bar-left .side-bar-box aside#search-2 form.search-form {
@@ -1762,12 +1939,9 @@ ul {
               line-height: 50px;
               letter-spacing: 0.2em; }
         .container-fluid aside#side-bar-left .side-bar-box span {
-          width: 100%;
+          width: 60%;
           display: block;
-          height: 100%;
-          line-height: 50px;
-          font-size: 1.1em;
-          text-align: center; }
+          height: auto; }
           .container-fluid aside#side-bar-left .side-bar-box span:hover {
             background-color: #e5e5e5; }
           .container-fluid aside#side-bar-left .side-bar-box span a {
@@ -1775,31 +1949,24 @@ ul {
             margin: 0;
             height: 100%;
             width: 100%;
-            line-height: 50px;
+            display: block;
+            line-height: 35px;
             letter-spacing: 0.2em;
-            font-size: 1.1em;
+            font-size: 0.9em;
             color: #336600;
             text-align: center;
             -webkit-transform-origin: 0, 0;
             -moz-transform-origin: 0, 0;
             -o-transform-origin: 0, 0;
             transform-origin: 0, 0;
-            -webkit-animation-fill-mode: both;
-            -moz-animation-fill-mode: both;
-            -o-animation-fill-mode: both;
-            animation-fill-mode: both;
             -webkit-transition: all 0.2s linear;
             -moz-transition: all 0.2s linear;
             -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-            display: block; }
+            transition: all 0.2s linear; }
             .container-fluid aside#side-bar-left .side-bar-box span a:hover {
-              font-size: 1.2em;
               color: #336600;
               text-decoration: none;
-              line-height: 50px;
-              font-weight: bold;
-              letter-spacing: 0.3em; }
+              font-weight: bold; }
       .container-fluid aside#side-bar-left .side-bar-box-front {
         width: 100%; }
         .container-fluid aside#side-bar-left .side-bar-box-front h2 {

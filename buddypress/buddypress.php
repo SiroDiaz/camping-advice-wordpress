@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('forum'); ?>
 
 <div class="row">
 index-buddy
@@ -7,12 +7,16 @@ index-buddy
         <div class="row">
            <article id="main-content">
 
- 
-<div class="entry-content">
-
-<?php the_content(); ?>
-
-</div>
+ <?php if ( is_bbpress() ) : ?>
+<?php bbp_breadcrumb(); ?>
+				
+                    <?php bbp_get_template_part( 'content', 'single-user' ); ?>
+                               
+                <?php else : ?>
+          
+ 					<?php get_template_part('template-parts/loop','single'); ?>
+ 					
+ 						<?php endif; ?>
 
 <!-- .entry-content -->
 
@@ -24,6 +28,6 @@ index-buddy
 
 </div><!-- .row -->
 
- <?php get_sidebar('blog'); ?>
+ <?php get_sidebar('forum'); ?>
  
 <?php get_footer(); ?>

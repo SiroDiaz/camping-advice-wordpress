@@ -34,7 +34,7 @@
 
     endif;
     ?>
-
+<div class="clearfix"></div>
 </article>
 
 </div>
