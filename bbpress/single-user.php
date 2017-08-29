@@ -21,6 +21,7 @@ get_header('forum'); ?>
 			<?php bbp_get_template_part( 'content', 'single-user' ); ?>
 
 		</div><!-- .entry-content -->
+		<br/>
 	</div><!-- #bbp-user-<?php bbp_current_user_id(); ?> -->
 
 	<?php do_action( 'bbp_after_main_content' ); ?>
