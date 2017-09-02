@@ -1,43 +1,37 @@
 <?php
 
+//buddypress
+add_theme_support( 'buddypress' );
 
+
+add_filter( 'widget_text', 'shortcode_unautop' );
+add_filter( 'widget_text', 'do_shortcode' );
+
+//bbpress
 remove_action( 'bbp_before_main_content',  'before_main_content'  ); // Top wrapper HTML
 remove_action( 'bbp_after_main_content',   'after_main_content'  ); // Bottom wrapper 
 
 
 add_action( 'bbp_before_main_content',  'before_main_content' ); // Top wrapper HTML
-	/**
-	 * Inserts HTML at the top of the main content area to be compatible with
-	 * the Twenty Twelve theme.
-	 *
-	 * @since bbPress (r3732)
-	 */
+
 	function before_main_content() {
 	?>
-
 		<article id="main-content">
 
 	<?php
 	}
 
-
-
-add_action( 'bbp_before_main_content',  'before_main_content'  ); // Top wrapper HTML
-	/**
-	 * Inserts HTML at the bottom of the main content area to be compatible with
-	 * the Twenty Twelve theme.
-	 *
-	 * @since bbPress (r3732)
-	 */
+add_action( 'bbp_after_main_content',  'after_main_content'  ); // bottom wrapper HTML
+	
 	function after_main_content() {
 	?>
-
-			</article><!-- #bbp-content -->
-		
-
+			</article>
 	<?php
 	}
 
+
+//Localization support
+load_theme_textdomain('camping-advice-wordpress', get_template_directory() . '/languages');
 
 
 add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );

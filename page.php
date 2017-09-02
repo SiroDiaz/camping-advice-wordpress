@@ -1,38 +1,29 @@
-	
+<?php get_header(); ?>
 
-<?php get_header('forum'); ?>
-	
+<div class="row">
+    <!---Right side content area with slider and intro text and links-->
+    <div class="col-lg- 12 col-md-12 col-sm-12 col-xs-12">
 
-
-	<div class="row">
-
-            <!---Right side content area with slider and intro text and links-->
-            
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              
-               <?php do_action( 'bbp_before_main_content' ); ?>
-               
-                
-             <?php if ( is_bbpress() ) : ?>
-             
-             <?php bbp_breadcrumb(); ?>
-				
-                    <?php bbp_get_template_part( 'content', 'single-user' ); ?>
-                               
-                <?php else : ?>
+        <article id="main-content">
           
- 					<?php get_template_part('template-parts/loop','single'); ?>
- 					
- 						<?php endif; ?>
+             
 
-                <?php do_action( 'bbp_after_main_content' ); ?>
-                
-	
-           
-            </div>
 
+            <?php the_content(); ?>
+
+
+		
+		
+		</article>
+
+
+    </div>
 
 </div>
-<?php get_sidebar('forum'); ?> 
+
+	<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
+
+
 

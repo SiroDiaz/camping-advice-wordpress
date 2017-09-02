@@ -41,14 +41,15 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
             <!--Header -->
             <header>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
-                    <?php  if ( is_front_page() || is_page()) : ?>
+                   
+                     <?php  if ( is_front_page() || is_page()) : ?>
                     <figure class="campuklogo">
-                        <img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/logo1.png" alt="Camping_Advice_Logo" />
+                        <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/logo1.png" alt="Camping_Advice_Logo" />
                     </figure>
                     
                     <?php else : ?>
                     <figure class="campuklogo">
-                        <img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/logo-blog.png" alt="Camping_Advice_Logo" alt="Camping_Advice_Logo" />
+                        <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/logo-blog.png" alt="Camping_Advice_Logo" alt="Camping_Advice_Logo" />
                     </figure>
                     
                     <?php endif; ?>

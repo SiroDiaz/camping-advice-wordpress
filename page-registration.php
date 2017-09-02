@@ -10,17 +10,19 @@
             
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               
-               <?php do_action( 'bbp_before_main_content' ); ?>
+               <article id="main-content">
                
+               <?php if(is_bbpress()): ?>
+                <?php bbp_get_template_part('page','user-login') ?>
                 
-             <?php if ( is_bbpress() ) : ?>
+               <?php endif; ?>
+      
              
-         <?php the_content(); ?>
-                               
+                        
                					
- 						<?php endif; ?>
 
-                <?php do_action( 'bbp_after_main_content' ); ?>
+
+				</article>
                 
 	
            

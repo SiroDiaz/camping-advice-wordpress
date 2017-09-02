@@ -43,7 +43,7 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
                     
                     <figure class="campuklogo">
-                        <img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/logo-forum.png" alt="Camping_Advice_Logo" />
+                        <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/logo-forum.png" alt="Camping_Advice_Logo" />
                     </figure>
                     
                   

@@ -1,13 +1,23 @@
 /*
-Theme Name: CampingAdviceWordpress
-Theme URI: http://lynda.com/mor10
+Theme Name: camping-advice-wordpress
+Theme URI: http://www.raythompsonwebdev.co.uk
 Description: A child theme of bootstrap-four.
 Author: Raymond Thompson
 Author URI: http://raythompsonwebdev.co.uk
 Template: bootstrap-four
 Version: 0.1.0
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-header, custom-background,editor-style
+Camping Theme, Copyright 2017 Raymond Thompson
+Raythompwebdesign is distributed under the terms of the GNU GPL
+Text Domain: camping-advice-wordpress
+Domain Path: /language
+
+
 */
 
 
 
+@import url("../bp-default/style.css");
 @import url("css/main.css");

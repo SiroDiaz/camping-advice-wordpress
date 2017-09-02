@@ -8,11 +8,12 @@
  */
 
 get_header('forum'); ?>
+    
 	    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <!--slider section-->
         <div class="row">
 
-	<?php do_action( 'bbp_before_main_content' ); ?>
+	<article id="main-content">
 
 	<?php do_action( 'bbp_template_notices' ); ?>
 
@@ -38,7 +39,7 @@ get_header('forum'); ?>
 
 	<?php endwhile; ?>
 
-	<?php do_action( 'bbp_after_main_content' ); ?>
+			</article>
 			</div>
 </div>
 <?php get_sidebar('forum'); ?>

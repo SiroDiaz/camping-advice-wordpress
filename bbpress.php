@@ -37,15 +37,12 @@ These are different every theme and help with structure and layout
 These could be SPANs or DIVs and with entirely different classes.
 */
 ?>
- 
-
- 
+  
 <?php
 /*
 Start the Loop
 */
 ?>
-
 
  
 <?php while ( have_posts() ) : the_post(); ?>
@@ -86,7 +83,7 @@ and class to better style the content
 ?>
 <?php if ( is_bbpress() ) : ?>
  
-<div class="entry-content">
+<div class="entry">
 
 <?php the_content(); ?>
 
@@ -107,11 +104,14 @@ End of Page
 <?php endwhile; // end of the loop. ?>
 
 
-            </article>
+      </article>
+            
     </div><!-- .row -->
        
   </div><!-- .col -->
+  
  <?php get_sidebar('forum'); ?>
+ 
 </div><!-- .row -->
  
 <?php

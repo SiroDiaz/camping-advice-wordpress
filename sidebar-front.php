@@ -16,7 +16,7 @@
                         <div class="media">
 
                             <div class="media-left ">
-                                <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Top5/image1.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Doward Farm Campsite" /></a>
+                                <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Top5/image1.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Doward Farm Campsite" /></a>
                             </div>
 
                             <div class="media-body">
@@ -30,7 +30,7 @@
                         <div class="media">
 
                             <div class="media-left">
-                                <img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Top5/image2.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Hollins Farm Campsite" />
+                                <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Top5/image2.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Hollins Farm Campsite" />
                             </div>
 
                             <div class="media-body">
@@ -43,7 +43,7 @@
                         <div class="media">
 
                             <div class="media-left">
-                                <img src="<?php echo home_url(); ?>/wp-content/themes/CampingAdviceWordpress/images/Top5/image3.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Syke Farm Campsite" />
+                                <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Top5/image3.jpg" class="img-thumbnail img-responsive media-object" alt="Image of Syke Farm Campsite" />
                             </div>
 
                             <div class="media-body">

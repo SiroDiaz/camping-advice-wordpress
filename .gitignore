@@ -22,7 +22,7 @@ $RECYCLE.BIN/
 # =========================
 
 # OSX
-# =========================
+
 
 .DS_Store
 .AppleDouble
@@ -45,17 +45,17 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-<<<<<<< HEAD
+
 nbproject/
 
 .sass-cache/
 
 css/.sass-cache/
-=======
 
 .sass-cache/
->>>>>>> 385738f109bc65bb942701216540152f38404459
+
 images/
+js/
 js/bootstrap/
 js/Respond-master/
 css/partials/
@@ -65,9 +65,30 @@ css/bootstrap.min.css
 css/bootstrap.css.map
 css/bootstrap.css
 
-js/
-<<<<<<< HEAD
-/nbproject/private/
-=======
+assets/
+
+activity/
+activity/single/
+activity/comment.php
+activity/activity-loop.php
+
+forums/forums-loop.php
+
+groups/single/
+groups/groups-loops.php
+groups/create.php
+
+members/single/
+members/register.php
+members.php/activate.php
+members/members.loop.php
+
+
+
+common/
+
+
+nbproject/private/
+
 nbproject/
->>>>>>> 385738f109bc65bb942701216540152f38404459
+
