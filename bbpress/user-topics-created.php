@@ -6,9 +6,9 @@
  * @package bbPress
  * @subpackage Theme
  */
+
 ?>
-
-
+   
 	<?php do_action( 'bbp_template_before_user_topics_created' ); ?>
 
 	<div id="bbp-user-topics-started" class="bbp-user-topics-started">
@@ -33,6 +33,4 @@
 	</div><!-- #bbp-user-topics-started -->
 
 	<?php do_action( 'bbp_template_after_user_topics_created' ); ?>
-
-
 

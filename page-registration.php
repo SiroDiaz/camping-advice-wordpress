@@ -13,7 +13,9 @@
                <article id="main-content">
                
                <?php if(is_bbpress()): ?>
-                <?php bbp_get_template_part('page','user-login') ?>
+                
+                
+                	<?php bbp_get_template_part('page','user-login') ?>
                 
                <?php endif; ?>
       
