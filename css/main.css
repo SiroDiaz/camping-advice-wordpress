@@ -389,10 +389,6 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
 .bp-login-widget-user-links {
   padding: 3% 0; }
 
-#buddypress #item-header {
-  padding-top: 0;
-  height: auto; }
-
 .bp_members,
 .forum {
   padding-top: 0.5em;
@@ -483,7 +479,78 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
     #main-content #buddypress #item-nav div#object-nav ul li a {
       display: block;
       background-color: #336600;
-      color: #e5e5e5; }
+      color: #e5e5e5;
+      text-align: center; }
+      #main-content #buddypress #item-nav div#object-nav ul li a:hover {
+        background-color: #e5e5e5;
+        color: #336600;
+        text-align: center; }
+#main-content #buddypress #item-body {
+  width: 100%; }
+  #main-content #buddypress #item-body div.item-list-tabs {
+    padding: 0.1em 0;
+    clear: both;
+    background-color: #336600; }
+    #main-content #buddypress #item-body div.item-list-tabs ul {
+      width: 90%;
+      margin: 1em auto;
+      padding: 0; }
+      #main-content #buddypress #item-body div.item-list-tabs ul li,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li {
+        text-align: center;
+        font-size: 0.85em;
+        width: 100%;
+        margin-bottom: 0.1em; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li a#just-me,
+        #main-content #buddypress #item-body div.item-list-tabs ul li a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li a#just-me,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          background-color: #336600;
+          color: #fff; }
+          #main-content #buddypress #item-body div.item-list-tabs ul li a#just-me:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li a#just-me:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li a:hover {
+            background-color: #fff;
+            color: #336600; }
+      #main-content #buddypress #item-body div.item-list-tabs ul li.last {
+        width: 100%;
+        float: none;
+        display: block;
+        background-color: #fff; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li.last label {
+          font-size: 1em;
+          display: inline-block;
+          float: left;
+          margin: 0;
+          width: 42%;
+          color: #336600; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li.last select {
+          font-size: 0.85em;
+          width: 50%;
+          display: inline-block; }
+      #main-content #buddypress #item-body div.item-list-tabs ul li#change-avatar-personal-li {
+        width: 30%; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li#change-avatar-personal-li a {
+          color: #fff;
+          background-color: #336600; }
+          #main-content #buddypress #item-body div.item-list-tabs ul li#change-avatar-personal-li a:hover {
+            background-color: #fff;
+            color: #336600; }
+      #main-content #buddypress #item-body div.item-list-tabs ul li.selected {
+        clear: both; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li.selected a {
+          background-color: #336600;
+          color: #fff;
+          display: block;
+          height: 100%;
+          width: 100%; }
+          #main-content #buddypress #item-body div.item-list-tabs ul li.selected a:hover {
+            background-color: #fff;
+            color: #336600; }
 #main-content #buddypress div.dir-search,
 #main-content #buddypress #members-dir-search {
   float: right;
@@ -523,38 +590,6 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
 #main-content #buddypress form#groups-directory-form,
 #main-content #buddypress form#members-directory-form {
   clear: both; }
-#main-content #buddypress div.item-list-tabs {
-  margin: 0.5em 0; }
-  #main-content #buddypress div.item-list-tabs ul {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    #main-content #buddypress div.item-list-tabs ul li {
-      text-align: center;
-      font-size: 0.85em;
-      width: 100%; }
-    #main-content #buddypress div.item-list-tabs ul li.last {
-      width: 22%;
-      float: right; }
-      #main-content #buddypress div.item-list-tabs ul li.last label {
-        font-size: 0.8em;
-        display: block;
-        float: left;
-        margin: 0; }
-      #main-content #buddypress div.item-list-tabs ul li.last select {
-        font-size: 0.85em;
-        max-width: 185px; }
-    #main-content #buddypress div.item-list-tabs ul li#change-avatar-personal-li {
-      width: 30%; }
-      #main-content #buddypress div.item-list-tabs ul li#change-avatar-personal-li a {
-        color: #fff;
-        background-color: #336600; }
-    #main-content #buddypress div.item-list-tabs ul li.selected a {
-      background-color: #336600;
-      color: #fff;
-      display: block;
-      height: 100%;
-      width: 100%; }
 #main-content #buddypress h2.bp-screen-reader-text {
   margin: 1% 0;
   width: 100%;
@@ -620,9 +655,20 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
         float: left;
         margin-right: 1em; }
       #main-content #buddypress div.activity ul li div.activity-content {
-        margin: 1em 0;
+        margin: 0;
         font-size: 0.9em;
-        width: 95%; }
+        width: 92%;
+        display: inline-block;
+        height: auto; }
+        #main-content #buddypress div.activity ul li div.activity-content div.activity-header {
+          font-size: 0.9em;
+          height: 30px; }
+        #main-content #buddypress div.activity ul li div.activity-content div.activity-inner {
+          height: 30px;
+          margin: 0; }
+        #main-content #buddypress div.activity ul li div.activity-content div.activity-meta {
+          height: 30px;
+          margin: 0; }
       #main-content #buddypress div.activity ul li div.activity-comments {
         margin: 1em 0; }
         #main-content #buddypress div.activity ul li div.activity-comments form.ac-form {
@@ -673,7 +719,8 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
               width: 30%; }
 #main-content #buddypress form#whats-new-form div#whats-new-options {
   display: block;
-  height: 50px; }
+  height: 50px;
+  margin-top: 1em; }
   #main-content #buddypress form#whats-new-form div#whats-new-options div#whats-new-submit {
     display: block;
     margin: 0; }
@@ -707,7 +754,6 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
         color: #fff;
         text-decoration: none;
         line-height: 20px;
-        font-size: 0.9em;
         font-weight: bold; }
   #main-content #buddypress form#whats-new-form div#whats-new-options div#whats-new-post-in-box {
     height: 50px;
@@ -722,10 +768,24 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
   width: 100%;
   display: inline-block; }
 
-#buddypress form#whats-new-form #whats-new-avatar {
-  width: 6%; }
-#buddypress form#whats-new-form p.activity-greeting {
-  line-height: 35px; }
+#buddypress form#whats-new-form {
+  clear: both;
+  margin-top: 1em; }
+  #buddypress form#whats-new-form #whats-new-avatar {
+    width: 6%;
+    margin-right: 0.5em;
+    float: left;
+    display: inline-block; }
+  #buddypress form#whats-new-form p.activity-greeting {
+    line-height: 35px;
+    display: inline-block;
+    width: 65%; }
+  #buddypress form#whats-new-form div#whats-new-content {
+    clear: both;
+    padding: 0.5em 0; }
+    #buddypress form#whats-new-form div#whats-new-content whats-new-textarea label {
+      width: 100%;
+      line-height: 35px; }
 
 #buddypress table.profile-fields tr td.label {
   width: 100%;
@@ -1123,18 +1183,16 @@ ul {
   .container-fluid {
     max-width: 64%;
     min-height: 800px;
+    /*navigation*/
     /*Slider*/
-    /*text col*/
+    /*main-content-comments*/
+    /*Main content*/
     /*end of main-content*/
     /*Leftside*/
-    /*end of leftside*/
-    /*end of text fill*/
+    /*Home-Page-text*/
     /*text boxes*/
-    /*end of text boxes*/
     /*Right side*/
-    /*end of right side*/
-    /*Footer*/
-    /* end of Footer*/ }
+    /*Footer*/ }
     .container-fluid header {
       width: 100%;
       height: auto;
@@ -1319,14 +1377,18 @@ ul {
     .container-fluid #main-content-comments {
       height: auto;
       min-height: 600px;
-      width: 96%;
+      width: 100%;
       margin: 0 auto;
       background-color: #fff;
-      padding: 0 1em;
+      padding: 1em;
       margin-bottom: 1em;
       /*#main-content { float: left;  height: auto; width: 340px;}*/
       /*register Form*/
-      /*search form*/
+      /*register page logins*/
+      /*setting form */
+      /*forum-navigation*/
+      /*error notices*/
+      /*search form-contact form*/
       /* results page*/
       /*search pagination*/
       /*search count*/
@@ -1393,35 +1455,38 @@ ul {
           .container-fluid #main-content-comments ul li span {
             height: 100%;
             color: #336600; }
-      .container-fluid #main-content .post h1.post-title,
-      .container-fluid #main-content-comments .post h1.post-title {
-        font-size: 2em; }
-      .container-fluid #main-content .post header.entry-header,
-      .container-fluid #main-content-comments .post header.entry-header {
-        height: 60px; }
-      .container-fluid #main-content .post p.right,
-      .container-fluid #main-content-comments .post p.right {
-        float: right;
-        width: 10%;
-        display: block;
-        text-align: center; }
-      .container-fluid #main-content .post a.read_more,
-      .container-fluid #main-content-comments .post a.read_more {
-        display: block;
-        width: 15%;
-        background-color: #336600;
-        color: #fff;
-        height: 35px;
-        line-height: 35px;
-        text-align: center; }
-        .container-fluid #main-content .post a.read_more:hover,
-        .container-fluid #main-content-comments .post a.read_more:hover {
-          background-color: #6ab866;
-          color: #336600; }
-      .container-fluid #main-content .post .featuredImage,
-      .container-fluid #main-content-comments .post .featuredImage {
-        width: 70%;
-        margin: 2% auto; }
+      .container-fluid #main-content article.post,
+      .container-fluid #main-content-comments article.post {
+        margin: 0.5em 0; }
+        .container-fluid #main-content article.post h1.post-title,
+        .container-fluid #main-content-comments article.post h1.post-title {
+          font-size: 2em; }
+        .container-fluid #main-content article.post header.byline,
+        .container-fluid #main-content-comments article.post header.byline {
+          height: 60px; }
+        .container-fluid #main-content article.post p.right,
+        .container-fluid #main-content-comments article.post p.right {
+          float: right;
+          width: 10%;
+          display: block;
+          text-align: center; }
+        .container-fluid #main-content article.post a.read_more,
+        .container-fluid #main-content-comments article.post a.read_more {
+          display: block;
+          width: 15%;
+          background-color: #336600;
+          color: #fff;
+          height: 35px;
+          line-height: 35px;
+          text-align: center; }
+          .container-fluid #main-content article.post a.read_more:hover,
+          .container-fluid #main-content-comments article.post a.read_more:hover {
+            background-color: #6ab866;
+            color: #336600; }
+        .container-fluid #main-content article.post figure.featuredImage,
+        .container-fluid #main-content-comments article.post figure.featuredImage {
+          width: 70%;
+          margin: 2% auto; }
       .container-fluid #main-content #summary,
       .container-fluid #main-content-comments #summary {
         display: none;
@@ -1569,26 +1634,33 @@ ul {
           width: 100%;
           display: inline-block;
           margin: 0 0 0.5em; }
-      .container-fluid #main-content #campregister,
-      .container-fluid #main-content-comments #campregister {
+      .container-fluid #main-content section#campregister,
+      .container-fluid #main-content-comments section#campregister {
         margin: auto;
-        background-color: #336600;
-        padding: 0;
+        padding: 1em;
         font-family: Candara, Arial, Helvetica, sans-serif;
         height: auto;
-        width: 50%; }
-        .container-fluid #main-content #campregister form#RegForm,
-        .container-fluid #main-content-comments #campregister form#RegForm {
+        width: 75%;
+        padding: 4em; }
+        .container-fluid #main-content section#campregister div.bbp-template-notice.info,
+        .container-fluid #main-content-comments section#campregister div.bbp-template-notice.info {
+          border: #cee1ef 1px solid;
+          background-color: #f0f8ff; }
+          .container-fluid #main-content section#campregister div.bbp-template-notice.info p,
+          .container-fluid #main-content-comments section#campregister div.bbp-template-notice.info p {
+            text-align: center; }
+        .container-fluid #main-content section#campregister form#RegForm,
+        .container-fluid #main-content-comments section#campregister form#RegForm {
           margin: auto;
           background-color: #336600;
           width: 90%;
           height: auto; }
-          .container-fluid #main-content #campregister form#RegForm img,
-          .container-fluid #main-content-comments #campregister form#RegForm img {
+          .container-fluid #main-content section#campregister form#RegForm img,
+          .container-fluid #main-content-comments section#campregister form#RegForm img {
             width: 25%;
             height: 40px; }
-          .container-fluid #main-content #campregister form#RegForm label,
-          .container-fluid #main-content-comments #campregister form#RegForm label {
+          .container-fluid #main-content section#campregister form#RegForm label,
+          .container-fluid #main-content-comments section#campregister form#RegForm label {
             color: #fff;
             text-align: left;
             line-height: 35px;
@@ -1597,29 +1669,29 @@ ul {
             letter-spacing: 0.1em;
             font-size: 1em;
             font-weight: 100; }
-          .container-fluid #main-content #campregister form#RegForm .verifybox,
-          .container-fluid #main-content-comments #campregister form#RegForm .verifybox {
+          .container-fluid #main-content section#campregister form#RegForm .verifybox,
+          .container-fluid #main-content-comments section#campregister form#RegForm .verifybox {
             width: 72%;
             height: 100%;
             font-size: 1em;
             color: #000;
             float: left;
             display: inline-block; }
-          .container-fluid #main-content #campregister form#RegForm .textfield,
-          .container-fluid #main-content-comments #campregister form#RegForm .textfield {
+          .container-fluid #main-content section#campregister form#RegForm .textfield,
+          .container-fluid #main-content-comments section#campregister form#RegForm .textfield {
             width: 100%;
             height: 100%;
             font-size: 1em;
             color: #000; }
-          .container-fluid #main-content #campregister form#RegForm #select8,
-          .container-fluid #main-content-comments #campregister form#RegForm #select8 {
+          .container-fluid #main-content section#campregister form#RegForm #select8,
+          .container-fluid #main-content-comments section#campregister form#RegForm #select8 {
             width: 100%;
             font-size: 1em;
             color: #336600;
             height: 40px;
             display: block; }
-          .container-fluid #main-content #campregister form#RegForm #Submit,
-          .container-fluid #main-content-comments #campregister form#RegForm #Submit {
+          .container-fluid #main-content section#campregister form#RegForm #Submit,
+          .container-fluid #main-content-comments section#campregister form#RegForm #Submit {
             width: 40%;
             margin: auto;
             font-size: 0.9em;
@@ -1635,12 +1707,211 @@ ul {
             background: #fff;
             background-color: #336600;
             display: block; }
-          .container-fluid #main-content #campregister form#RegForm #Submit:hover,
-          .container-fluid #main-content-comments #campregister form#RegForm #Submit:hover {
+          .container-fluid #main-content section#campregister form#RegForm #Submit:hover,
+          .container-fluid #main-content-comments section#campregister form#RegForm #Submit:hover {
             color: #336600;
             background-color: #fff;
             color: #063;
             cursor: pointer; }
+      .container-fluid #main-content form.bbp-login-form,
+      .container-fluid #main-content-comments form.bbp-login-form {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        display: block; }
+        .container-fluid #main-content form.bbp-login-form fieldset.bbp-form,
+        .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form {
+          background-color: #336600; }
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form legend,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form legend {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            background-color: #063;
+            color: #fff;
+            text-indent: 0.5em; }
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username,
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password,
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me,
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email,
+          .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email,
+          .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper {
+            display: block; }
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username label,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password label,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me label,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email label,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper label,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username label,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password label,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me label,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email label,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper label {
+              color: #fff;
+              text-align: left;
+              width: 100%;
+              display: block;
+              letter-spacing: 0.1em;
+              font-size: 1em;
+              line-height: 35px;
+              font-weight: 100; }
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username input,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username input[type="text"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password input,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password input[type="text"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me input,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me input[type="text"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email input,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email input[type="text"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper input,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper input[type="text"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username input,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username input[type="text"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password input,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password input[type="text"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me input,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me input[type="text"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email input,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email input[type="text"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper input,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper input[type="text"] {
+              width: 100%;
+              height: 100%;
+              height: 35px;
+              color: #000;
+              border: 0;
+              outline: none; }
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username button[type="submit"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password button[type="submit"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me button[type="submit"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email button[type="submit"],
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username button[type="submit"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password button[type="submit"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me button[type="submit"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email button[type="submit"],
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit"] {
+              width: 100%;
+              margin: auto;
+              font-size: 0.9em;
+              line-height: 30px;
+              color: #fff;
+              border: 1px solid #e5e5e5;
+              outline: 0;
+              height: 35px;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+              -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+              -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+              background-color: #336600;
+              display: block; }
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-username button[type="submit"]:hover,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-password button[type="submit"]:hover,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-remember-me button[type="submit"]:hover,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-email button[type="submit"]:hover,
+            .container-fluid #main-content form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit"]:hover,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-username button[type="submit"]:hover,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-password button[type="submit"]:hover,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-remember-me button[type="submit"]:hover,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-email button[type="submit"]:hover,
+            .container-fluid #main-content-comments form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit"]:hover {
+              background-color: #fff;
+              color: #063;
+              cursor: pointer; }
+      .container-fluid #main-content form#settings-form,
+      .container-fluid #main-content-comments form#settings-form {
+        background-color: #336600;
+        padding: 1em; }
+        .container-fluid #main-content form#settings-form label,
+        .container-fluid #main-content-comments form#settings-form label {
+          color: #fff;
+          text-align: left;
+          width: 100%;
+          display: block;
+          letter-spacing: 0.1em;
+          font-size: 1em;
+          line-height: 35px;
+          font-weight: 100; }
+        .container-fluid #main-content form#settings-form input,
+        .container-fluid #main-content form#settings-form input[type="text"],
+        .container-fluid #main-content-comments form#settings-form input,
+        .container-fluid #main-content-comments form#settings-form input[type="text"] {
+          width: 100%;
+          height: 100%;
+          height: 35px;
+          color: #000;
+          border: 0;
+          outline: none; }
+        .container-fluid #main-content form#settings-form div.submit,
+        .container-fluid #main-content-comments form#settings-form div.submit {
+          display: block;
+          height: 50px;
+          margin-top: 1em;
+          width: 20%; }
+          .container-fluid #main-content form#settings-form div.submit input[type="submit"],
+          .container-fluid #main-content-comments form#settings-form div.submit input[type="submit"] {
+            width: 100%;
+            margin: auto;
+            font-size: 0.9em;
+            line-height: 30px;
+            color: #fff;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 35px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+            background-color: #336600;
+            display: block; }
+          .container-fluid #main-content form#settings-form div.submit input[type="submit"]:hover,
+          .container-fluid #main-content-comments form#settings-form div.submit input[type="submit"]:hover {
+            background-color: #fff;
+            color: #063;
+            cursor: pointer; }
+      .container-fluid #main-content div.item-list-tabs ul,
+      .container-fluid #main-content-comments div.item-list-tabs ul {
+        background-color: #336600;
+        padding: 0.5em;
+        width: 80%;
+        margin: 0 auto; }
+        .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li,
+        .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li,
+        .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li,
+        .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li,
+        .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li,
+        .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li,
+        .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li,
+        .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li {
+          display: block;
+          text-align: center; }
+          .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a,
+          .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a,
+          .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a,
+          .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a {
+            background-color: #336600;
+            color: #fff;
+            display: block;
+            height: 100%;
+            line-height: 40px; }
+            .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a:hover,
+            .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a:hover,
+            .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a:hover,
+            .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a:hover,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a:hover,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a:hover,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a:hover,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a:hover {
+              background-color: #fff;
+              color: #336600; }
       .container-fluid #main-content .error,
       .container-fluid #main-content .notice,
       .container-fluid #main-content .success,
@@ -1699,7 +1970,7 @@ ul {
         .container-fluid #main-content-comments section.searchformadvance form#searchform {
           height: auto;
           width: 90%;
-          margin: 0 auto;
+          margin: 1em auto;
           display: block; }
           .container-fluid #main-content section.searchformadvance form.wpcf7-form label,
           .container-fluid #main-content section.searchformadvance form#contactform label,

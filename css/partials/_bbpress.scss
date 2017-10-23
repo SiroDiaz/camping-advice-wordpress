@@ -509,7 +509,6 @@ div.bbp-topic-tags {
 }
 
 
-
 #bbpress-forums,
 div.bbp-reply-author,
 a.bbp-author-name {
@@ -677,6 +676,12 @@ div.bbp-submit-wrapper {
 						display:block;
 						background-color:$color1;
 						color:$color6;
+                        text-align: center;
+                        &:hover{
+                            background-color:$color6;
+						    color:$color1;
+                            text-align: center;
+                        }
 						
 					}
 				}
@@ -684,9 +689,98 @@ div.bbp-submit-wrapper {
 		
 		}
 	}
+    
+    #item-body{
+        width:100%;
+        div.item-list-tabs{
+            padding: 0.1em 0;
+            clear: both;
+            background-color: $color1;
+
+            ul {
+                width: 90%;
+                margin: 1em auto;
+                padding:0;
+                li,
+                li#just-me-personal-li{ 
+                    text-align: center; 
+                    font-size:0.85em; 
+                    width: 100%;
+                    margin-bottom:0.1em;
+                    a#just-me,
+                    a{
+                        display:block;
+                        height:100%;
+                        width:100%;
+                        background-color: $color1;
+                        color: $color2;
+                        &:hover{
+                            background-color: $color2;
+                            color: $color1;
+                        
+                        }
+                        
+                    }
+                }
+                li.last {
+                    width: 100%;
+                    float:none;
+                    display: block;
+                    background-color:#fff;
+                    label{
+                        font-size:1em;
+                        display: inline-block;
+                        float: left;
+                        margin: 0;
+                        width:42%;
+                        color:$color1;
+                    }
+                    select { 
+                        font-size:0.85em;  
+                        width: 50%;
+                        display:inline-block;
+
+                    }
+                }
+                li#change-avatar-personal-li{
+                    width:30%;
+
+                    a{
+                        color: $color2; 
+                        background-color: $color1;
+                        &:hover{
+                            background-color: $color2;
+                            color: $color1;
+                        }
+                    
+                    }
+                }
+
+                li.selected {
+                    clear:both;
+                
+                    a {
+                        background-color: $color1;
+                        color: $color2;
+                        display:block;
+                        height:100%;
+                        width:100%;
+                        &:hover{
+                            background-color: $color2;
+                            color: $color1;
+                        }
+
+                    }
+                }
+
+            }
+
+        } 
+    
+    
+    }
 	
 
-	
 	//groups and members search
 	
 	div.dir-search,
@@ -735,52 +829,7 @@ div.bbp-submit-wrapper {
 		clear:both;
 	}
 	
-	div.item-list-tabs{
-		margin:0.5em 0;
 		
-		ul {
-			width: 100%;
-			margin:0;
-			padding:0;
-			li { 
-				text-align: center; 
-				font-size:0.85em; 
-				width: 100%;
-			}
-			li.last {
-				width: 22%;
-				float:right;
-			    label{
-					font-size:0.8em;
-					display: block;
-					float: left;
-					margin: 0;
-				}
-			    select { 
-					font-size:0.85em;  
-					max-width: 185px;
-					
-				}
-			}
-			li#change-avatar-personal-li{
-				width:30%;
-
-				a{color: $color2; background-color: $color1;}
-			}
-			
-			li.selected a {
-				background-color: $color1;
-				color: $color2;
-				display:block;
-				height:100%;
-				width:100%;
-
-			}
-			
-		}
-	
-	} 
-	
 	h2.bp-screen-reader-text{
 		
 		margin: 1% 0;
@@ -870,9 +919,26 @@ div.bbp-submit-wrapper {
 					margin-right:1em;
 				}
 				div.activity-content{
-					margin:1em 0;
+					margin:0;
 					font-size:0.9em;
-					width:95%;
+					width:92%;
+                    display:inline-block;
+                    height: auto;
+                    div.activity-header{
+                        font-size:0.9em;
+                        height:30px;
+                    
+                    }
+                    div.activity-inner{
+                        height:30px;
+                        margin: 0;
+                    
+                    }
+                    div.activity-meta{
+                        height:30px;
+                        margin: 0;
+                    
+                    }
 				}
 				div.activity-comments{
 					margin:1em 0;
@@ -939,6 +1005,7 @@ div.bbp-submit-wrapper {
 		div#whats-new-options{
 			display:block;
 			height:50px;
+            margin-top: 1em;
 			
 			div#whats-new-submit{
 				display:block;
@@ -966,7 +1033,6 @@ div.bbp-submit-wrapper {
 						color: $color2;
 						text-decoration: none;
 						line-height: 20px;
-						font-size: 0.9em;
 						font-weight: bold;
 
 
@@ -998,12 +1064,31 @@ div.bbp-submit-wrapper {
 }
 
 #buddypress form#whats-new-form{
+    clear:both;
+    margin-top: 1em;
 
     #whats-new-avatar {
         width: 6%;
+        margin-right: 0.5em;
+        float: left;
+        display:inline-block;
     }
     p.activity-greeting {
         line-height: 35px;
+        display: inline-block;
+        width: 65%;
+    }
+    div#whats-new-content{
+        clear:both;
+        padding:0.5em 0;
+        whats-new-textarea{
+        
+            label{
+                width:100%;
+                line-height:35px;
+                
+            }
+        }
     }
 
 }

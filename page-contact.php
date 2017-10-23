@@ -17,11 +17,11 @@
     
                 <h1>Contact</h1>
                 
-                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('contact-form')) : ?>
-
-[ do default stuff if no widgets ]
-
-<?php endif; ?>
+                <section class="searchformadvance">
+                
+                <?php the_content(); ?>
+                
+                </section>
 <br/>
 <br/>
  </article>

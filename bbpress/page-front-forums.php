@@ -9,11 +9,7 @@
 
 get_header('forum'); ?>
 
-<div class="row">
-    <!---Right side content area with slider and intro text and links-->
-    <div class="col-lg- 12 col-md-12 col-sm-12 col-xs-12">
-
-        <article id="main-content">
+	<?php do_action( 'bbp_before_main_content' ); ?>
 
 	<?php do_action( 'bbp_template_notices' ); ?>
 
@@ -21,7 +17,6 @@ get_header('forum'); ?>
 
 		<div id="forum-front" class="bbp-forum-front">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			pagefront
 			<div class="entry-content">
 
 				<?php the_content(); ?>
@@ -33,10 +28,7 @@ get_header('forum'); ?>
 
 	<?php endwhile; ?>
 
-</article>
+	<?php do_action( 'bbp_after_main_content' ); ?>
+
 <?php get_sidebar('forum'); ?>
-	</div>
-</div>
-
-
 <?php get_footer(); ?>

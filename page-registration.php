@@ -11,19 +11,13 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               
                <article id="main-content">
-               
-               <?php if(is_bbpress()): ?>
+                                 
+                        <section id="campregister">      
+              
+                	<?php the_content(); ?>
+                	
+                </section> 
                 
-                
-                	<?php bbp_get_template_part('page','user-login') ?>
-                
-               <?php endif; ?>
-      
-             
-                        
-               					
-
-
 				</article>
                 
 	

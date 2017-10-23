@@ -6,12 +6,8 @@
 
         <article id="main-content">
           
-             
 
-
-            <?php the_content(); ?>
-
-
+<?php the_content(); ?>
 		
 		
 		</article>
@@ -24,6 +20,3 @@
 	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
-
-
-

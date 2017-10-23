@@ -51,6 +51,7 @@ add_filter('the_excerpt', 'excerpt_read_more_link');
 register_nav_menus(array(
 'main' => 'Main Nav',
 'Secondary' => 'Secondary',
+'Forum' => 'Forum',
 'mobile' => 'mobile',
 'Front-menu' => 'Front-menu'));
 
@@ -86,20 +87,6 @@ register_sidebar( array(
 endif;
 add_action( 'widgets_init', 'front_widgets_init' );
 
-
-//contact form area
-if ( ! function_exists( 'contact_widgets_init' ) ) :
-function contact_widgets_init() {
-register_sidebar( array(
-'name' => __( 'contact-form', 'CampingAdviceWordpress' ),
-'id' => 'contact-form',
-'description' => __( 'The contact form widget area', 'CampingAdviceWordpress' ),
-'before_widget' => '<section class="searchformadvance">',
-'after_widget' => '</section>',
-) );
-}
-endif;
-add_action( 'widgets_init', 'contact_widgets_init' );
 
 
 //forum sidebar area
