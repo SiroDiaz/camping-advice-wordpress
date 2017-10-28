@@ -465,14 +465,14 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
 
 #main-content #buddypress #item-header {
   height: auto;
-  width: 50%;
+  width: 70%;
   float: left;
   display: block;
   padding: 0.5em 0; }
   #main-content #buddypress #item-header #item-header-avatar {
-    width: 20%; }
+    width: 10%; }
 #main-content #buddypress #item-nav {
-  width: 50%;
+  width: 30%;
   display: inline-block; }
   #main-content #buddypress #item-nav div#object-nav {
     display: block; }
@@ -486,15 +486,18 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
         color: #336600;
         text-align: center; }
 #main-content #buddypress #item-body {
-  width: 100%; }
+  width: 100%;
+  margin-top: 1em; }
   #main-content #buddypress #item-body div.item-list-tabs {
     padding: 0.1em 0;
     clear: both;
     background-color: #336600; }
     #main-content #buddypress #item-body div.item-list-tabs ul {
-      width: 90%;
+      width: 60%;
       margin: 1em auto;
-      padding: 0; }
+      padding: 0;
+      background-color: #336600;
+      padding: 0.5em; }
       #main-content #buddypress #item-body div.item-list-tabs ul li,
       #main-content #buddypress #item-body div.item-list-tabs ul li#just-me-personal-li {
         text-align: center;
@@ -551,6 +554,84 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
           #main-content #buddypress #item-body div.item-list-tabs ul li.selected a:hover {
             background-color: #fff;
             color: #336600; }
+      #main-content #buddypress #item-body div.item-list-tabs ul li#activity-filter-select,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#feed,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#activity-mentions,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#activity-all,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#topics-personal-li,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#replies-personal-li,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#favorites-personal-li,
+      #main-content #buddypress #item-body div.item-list-tabs ul li#subscriptions-personal-li {
+        display: block;
+        text-align: center; }
+        #main-content #buddypress #item-body div.item-list-tabs ul li#activity-filter-select a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#feed a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#activity-mentions a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#activity-all a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#topics-personal-li a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#replies-personal-li a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#favorites-personal-li a,
+        #main-content #buddypress #item-body div.item-list-tabs ul li#subscriptions-personal-li a {
+          background-color: #336600;
+          color: #fff;
+          display: block;
+          height: 100%;
+          line-height: 40px; }
+          #main-content #buddypress #item-body div.item-list-tabs ul li#activity-filter-select a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#feed a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#activity-mentions a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#activity-all a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#topics-personal-li a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#replies-personal-li a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#favorites-personal-li a:hover,
+          #main-content #buddypress #item-body div.item-list-tabs ul li#subscriptions-personal-li a:hover {
+            background-color: #fff;
+            color: #336600; }
+    #main-content #buddypress #item-body div.item-list-tabs .message-search {
+      width: 100%;
+      margin: 1em 0;
+      height: 40px; }
+      #main-content #buddypress #item-body div.item-list-tabs .message-search form#search-message-form {
+        width: 100%;
+        display: block; }
+        #main-content #buddypress #item-body div.item-list-tabs .message-search form#search-message-form label {
+          color: #fff;
+          text-align: center;
+          line-height: 35px;
+          width: 22%;
+          display: inline-block;
+          letter-spacing: 0.1em;
+          font-size: 1em;
+          float: left; }
+        #main-content #buddypress #item-body div.item-list-tabs .message-search form#search-message-form input[type="text"] {
+          width: 58%;
+          height: auto;
+          font-size: 1em;
+          line-height: 35px;
+          color: #000;
+          display: inline-block;
+          margin-right: 0.5em; }
+        #main-content #buddypress #item-body div.item-list-tabs .message-search form#search-message-form input[type="submit"] {
+          width: 15%;
+          margin: auto;
+          font-size: 0.9em;
+          color: #fff;
+          border: 1px solid #e5e5e5;
+          outline: 0;
+          height: 35px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+          -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+          -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 4px;
+          line-height: 30px;
+          background: #fff;
+          background-color: #336600;
+          display: inline-block; }
+          #main-content #buddypress #item-body div.item-list-tabs .message-search form#search-message-form input[type="submit"]:hover {
+            color: #336600;
+            background-color: #fff;
+            color: #063;
+            cursor: pointer; }
 #main-content #buddypress div.dir-search,
 #main-content #buddypress #members-dir-search {
   float: right;
@@ -770,7 +851,8 @@ div.bbp-submit-wrapper button#bbp_topic_submit {
 
 #buddypress form#whats-new-form {
   clear: both;
-  margin-top: 1em; }
+  margin: 1em 0;
+  padding: 1em; }
   #buddypress form#whats-new-form #whats-new-avatar {
     width: 6%;
     margin-right: 0.5em;
@@ -1873,45 +1955,74 @@ ul {
             background-color: #fff;
             color: #063;
             cursor: pointer; }
-      .container-fluid #main-content div.item-list-tabs ul,
-      .container-fluid #main-content-comments div.item-list-tabs ul {
+      .container-fluid #main-content div.item-list-tabs,
+      .container-fluid #main-content-comments div.item-list-tabs {
+        width: 100%;
         background-color: #336600;
-        padding: 0.5em;
-        width: 80%;
-        margin: 0 auto; }
-        .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li,
-        .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li,
-        .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li,
-        .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li,
-        .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li,
-        .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li,
-        .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li,
-        .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li {
-          display: block;
-          text-align: center; }
-          .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a,
-          .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a,
-          .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a,
-          .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a,
-          .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a,
-          .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a,
-          .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a,
-          .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a {
-            background-color: #336600;
-            color: #fff;
+        margin: auto; }
+        .container-fluid #main-content div.item-list-tabs ul,
+        .container-fluid #main-content-comments div.item-list-tabs ul {
+          background-color: #336600;
+          padding: 0.5em;
+          width: 80%;
+          margin: 0 auto; }
+          .container-fluid #main-content div.item-list-tabs ul li#activity-filter-select,
+          .container-fluid #main-content div.item-list-tabs ul li#feed,
+          .container-fluid #main-content div.item-list-tabs ul li#activity-mentions,
+          .container-fluid #main-content div.item-list-tabs ul li#activity-all,
+          .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li,
+          .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li,
+          .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li,
+          .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#activity-filter-select,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#feed,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#activity-mentions,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#activity-all,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li,
+          .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li {
             display: block;
-            height: 100%;
-            line-height: 40px; }
-            .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a:hover,
-            .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a:hover,
-            .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a:hover,
-            .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a:hover,
-            .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a:hover,
-            .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a:hover,
-            .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a:hover,
-            .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a:hover {
-              background-color: #fff;
-              color: #336600; }
+            text-align: center; }
+            .container-fluid #main-content div.item-list-tabs ul li#activity-filter-select a,
+            .container-fluid #main-content div.item-list-tabs ul li#feed a,
+            .container-fluid #main-content div.item-list-tabs ul li#activity-mentions a,
+            .container-fluid #main-content div.item-list-tabs ul li#activity-all a,
+            .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a,
+            .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a,
+            .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a,
+            .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#activity-filter-select a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#feed a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#activity-mentions a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#activity-all a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a,
+            .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a {
+              background-color: #336600;
+              color: #fff;
+              display: block;
+              height: 100%;
+              line-height: 40px; }
+              .container-fluid #main-content div.item-list-tabs ul li#activity-filter-select a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#feed a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#activity-mentions a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#activity-all a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#topics-personal-li a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#replies-personal-li a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#favorites-personal-li a:hover,
+              .container-fluid #main-content div.item-list-tabs ul li#subscriptions-personal-li a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#activity-filter-select a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#feed a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#activity-mentions a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#activity-all a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#topics-personal-li a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#replies-personal-li a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#favorites-personal-li a:hover,
+              .container-fluid #main-content-comments div.item-list-tabs ul li#subscriptions-personal-li a:hover {
+                background-color: #fff;
+                color: #336600; }
       .container-fluid #main-content .error,
       .container-fluid #main-content .notice,
       .container-fluid #main-content .success,
