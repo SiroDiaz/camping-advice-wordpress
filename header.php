@@ -1,17 +1,28 @@
 <!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
-
+<!--<![endif]-->
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msvalidate.01" content="4CB214A27E0A9871DDFEF492EF5A6AD2" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="icon" href="<?php bloginfo('siteurl'); ?>/favicon.ico" type="image/x-icon" />
-      
-    <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?> 
-    
+
+<?php if (is_search()) { ?>
+	   <meta name="robots" content="noindex, nofollow" /> 
+<?php } ?>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="msvalidate.01" content="4CB214A27E0A9871DDFEF492EF5A6AD2" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+
 <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9 ]>
 
@@ -27,10 +38,10 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
 <script src="scripts/html5shiv.min.js"></script>
 <script src="scripts/selectivizr.min.js"></script>
 <![endif]-->
-        
+
     <?php wp_head(); ?>
 </head>
-      
+
 <body <?php body_class(); ?>>
 
   <div class="container-fluid">
@@ -41,17 +52,17 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
             <!--Header -->
             <header>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
-                   
+
                      <?php  if ( is_front_page() || is_page()) : ?>
                     <figure class="campuklogo">
                         <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/logo1.png" alt="Camping_Advice_Logo" />
                     </figure>
-                    
+
                     <?php else : ?>
                     <figure class="campuklogo">
                         <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/logo-blog.png" alt="Camping_Advice_Logo" alt="Camping_Advice_Logo" />
                     </figure>
-                    
+
                     <?php endif; ?>
                 </div>
 
@@ -77,5 +88,5 @@ window.jQuery || document.write('<script src="../bower_components/jquery/dist/jq
             </header>
             <!--Header end-->
                 </div>
-        
+
 <?php get_template_part( 'template-parts/navigation', 'default' ); ?>

@@ -51,6 +51,7 @@
 
                     </footer>
 
+<?php comment_form(); ?>
 <br>
 <br>
             </article>
