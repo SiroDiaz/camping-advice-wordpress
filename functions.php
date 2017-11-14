@@ -25,6 +25,8 @@ add_action( 'bbp_after_main_content',  'after_main_content'  ); // bottom wrappe
 	<?php
 	}
 
+
+//theme set up
 if ( ! function_exists( 'my_theme_setup' ) ) :
 
 	function my_theme_setup(){
@@ -94,6 +96,7 @@ if ( ! function_exists( 'my_theme_setup' ) ) :
 endif; // my_theme_setup end
 add_action('after_setup_theme', 'my_theme_setup');
 
+
 //read more button
 function excerpt_read_more_link($output) {
  global $post;
@@ -102,6 +105,7 @@ function excerpt_read_more_link($output) {
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
 
+//register siderbar
 if ( ! function_exists( 'bootstrap_four_widgets_init' ) ) :
   function bootstrap_four_widgets_init() {
     register_sidebar( array(
@@ -177,6 +181,7 @@ function my_scripts_own() {
 	//wp_enqueue_script( 'master' );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_own' );
+
 
 // remove version from scripts and styles
 function shapeSpace_remove_version_scripts_styles($src) {
