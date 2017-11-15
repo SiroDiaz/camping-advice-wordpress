@@ -18,14 +18,14 @@ $footer_nav_options = array(
 
 
 
-</footer>
+</footer> 
  <br/>
+ 
+<p id="copyr" > &copy; 2016 - Raymond Thompson - UK : 
 
-<p id="copyr" > &copy; 2016 - Raymond Thompson - UK :
-
-    	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'camping-advice-wordpress' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'camping-advice-wordpress' ), 'WordPress' ); ?></a>
+    	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'raythompwebdesign-com' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'CampingAdviceWordpress' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'camping-advice-wordpress' ), 'camping-advice-wordpress', '<a href="" rel="designer">Raymond Thompson</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'CampingAdviceWordpress' ), 'CampingAdviceWordpress', '<a href="http://lynda.com/mor10" rel="designer">Raymond Thompson</a>' ); ?>
 <br/>
 <?php
 $page = "Page was last updated : ";
@@ -39,8 +39,9 @@ $dt = time();
 
 
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> 
 
 </body>
 
 </html>
+
