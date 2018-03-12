@@ -1302,33 +1302,6 @@ textarea:hover {
   background-color: #F0F7E8;
   outline: 0; }
 
-.wp-caption-text {
-  font-size: 0.9em; }
-
-.sticky {
-  margin: auto; }
-
-.gallery-options {
-  font-size: 0.8em; }
-
-.gallery-caption {
-  font-size: 0.8em; }
-
-.screen-reader-text {
-  font-size: 0.8em; }
-
-.bypostauthor {
-  font-size: 0.8em; }
-
-.alignright {
-  float: right; }
-
-.alignleft {
-  float: left; }
-
-.aligncenter {
-  margin: auto; }
-
 li,
 ul {
   list-style: none; }

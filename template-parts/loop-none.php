@@ -7,7 +7,7 @@
  * @package CampingAdviceWordpress
  */
 ?>
-
+ 
 
             <section class="<?php if (is_404()) {
     echo 'error-404';
@@ -21,12 +21,12 @@
                         <h1 class="entry-title">
                             <?php
                             if (is_404()) {
-                                _e('Page not available', 'camping-advice-wordpress');
+                                _e('Page not available', 'CampingAdviceWordpress');
                             } else if (is_search()) {
                                 /* translators: %s = search query */
-                                printf(__('Nothing found for %s', 'camping-advice-wordpress'), '<em>' . get_search_query() . '</em>');
+                                printf(__('Nothing found for %s', 'CampingAdviceWordpress'), '<em>' . get_search_query() . '</em>');
                             } else {
-                                _e('Nothing Found', 'camping-advice-wordpress');
+                                _e('Nothing Found', 'CampingAdviceWordpress');
                             }
                             ?>
                         </h1>
@@ -59,7 +59,7 @@
                     <?php
                     if (is_404() || is_search()) {
                         ?>
-                    <header class="page-header"><h1 class="page-title"><?php _e('Most recent posts:', 'camping-advice-wordpress'); ?></h1></header>
+                    <header class="page-header"><h1 class="page-title"><?php _e('Most recent posts:', 'CampingAdviceWordpress'); ?></h1></header>
                         <?php
                         // Get the 6 latest posts
                         $args = array(
@@ -83,3 +83,4 @@
                     ?>
 
             </section><!-- .no-results -->
+ 
