@@ -47,41 +47,46 @@ Temporary Items
 .apdisk
 
 nbproject/
-
+node_modules/
+dist/
+test/
 .sass-cache/
 
-css/.sass-cache/
+camping-advice-wordpress/assets/
+camping-advice-wordpress/images/
+camping-advice-wordpress/js/
+camping-advice-wordpress/js/bootstrap/
+camping-advice-wordpress/js/Respond-master/
+camping-advice-wordpress/css/main.css.map
+camping-advice-wordpress/css/bootstrap.min.css
+camping-advice-wordpress/css/bootstrap.css.map
+camping-advice-wordpress/css/bootstrap.css
+camping-advice-wordpress/css/.sass-cache/
+camping-advice-wordpress/assets/
 
-.sass-cache/
+camping-advice-wordpress/images/PSD Files/
+camping-advice-wordpress/images/Camping Photos/
+camping-advice-wordpress/images/slider/
 
-images/
-js/
-js/bootstrap/
-js/Respond-master/
-css/partials/
-css/main.scss
-css/main.css.map
-css/bootstrap.min.css
-css/bootstrap.css.map
-css/bootstrap.css
 
-assets/
+camping-advice-wordpress/activity/
+camping-advice-wordpress/activity/single/
 
-activity/
-activity/single/
-activity/comment.php
-activity/activity-loop.php
+camping-advice-wordpress/forums/
+camping-advice-wordpress/forums/forums-loop.php
 
-forums/forums-loop.php
+camping-advice-wordpress/groups/
+camping-advice-wordpress/groups/single/
+camping-advice-wordpress/groups/groups-loops.php
+camping-advice-wordpress/groups/create.php
 
-groups/single/
-groups/groups-loops.php
-groups/create.php
+camping-advice-wordpress/members/
+camping-advice-wordpress/members/single/
+camping-advice-wordpress/members/register.php
+camping-advice-wordpress/members/activate.php
+camping-advice-wordpress/members/members.loop.php
 
-members/single/
-members/register.php
-members.php/activate.php
-members/members.loop.php
+camping-advice-wordpress/groups/
 
 
 
