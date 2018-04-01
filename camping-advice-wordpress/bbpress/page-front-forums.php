@@ -7,7 +7,7 @@
  * @subpackage Theme
  */
 
-get_header(); ?>
+get_header('forum'); ?>
 
 	<?php do_action( 'bbp_before_main_content' ); ?>
 
@@ -17,6 +17,7 @@ get_header(); ?>
 
 		<div id="forum-front" class="bbp-forum-front">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
+			index-bbpress
 			<div class="entry-content">
 
 				<?php the_content(); ?>
@@ -30,5 +31,5 @@ get_header(); ?>
 
 	<?php do_action( 'bbp_after_main_content' ); ?>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('forum'); ?>
 <?php get_footer(); ?>
