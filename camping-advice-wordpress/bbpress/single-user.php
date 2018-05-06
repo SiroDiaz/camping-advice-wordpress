@@ -9,10 +9,7 @@
 
 get_header('forum'); ?>
    
-    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!--slider section-->
-        <div class="row">
-	<article id="main-content">
+	 <?php do_action( 'bbp_before_main_content' ); ?>
 
 	<div id="bbp-user-<?php bbp_current_user_id(); ?>" class="bbp-single-user">
 		
@@ -24,9 +21,14 @@ get_header('forum'); ?>
 		<br/>
 	</div><!-- #bbp-user-<?php bbp_current_user_id(); ?> -->
 
+<<<<<<< HEAD:bbpress/single-user.php
 			</article>
 
 	<?php get_sidebar('forum'); ?>
 
+=======
+			<?php do_action( 'bbp_before_main_content' ); ?>
+>>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42:camping-advice-wordpress/bbpress/single-user.php
 
+<?php get_sidebar('forum'); ?>
 <?php get_footer(); ?>

@@ -56,12 +56,19 @@ index
 
       </article>
     </div><!-- .row -->
+    <?php get_sidebar(); ?>
 
   </div><!-- .col -->
 
 
+<<<<<<< HEAD:index.php
 <?php
 get_sidebar();
 get_footer();
 
 
+=======
+
+ 
+<?php get_footer(); ?>
+>>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42:camping-advice-wordpress/index.php
