@@ -1,0 +1,23 @@
+{
+  "name": "mannering-music",
+  "version": "0.0.1",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2"
+  },
+  "private": true,
+  "homepage": "https://github.com/raythompsonwebdev/mannering-music",
+  "authors": [
+    ""
+  ],
+  "description": "online music store",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

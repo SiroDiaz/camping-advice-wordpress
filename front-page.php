@@ -8,11 +8,11 @@
 
     <?php get_sidebar('front'); ?>
 
-    <div class=" col-lg-9 col-md-9 col-sm-12 col-xs-12">
+    <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
 
         <!--slider section-->
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="carousel slide" data-ride="carousel" id="campingCarousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#campingCarousel" data-slide-to="0" class="active"></li>
@@ -22,44 +22,55 @@
                         <li data-target="#campingCarousel" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
+                        <div class="carousel-item active">
                             <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/black-family-in-tent-smiling.jpg" alt="black-family-in-tent-smiling" /></a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/Man-sitting-in-tent-in-wood-lands.jpg" alt="Man-sitting-in-tent-in-wood-lands" /></a>
+                        <div class="carousel-item">
+                            <a href="#"><img 
+                            src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/Man-sitting-in-tent-in-wood-lands.jpg" 
+                            alt="<?php esc_attr_e('Man-sitting-in-tent-in-wood-lands', 'camping-advice');?>" 
+                            class="d-block w-100"
+                            /></a>
+                            
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/group-of-young-people-camping.jpg" alt="group-of-young-people-camping" /></a>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/group-of-young-people-camping.jpg" alt="<?php esc_attr_e('group-of-young-people-camping', 'camping-advice');?>" />
+                            </a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/kids-running-around-tent.jpg" alt="kids-running-around-tent" /></a>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/kids-running-around-tent.jpg" alt="<?php esc_attr_e('kids-running-around-tent', 'camping-advice');?>" />
+                            </a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#"><img src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/young-couple-in-tent.jpg" alt="young-couple-in-tent" /></a>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Sliderimages/young-couple-in-tent.jpg" alt="<?php esc_attr_e('young-couple-in-tent', 'camping-advice');?>" />
+                            </a>
                             <div class="carousel-caption">
                                 <h3>Caption Text</h3>
                             </div>
                         </div>
                     </div>
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#campingCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <a class="carousel-control-prev" href="#campingCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                   <a class="right carousel-control" href="#campingCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                   <a class="carousel-control-next" href="#campingCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -73,21 +84,23 @@
                 <!--Intro section-->
                 <article class="home-page-text">
                     <!-- TEXT BOX-->
-                    <h1>CampingAdvice.com</h1>
-                    <h2>Expert Advice</h2>
-                    <p>
-                        is a site goving advice on all camping related issues. Sed commodo hendrerit mi. Praesent libero lorem, sollicitudin bibendum, ultricies in, pharetra id, risus.
+                    <h1><?php _e( 'CampingAdvice.com', 'camping-advice' ); ?></h1>
+
+                    <h2><?php _e( 'Expert Advice', 'camping-advice' ); ?></h2>
+                    
+                    <p><?php _e( 'is a site goving advice on all camping related issues. Sed commodo hendrerit mi. Praesent libero lorem, sollicitudin bibendum, ultricies in, pharetra id, risus.', 'camping-advice' ); ?>
+                        
                     </p>
                     <br/>
-                    <h2>Discounts and Special offers</h2>
+                    <h2><?php _e( 'Discounts and Special offers', 'camping-advice' ); ?></h2>
                     <p>
-                        Etiam ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor sollicitudin Hiking. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lacus quis pede.
+                        
+                        <?php _e( 'Etiam ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor sollicitudin Hiking. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lacus quis pede.', 'camping-advice' ); ?>
                     </p>
                     <br/>
-                    <h2>Find the best value camp sites</h2>
+                    <h2><?php _e( 'Find the best value camp sites', 'camping-advice' ); ?></h2>
                     <p>
-                        Class aptent taciti sociosqu ad litora torquent per conubia tents, per inceptos himenaeos. Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare. Integer blandit consectetur sem. Morbi in leo quis felis vehicula
-                        pharetra. Suspendisse porta felis eu turpis. Ut vestibulum.
+                    <?php _e( 'Etiam ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor sollicitudin Hiking. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lacus quis pede.', 'camping-advice' ); ?>
                     </p>
                     <br/>
                     <br/>
@@ -96,54 +109,54 @@
         </div>
 
         <div class="row">
-            <div class="lg-md-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="lg-md-4 col-md-4 col-sm-6 col-xs-12">
                 <!--content-boxes section-->
-                <article class="textboxes">
 
-                    <div class="media ">
-                        <div class="media-left">
-                            <a href="#"> <img class="img-thumbnail img-responsive media-object" src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Kids-running.jpg" alt="kids-running"> </a>
+                <div class="card" >
+                    <a href="#">  <img class="card-img-top" src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Kids-running.jpg" alt="<?php esc_attr_e('kids-running-around-tent', 'camping-advice');?>"></a>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Class aptent taciti sociosqu ad torquent per conubia tents</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
                         </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Class aptent taciti sociosqu ad torquent per conubia tents</h4>
-                            <p>
-                                Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.
-                            </p>
-                            <p>
-                                Integer blandit consectetur sem. Morbi in leo quis felis vehicula pharetra. Suspendisse porta felis eu turpis. Ut vestibulum.
-                            </p>
-                            <p>
-                                Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.
-                            </p>
-                           
-                        </div>
-                    </div>
+                </div>
 
-                </article>
-
-                <article class="textboxes">
-
-                    <div class="media ">
-                        <div class="media-left">
-                            <a href="#"> <img class="img-thumbnail img-responsive media-object" src="<?php echo home_url(); ?>/wp-content/themes/camping-advice-wordpress/images/Kids-running.jpg" alt="kids-running"> </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Class aptent taciti sociosqu ad torquent per conubia tents</h4>
-                            <p>
-                                Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.
-                            </p>
-                            <p>
-                                Integer blandit consectetur sem. Morbi in leo quis felis vehicula pharetra. Suspendisse porta felis eu turpis. Ut vestibulum.
-                            </p>
-                            <p>
-                                Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.
-                            </p>
-                            
-                        </div>
-                    </div>
-
-                </article>
             </div>
+
+             <div class="lg-md-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card" >
+                    <a href="#">  <img class="card-img-top" src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Kids-running.jpg" alt="<?php esc_attr_e('kids-running-around-tent', 'camping-advice');?>"></a>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Class aptent taciti sociosqu ad torquent per conubia tents</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="lg-md-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card" >
+                    <a href="#">  <img class="card-img-top" src="<?php echo esc_url(home_url('/'));?>/wp-content/themes/camping-advice-wordpress/images/Kids-running.jpg" alt="<?php esc_attr_e('kids-running-around-tent', 'camping-advice');?>"></a>
+                        <div class="card-body">
+
+                            <h5 class="card-title">Class aptent taciti sociosqu ad torquent per conubia tents</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Proin eu enim. Maecenas porttitor metus sit amet tortor. Aenean non tellus in ante interdum ornare.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                </div>
+                
+            </div>
+            
         </div>
 
     </div>

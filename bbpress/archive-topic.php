@@ -9,11 +9,7 @@
 
 get_header('forum'); ?>
 
-	    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!--slider section-->
-        <div class="row">
-
-	<article id="main-content">
+	<?php do_action( 'bbp_before_main_content' ); ?>
 
 	<?php do_action( 'bbp_template_notices' ); ?>
 
@@ -26,9 +22,9 @@ get_header('forum'); ?>
 		</div>
 	</div><!-- #topics-front -->
 
-			</article>
-			</div>
-</div>
+<?php do_action( 'bbp_after_main_content' ); ?>
 
 <?php get_sidebar('forum'); ?>
+
+
 <?php get_footer(); ?>

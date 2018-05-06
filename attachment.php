@@ -7,7 +7,7 @@
 
                 <article id="main-content">
 
-                    <h1> Attachment</h1>
+                    <h1><?php _e( 'Attachment', 'raythompsonwebdev-com' ); ?></h1>
 
 
 

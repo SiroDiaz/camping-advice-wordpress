@@ -1,10 +1,10 @@
 <?php get_header('forum'); ?>
 
-<div class="row">
 index-buddy
     <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!--slider section-->
+       
         <div class="row">
+
            <article id="main-content">
 
  <?php if ( is_bbpress() ) : ?>
@@ -18,15 +18,11 @@ index-buddy
  					
  						<?php endif; ?>
 
-<!-- .entry-content -->
-
-
            </article>
+
     </div><!-- .row -->
 
   </div><!-- .col -->
-
-</div><!-- .row -->
 
  <?php get_sidebar('forum'); ?>
  

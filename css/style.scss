@@ -1,0 +1,4369 @@
+/*!
+Theme Name: camping-advice
+Theme URI: http://underscores.me/
+Author: raythompsonwebdev
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: camping-advice
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+camping-advice is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "partials/base";
+@import "partials/bbpress";
+@import "partials/buddypress";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/mixins";
+
+
+@media only screen and (max-width: 1920px){
+
+	.container-fluid {
+		max-width: 85%;
+        min-height: 800px;
+        margin: auto;
+
+		
+		//header
+		header#masthead{
+			width: 100%;
+			height: auto;
+			min-height:75px;
+			            
+            .site-branding{
+
+                width:auto;
+
+                .site-logo {
+                    position: relative;
+                    top: 0.5em;
+                    left: 0;
+                    width: 3.4em;
+                    height: 3.5em;
+                    -webkit-flex: 0 0 auto;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    a {
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        left: 2px;
+                        display: block;
+                        background: $color1;
+                        color: $color4;
+                        text-decoration: none;
+                        line-height: 40px;
+                        width: 83%;
+                        @include TransOrigin( 50% 50%);
+                        @include TranSition(all 0.2s linear 0s, color 0.2s linear 0s);
+                        height: auto;
+                        /* Text meant only for screen readers. */
+                        div.screen-reader-text {
+                            clip: rect(1px, 1px, 1px, 1px);
+                            position: absolute !important;
+                            height: 1px;
+                            width: 1px;
+                            overflow: hidden;
+                            &:focus {
+                                background-color: #f1f1f1;
+                                border-radius: 3px;
+                                box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+                                clip: auto !important;
+                                color: #21759b;
+                                display: block;
+                                font-size: 14px;
+                                font-size: 0.875rem;
+                                font-weight: bold;
+                                height: auto;
+                                left: 5px;
+                                line-height: normal;
+                                padding: 15px 23px 14px;
+                                text-decoration: none;
+                                top: 5px;
+                                width: auto;
+                                z-index: 100000;
+                                /* Above WP toolbar. */
+                            }
+                            
+                        }
+                        div.site-firstletter {
+                            font-family: ($FontList);
+                            font-size: 1em;
+                            font-weight: normal;
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                            height:100%;
+                        }
+                        
+                    }
+                    
+                }
+                .site-logo a:focus,
+                .site-logo a:hover {
+                    outline: 2px solid white;
+                }
+                
+                .site-logo a:focus .site-firstletter,
+                .site-logo a:hover .site-firstletter {
+                    background: $color1;
+                    color: $color6;
+                    font-weight: normal;
+                    text-align: center;
+                }
+            }
+            hgroup {
+                width: 100%;
+                display: block;
+                float: left;
+                height: 4em;
+                h1#logo {
+                    margin:0;
+                    font-size: 1.7em;
+                    width: 100%;
+                    height: 40px;
+                    font-weight: bold;
+                    line-height: 40px;
+                    color: $color4;
+                    //text-shadow: 2px 2px $color11;
+                    display: block;
+                    letter-spacing: 0.03em;
+                    float: left;
+                    span {
+                        height: 100%;
+                        margin: 0;
+                        color: $color4;
+                        text-align: left;
+                        display: inline-block;
+                    }
+                    span:last-of-type {
+                        height: 100%;
+                        color: $color1;
+                        display: inline-block;
+                        margin: 0 0.1em;
+                    }
+                }
+                h1#logo-blog {
+                    margin:0;
+                    font-size: 1.7em;
+                    height: 40px;
+                    font-weight: bold;
+                    line-height: 40px;
+                    color: $color4;
+                    //text-shadow: 2px 3px $color11;
+                    display: block;
+                    letter-spacing: 0.03em;
+                    float: left;
+                    width: 100%;
+                    span {
+                        height: 100%;
+                        margin: 0;
+                        color: $color4;
+                        text-align: left;
+                    }
+                    span:last-of-type {
+                        height: 100%;
+                        color: $color1;
+                        margin: 0 0.1em;
+                    }
+                }
+                h2 {
+                    float: none;
+                    display: block;
+                    width: 100%;
+                    letter-spacing: 0.1em;
+                    line-height: 20px;
+                    font-size: 0.75em;
+                    font-weight: normal;
+                    padding: 0;
+                    clear: left;
+                }
+                #title {
+                    float: left;
+                    min-width: 280px;
+                    max-width: 350px;
+                    margin-left: 0;
+                }
+            }
+            .socials {
+				width: 100%;
+				height: 35px;
+				display: inline-block;
+
+				ul {
+					margin: 0;
+					padding: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+
+					li {
+						float: left;
+						display: inline-block;
+						width: 25%;
+						height: 100%;
+
+						a {
+							height: 100%;
+							width: 100%;
+							text-align: center;
+							display: block;
+
+							i {
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								font-size: 1.3em;
+								color: $color1;
+								@include TransOrigin( 0,0 );
+								@include FillUp( both );
+								@include TranSition( all 0.2s linear);
+								line-height: 35px;
+							}
+
+							i:hover {
+								@include HoverScale( scale(1.1));
+								color: $color1;
+							}
+						}
+					}
+				}
+				/*Navigation*/
+            }
+		}
+        
+        /*navigation*/
+		nav#site-navigation{
+			padding: 0;
+			margin-bottom: 1%;
+			min-height: 50px;
+
+			.container {
+				margin: 0;
+				padding: 0;
+				border: none;
+            }
+            
+            .navbar {
+                padding: 0;
+            }
+
+			.navbar-toggle {
+				display: none;
+			}
+
+			.navbar-collapse {
+				position: relative;
+				margin-bottom: 5px;
+				border: 0;
+				font-family: ($FontList);
+				z-index: 2;
+            }
+            
+            ul#navbar_default,
+            ul#navbar_forum {
+                margin: 0;
+                font-family: ($FontList);
+
+                li.menu-item {
+                    font-family: ($FontList);
+                    text-align: center;
+                    height: 50px;
+                    width: 14%;
+                    background-color: $color1;
+                    display: inline-block;
+                    @include TranSition( all 0.2s linear);
+
+                    a {
+                        height: 100%;
+                        font-size: 1em;
+                        color: $color2;
+                        text-decoration: none;
+                        width: 100%;
+                        line-height: 50px;
+                        padding: 0;
+                        display: block;
+                        &:hover {
+                            color: $color1;
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 1em;
+                            background-color: $color2;
+                        }
+                        &:active {
+                            background-color: $color2;
+                            color: $color1;
+                        }
+                    }
+
+                }
+            }
+
+			
+            ul#navbar_front {
+                padding: 0;
+                width: 100%;
+                height: auto;
+                list-style: none;
+                margin: 0;
+                border: none;
+
+                li {
+                    font-family: ($FontList);
+                    text-align: center;
+                    height: 50px;
+                    width: 14%;
+                    background-color: $color1;
+                    display: inline-block;
+                    @include TranSition( all 0.2s linear);
+
+                    a.nav-link {
+                        height: 100%;
+                        font-size: 1em;
+                        color: $color2;
+                        text-decoration: none;
+                        width: 100%;
+                        line-height: 50px;
+                        padding: 0;
+                        display: block;
+                    }
+
+                    a:hover {
+                        color: $color1;
+                        line-height: 50px;
+                        height: 50px;
+                        font-size: 1em;
+                        background-color: $color2;
+                    }
+
+                    a:active {
+                        background-color: $color2;
+                        color: $color1;
+                    }
+                }
+            }
+			
+		}
+        
+		/*Slider*/
+		.carousel {
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+
+		.error-box {
+			min-height: 600px;
+			font-size: 100%;
+			letter-spacing: 0.1em;
+			width: 100%;
+			padding-top: 1em;
+			height: auto;
+			margin-bottom: 5px;
+			padding-left: 5px;
+			line-height: 1.5em;
+			background-color: $color2;
+
+			h1 {
+				font-size: 1.5em;
+				line-height: 40px;
+				display: block;
+			}
+
+			h1 a {
+				text-decoration: none;
+				display: block;
+			}
+		}
+
+		        
+		/*main-content-comments*/
+		#main-content-comments {
+
+
+		}
+        
+        /*Main content*/
+		#main-content, 
+		#main-content-comments {
+			height: auto;
+			min-height: 600px;
+			width: 100%;
+			margin: 0 auto;
+			background-color: $color2;
+			padding:1em;
+			margin-bottom: 1em;
+
+			h1 {
+				display: block;
+				margin: 0;
+				color: $color1;
+				text-align: center;
+				font-size: 2em;
+				width: 100%;
+				line-height: 60px;
+			}
+
+			h2 {
+				margin: 1% 0;
+				width: 100%;
+				color: $color1;
+				height: 40px;
+				line-height: 40px;
+				letter-spacing: 0.1em;
+				font-size: 1.4em;
+				text-align: left;
+				display: block;
+
+				a {
+					display: block;
+					text-decoration: none;
+					margin: 0 auto;
+					height: 100%;
+					width: 80%;
+					line-height: 40px;
+					letter-spacing: 0.2em;
+					font-size: 2em;
+					color: $color1;
+					text-align: center;
+				}
+			}
+
+			p {
+				width: 96%;
+				margin: 0;
+				font-size: 1em;
+				line-height: 1.7em;
+				color: #333;
+
+				a {
+					color: $color1;
+					font-size: 1.2em;
+				}
+			}
+
+			ul {
+				list-style: none;
+				margin: 2% 0;
+				font-size: 1.1em;
+				width: auto;
+
+				li {
+					letter-spacing: 0.1em;
+					width: 100%;
+					text-align: left;
+					line-height: 35px;
+					display: block;
+					font-style: italic;
+					font-size: 0.9em;
+
+					span {
+						height: 100%;
+						color: $color1;
+					}
+				}
+			}
+
+			article.post{
+                margin:0.5em 0;
+				
+			  h1.post-title{
+				font-size:2em;
+				
+			  }
+
+			  
+              header.byline{
+				height:60px;
+
+			  }
+
+			  p.right{
+				float:right;
+				width:10%;
+				display:block;
+				text-align:center;
+			  }
+
+			  a.read_more{
+				display:block;
+				width:15%;
+				background-color:$color1;
+				color:$color2;
+				height:35px;
+				line-height:35px;
+				text-align:center;
+
+				&:hover{background-color:$color4; color:$color1;}
+
+
+			  }
+
+			  figure.featuredImage {
+				  width: 70%;
+				  margin: 2% auto;
+			  }
+                
+              div.entry-content{
+
+              }
+
+
+			}
+
+			#summary {
+				display: none;
+				width: 100%;
+				height: 100px;
+				font-size: 1em;
+				background-color: $color1;
+				color: #fff;
+			}
+
+			.panel {
+				border-color: $color1;
+
+				.panel-heading {
+					border-color: $color1;
+					background-color: $bgcolor1;
+
+					h3.panel-title {
+						font-size: 1.5em;
+						height: 30px;
+						line-height: 1.3em;
+						margin-top: 5px;
+						color: $color1;
+
+						span {
+							color: $color1;
+							margin: 0 0.5% 0 0;
+							display: inline-block;
+							height: 100%;
+							line-height: 1.3em;
+						}
+					}
+				}
+
+				.panel-body {
+					.activ_img,
+					.cook_img,
+					.equip1_img,
+					.equip2_img,
+					.equip_img,
+					.trav_img {
+						margin: 0 2% 0 0;
+						width: 15%;
+						display: inline-block;
+						float: left;
+					}
+
+					p {
+						width: 100%;
+						margin: 0 0 1%;
+						font-size: 1em;
+						line-height: 1.5em;
+						color: #333;
+					}
+
+					p a {
+						color: $color1;
+						font-size: 1.2em;
+					}
+				}
+			}
+            
+			/*#main-content { float: left;  height: auto; width: 340px;}*/
+			section#account-box {
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+				border: 1px #ccc solid;
+				padding: 2%;
+			}
+
+			.nav-tabs {
+				list-style: none;
+				margin: 0;
+				font-size: 1.1em;
+				width: 100%;
+				height: 50px;
+				background-color: #fff;
+
+				li {
+					letter-spacing: 0.1em;
+					width: 24%;
+					text-align: center;
+					line-height: 1.5em;
+					display: block;
+					font-style: italic;
+					font-size: 0.9em;
+					height: auto;
+					margin-right: 1%;
+
+					span {
+						height: 100%;
+						color: $color1;                }
+				}
+			}
+
+			div.tab-content {
+				h3 {
+					margin: 0;
+				}
+
+				.media {
+					height: auto;
+					font-size: 0.75em;
+					margin: 0.5em 0;
+					padding: 0;
+					width: 100%;
+					list-style: none;
+					display: block;
+				}
+
+				.media .media-left {
+					display: inline-block;
+					width: 20%;
+					padding: 0;
+					margin: 0;
+					border: 0;
+					text-decoration: none;
+					overflow: hidden;
+					cursor: pointer;
+				}
+
+				.media .media-left .media-object {}
+
+				.media .media-body {
+					width: 79%;
+					display: inline-block;
+
+					h3 {
+						font-size: 1.3em;
+						font-weight: bold;
+						font-style: italic;
+						margin: 0;
+						padding: 0;
+						line-height: 1.6em;
+					}
+
+					p {
+						width: 100%;
+						line-height: 1.6em;
+						margin: 0;
+						font-size: 1.1em;
+						text-align: left;
+					}
+
+					ul.list-group {
+						width: 98%;
+						margin: 0;
+						padding: 0 1% 0 0;
+
+						li {
+							width: 100%;
+							display: inline-block;
+							margin: 0 0 0.5em;
+						}
+					}
+				}
+
+				ul.list-group {
+					width: 98%;
+					margin: 0;
+					padding: 0 1% 0 0;
+
+					li {
+						width: 100%;
+						display: inline-block;
+						margin: 0 0 0.5em;
+					}
+				}
+            }
+            
+            
+			/*register Form*/
+			section#campregister {
+				margin: auto;
+				padding: 1em;
+				font-family: $FontList;
+				height: auto;
+				width: 75%;
+                padding: 4em;
+                
+                div.bbp-template-notice.info {
+                    border: #cee1ef 1px solid;
+                    background-color: #f0f8ff;
+                    p{
+                        text-align:center;
+                    }
+                }
+
+				form#RegForm {
+					margin: auto;
+					background-color: $color1;
+					width: 90%;
+					height: auto;
+
+					img {
+						width: 25%;
+						height: 40px;
+					}
+
+					label {
+						color: $color2;
+						text-align: left;
+						line-height: 35px;
+						width: 100%;
+						display: block;
+						letter-spacing: 0.1em;
+						font-size: 1em;
+						font-weight: 100;
+					}
+
+					.verifybox {
+						width: 72%;
+						height: 100%;
+						font-size: 1em;
+						color: $color5;
+						float: left;
+						display: inline-block;
+					}
+
+					.textfield {
+						width: 100%;
+						height: 100%;
+						font-size: 1em;
+						color: $color5;
+					}
+
+					#select8 {
+						width: 100%;
+						font-size: 1em;
+						color: $color1;
+						height: 40px;
+						display: block;
+					}
+
+					#Submit {
+						width: 40%;
+						margin: auto;
+						font-size: 0.9em;
+						color: $color2;
+						border: 1px solid $color6;
+						outline: 0;
+						height: 35px;
+						@include boxShadow( rgba(0,0,0,.1) 0 0 0 4px );
+						line-height: 30px;
+						background: $color2;
+						background-color: $color1;
+						display: block;
+					}
+
+					#Submit:hover {
+						color: $color1;
+						background-color: $color2;
+						color: $color3;
+						cursor: pointer;
+					}
+				}
+			}
+                                  
+                       
+                                   
+			/*search form-contact form*/
+			section.searchformadvance {
+				margin: auto;
+				background-color: $color1;
+				padding: 0;
+				font-family: ($FontList);
+				height: auto;
+				width: 50%;
+				.textwidget{
+
+					div.wpcf7 {
+						padding-top:3%;
+
+						img.ajax-loader {
+							border: medium none;
+							vertical-align: middle;
+							height: 100px;
+							width: 10%;
+							display: block;
+							margin: 5% auto;
+						}
+					}
+				}
+
+				form.wpcf7-form,
+				form#contactform,
+				form#login,
+				form#retrieve,
+				form#searchform{
+                
+					height: auto;
+					width: 90%;
+					margin: 1em auto;
+					display: block;
+
+					label {
+						color: $color2;
+						text-align: left;
+						width: 100%;
+						display: block;
+						letter-spacing: 0.1em;
+						font-size: 1em;
+						line-height: 35px;
+						font-weight: 100;
+					}
+
+					input[type="email"], input[type="text"], .textfield {
+						width: 100%;
+						height: 100%;
+						height: 35px;
+						color: $color5;
+						border: 0;
+						outline: none;
+					}
+
+					input[type="submit"], #Submit {
+						width: 40%;
+						margin: auto;
+						font-size: 1em;
+						line-height: 30px;
+						color: $color2;
+						border: 1px solid $color6;
+						outline: 0;
+						height: 35px;
+						@include boxShadow( rgba(0,0,0,.1) 0 0 0 4px );
+						background-color: $color1;
+						display: block;
+					}
+
+					input[type="submit"], #Submit:hover {
+						background-color: $color2;
+						color: $color3;
+						cursor: pointer;
+					}
+				}
+			}
+			/* results page*/
+			section#search_result {
+				margin: auto;
+				font-size: 1em;
+				width: 90%;
+				height: auto;
+				padding: 0;
+
+				.result_s {
+					height: auto;
+					width: 16%;
+					display: inline-block;
+					float: left;
+					margin: 0;
+					padding: 0;
+				}
+
+				.result_s1 {
+					height: auto;
+					width: 34%;
+					display: block;
+					float: left;
+					margin: 0;
+					padding: 0;
+				}
+
+				.result_s li {
+					height: 30px;
+					line-height: 30px;
+					font-size: 0.8em;
+					padding: 0;
+				}
+
+				.result_s1 li {
+					height: 30px;
+					width: 100%;
+					line-height: 30px;
+					padding: 0;
+					font-size: 0.8em;
+				}
+
+				.resultmap {
+					float: right;
+					height: 420px;
+					width: 50%;
+					border: 2px solid $color1;
+				}
+
+				.resultimage {
+					max-height: 100%;
+					margin: 10px 0 0;
+					float: left;
+					width: 47%;
+					display: inline-block;
+				}
+
+				.resulttext {
+					width: 100%;
+					height: auto;
+					clear: both;
+					margin: 1% 0;
+					line-height: 1.5em;
+					display: inline-block;
+				}
+			}
+			/*search pagination*/
+			#pagination {
+				margin: 1% 0;
+				height: 30px;
+
+				ul {
+					margin: 0;
+					padding: 0;
+					width: 50%;
+					height: 100%;
+				}
+
+				ul li {
+					width: auto;
+					display: inline-block;
+					float: left;
+					margin-right: 4%;
+				}
+
+				ul li a {
+					display: block;
+					text-align: left;
+					text-decoration: none;
+					padding: 1%;
+					color: $color5;
+				}
+
+				ul li a:hover {
+					color: $color1;
+					font-weight: bold;
+				}
+			}
+			/*search count*/
+			.count {
+				font-size: 0.95em;
+			}
+			/*images column*/
+			
+			//comments
+			ol.commentlist{
+				margin:0;
+				padding: 0; 
+				li.comment{
+					display:block;
+				
+					article.comment-body{
+						font-size:1em;
+						footer.comment-meta{
+							padding: 0.5em 0;
+							background-color:$color1;
+							color:$color2;
+							.comment-author{
+								font-size:1em;
+								
+								img.avatar{
+									display: block;
+									background-color: #c90;
+									width: 40px;
+									height:40px;
+									margin-right: 0.5em;
+									float:left;
+										
+								
+								}
+							}
+							
+							.comment-metadata{
+								
+								a{
+								
+									color:#fff;
+								}
+
+							}
+						
+						}
+						
+						div.comment-content{
+							
+							width:98%;
+							margin:auto;
+							padding:0.5em;
+						
+						}
+						
+						div.reply{
+							
+							display:block;
+							width:15%;
+							background-color:$color1;
+							color:$color2;
+							height:35px;
+							line-height:35px;
+							text-align:center;
+
+							&:hover{background-color:$color4; color:$color1;}
+						
+						
+						}
+					}
+				}
+					
+			}
+			.nav-links{
+				margin:0.5em 0;
+				.nav-previous,
+				.nav-next{
+					height: 30px;
+					width: 50%;
+					display: block;
+					float: left;
+					background-color:#c90;
+				
+				
+				}
+				
+			}
+		
+        }
+        
+        .card-img-top {
+            border-radius: .25rem .25rem 0 0;
+            width: 50%;
+            margin: 1em auto;
+            display: block;
+        }
+		/*end of main-content*/
+		
+        /*Leftside*/
+		aside#side-bar-left {
+			height: auto;
+			background-color: $color2;
+			padding:0.5em 0;
+			display:block;
+			ul{
+				padding:0;
+				margin:0;
+				li{
+					height:auto;
+					a{
+					
+						display:block;
+						width:100%;
+						line-height:35px;
+						color:$color1;
+						text-align:center;
+						
+					}
+				
+				}
+			}
+    		.side-bar-box{
+				height: auto;
+				text-decoration: none;
+				padding: 0;
+				margin: 0;
+				float:left;
+				display:inline-block;
+				margin:0.2em;
+				width:96%;
+				h2 {
+					width: 100%;
+					height: 40px;
+					line-height: 40px;
+					color: $color2;
+					margin: 0;
+					font-weight: bold;
+					font-size: 1em;
+					background-color: $color1;
+					text-align: center;
+					letter-spacing: 0.1em;
+				}
+			
+				//bbp forum side bar
+				#bp-login-widget-form {
+					background-color: $color1;
+					color: $color2;
+					width: 80%;
+					padding: 2%;
+					margin: 2% auto;
+
+					label {}
+
+					input#bp-login-widget-user-login,
+					input#bp-login-widget-user-pass {
+						margin: 1em 0;
+						display: block;
+						font-weight: normal;
+						width: 100%;
+						color: #000;
+					}
+
+					input#bp-login-widget-submit {
+						width: 100%;
+						height: 50px;
+						font-size: 0.9em;
+						color: $color2;
+						border: 1px solid $color6;
+						outline: 0;
+						@include boxShadow( rgba(0,0,0,.1) 0 0 0 4px );
+						background: $color2;
+						background-color: $color1;
+						display: block;
+
+						&:hover {
+							color: $color1;
+							background-color: $color2;
+							color: $color3;
+							cursor: pointer;
+						}
+					}
+
+					span.bp-login-widget-register-link {
+						a {
+							font-size: 1em;
+							color: $color2;
+							background-color: $color1;
+
+							&:hover {
+								background-color: $color2;
+								color: $color1;
+							}
+						}
+					}
+				}
+				
+				form#bbp-search-form{
+					font-size:1em;
+					
+					div{
+						display:block;
+						padding:1em 0;
+					
+					}
+					
+					input[type="text"]{
+						display:inline-block;
+						float:left;
+					
+					}
+					
+					input#bbp_search_submit{
+						margin: 0 auto;
+						display: block;
+						font-size: 0.9em;
+						line-height: 15px;
+						color: $color2;
+						border: 1px solid $color6;
+						outline: 0;
+						font-family: ($FontList);
+						height: 30px;
+						@include boxShadow( rgba(0,0,0,.1) 0 0 0 4px );
+						line-height: 1.5em;
+						background: $color3;
+						/*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
+						@include TransOrigin( 0,0 );
+						@include FillUp( both );
+						@include TranSition( all 0.2s ease-out);
+						background-color: $color1;
+						width: 40%;
+						&:hover {
+							background-color: $color2;
+							color: $color1;
+						}
+
+					}
+				}
+								
+				span {
+					width: 60%;
+					display: block;
+					height: auto;
+					margin: auto;
+					text-align: center;
+					font-size:0.9em;
+					&:hover {
+						background-color: $color6;
+					}
+
+					a {
+						text-decoration: none;
+						margin: 0;
+						height: 100%;
+						width: 100%;
+						display:block;
+						line-height: 35px;
+						letter-spacing: 0.2em;
+						font-size: 0.9em;
+						color: $color1;
+						text-align: center;
+						@include TransOrigin( 0,0 );
+						@include TranSition( all 0.2s linear);
+						&:hover {
+							color: $color1;
+							text-decoration: none;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			/* homepage text box*/
+			
+			.side-bar-box-front{
+				width:100%;
+				h2 {
+					width: 100%;
+					height: 40px;
+					line-height: 40px;
+					color: $color2;
+					margin: 0;
+					font-weight: bold;
+					font-size: 1em;
+					background-color: $color1;
+					text-align: center;
+					letter-spacing: 0.1em;
+                }
+
+                nav#navbar-front-menu{
+
+                    /*linkt to buddypress forums*/
+                    ul#navbar-front {
+                        list-style: none;
+                        padding: 0;
+                        li.bp-menu,
+                        li.menu-item{
+                            width: 100%;
+                            margin: 0.5em 0;
+                            font-weight: bold;
+                            text-align: center;
+                            letter-spacing: 0.1em;
+                            height:40px;
+        
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                margin: 0 auto;
+                                height: 100%;
+                                width: 80%;
+                                letter-spacing: 0.2em;
+                                font-size: 0.85em;
+                                color: $color2;
+                                text-align: center;
+                                background-color: $color1;
+                                @include TransOrigin( 0,0 );
+                                @include FillUp( both );
+                                @include TranSition( all 0.2s linear);
+                                &:hover {
+                                    font-size: 0.95em;
+                                    width: 80%;
+                                    background-color: $color2;
+                                    color: $color1;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    letter-spacing: 0.1em;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .card-img-top {
+                    border-radius: .25rem .25rem 0 0;
+                    width: 50%;
+                    margin: 1em auto;
+                    display: block;
+                }
+                
+
+				#newsletter {
+					form {
+						width: 100%;
+						margin: 0;
+
+						.form-group {
+							width: 80%;
+							margin: 4% auto;
+							padding: 0;
+
+							label#NewsLetter {
+								input {
+									margin: 1em 0;
+									display: block;
+									font-weight: normal;
+									width: 100%;
+								}
+							}
+						}
+
+						button[type="submit"] {
+							margin: 0 auto;
+							display: block;
+							font-size: 0.9em;
+							line-height: 15px;
+							color: $color2;
+							border: 1px solid $color6;
+							outline: 0;
+							font-family: ($FontList);
+							height: 30px;
+							@include boxShadow( rgba(0,0,0,.1) 0 0 0 4px );
+							line-height: 1.5em;
+							background: $color3;
+							/*-webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,#090));*/
+							@include TransOrigin( 0,0 );
+							@include FillUp( both );
+							@include TranSition( all 0.2s ease-out);
+							background-color: $color1;
+							width: 40%;
+						}
+
+						button[type="submit"]:hover {
+							background-color: $color2;
+							color: $color1;
+						}
+					}
+				}
+				
+			}
+		}
+		
+        /*Home-Page-text*/
+		.home-page-text {
+			letter-spacing: 0.1em;
+			width: 100%;
+			padding-top: 1em;
+			height: auto;
+			margin: 1em 0;
+			padding: 0 1em 1em;
+			background-color: $color2;
+
+			h1 {
+				color: $color1;
+				margin: 0;
+				font-size: 2.1em;
+				text-align: center;
+				width: 100%;
+				display: block;
+				line-height: 60px;
+			}
+
+			h2 {
+				margin: 0;
+				line-height: 30px;
+				height: 30px;
+				display: block;
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+
+			p {
+				width: 98%;
+				font-size: 0.85em;
+				margin: 0;
+				display: block;
+				line-height: 1.8em;
+			}
+		}
+		
+		/*text boxes*/
+		.textboxes {
+			letter-spacing: 0.1em;
+			width: 100%;
+			padding-top: 1em;
+			height: auto;
+			margin-bottom: 5px;
+			padding: 1% 0 0 1%;
+			line-height: 1.5em;
+			background-color: $color2;
+
+			h2 {
+				line-height: 30px;
+				height: 30px;
+				display: block;
+				font-size: 1em;
+				font-weight: bold;
+			}
+
+			
+		}
+		
+		/*Right side*/
+		#right_side {
+			height: auto;
+			width: 777px;
+			float: left;
+			margin-bottom: 5px;
+			padding-left: 0;
+			font-size: 1em;
+			font-family: ($FontList);
+
+			p {
+				font-size: 0.9em;
+				font-family: ($FontList);
+			}
+			/*Privacy page*/
+			.privacy p {
+				font-size: 1em;
+				width: 85%;
+				margin: 5px 0 5px 7%;
+				line-height: 1.3em;
+
+				h3 {
+					text-indent: 7%;
+					font-size: 100%;
+				}
+
+				ul {
+					width: 80%;
+					margin-left: 10%;
+					font-size: 1em;
+					letter-spacing: 0.1em;
+				}
+			}
+		}
+		
+		/*Footer*/
+		footer#site-footer {
+			height: 40px;
+			margin-top: 5px;
+			background-color: $color1;
+			padding: 0;
+			clear: both;
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			padding: 0;
+			font-family: ($FontList);
+
+			ul#menu-secondary {
+				padding: 0;
+				width: 50%;
+				height: 40px;
+				list-style: none;
+				margin: auto;
+
+				li {
+					font-family: ($FontList);
+					float: left;
+					width: 25%;
+					text-align: center;
+					height: 40px;
+					line-height: 40px;
+					@include TranSition( all 0.2s linear);
+
+					a {
+						line-height: 40px;
+						height: 40px;
+						font-size: 0.85em;
+						color: $color2;
+						text-decoration: none;
+						@include TranSition( all 0.2s linear);
+						display: block;
+					}
+
+					a:active {
+						color: #FF0;
+					}
+
+					a:hover {
+						font-weight: bold;
+						color: $color1;
+					}
+				}
+
+				li:hover {
+					background-color: $color2;
+					color: $color1;
+				}
+			}
+		}
+		
+	}
+
+	.setloglink a {
+		font-size: 1.2em;
+	}
+
+	.setloglink a:hover {
+		color: $color5;
+		font-weight: bold;
+	}
+
+	.copyright {
+		margin: 2% auto;
+		color: $color5;
+		font-size: 10px;
+		width: 84%;
+		display: block;
+		height: 50px;
+	}
+
+
+}
+
+@media only screen and (max-width: 1440px){
+
+
+}
+
+/* Large desktop */
+@media all and (max-width: 1024px) {
+    .container-fluid {
+        max-width: 95%;
+
+        .sidebar-btn {
+            display: none;
+        }
+
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                // display:none !important;
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 13.959%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.9em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.9em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 13.959%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.9em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.9em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        .socials {
+            width: 100%;
+
+            ul li a i {
+                font-size: 1.2em;
+            }
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 46%;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    h3 {
+                        font-size: 1.25m;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            height: auto;
+            width: 100%;
+            margin: auto;
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            ul li {
+                font-size: 0.85em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.4em;
+                        height: 30px;
+                        line-height: 1.3em;
+
+                        span.fa {
+                            color: $color1;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 2% 0 0;
+                        width: 22%;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 0 0 1%;
+                        font-size: 0.9em;
+                    }
+
+                    p a {
+                        color: $color1;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+            /*register Form*/
+            #campregister {
+                width: 70%;
+
+                form#RegForm {
+                    width: 90%;
+
+                    img {
+                        width: 25%;
+                        height: 40px;
+                    }
+
+                    label {
+                        font-size: 0.9em;
+                    }
+
+                    .verifybox {
+                        font-size: 0.9em;
+                    }
+
+                    .textfield {
+                        font-size: 0.9em;
+                    }
+
+                    #select8 {
+                        font-size: 0.9em;
+                    }
+
+                    #Submit {
+                        font-size: 0.9em;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            /*search form*/
+            section.searchformadvance {
+                width: 50%;
+
+                form#contactform,
+                form#login,
+                form#retrieve,
+                form#searchform {
+                    width: 90%;
+
+                    label {
+                        letter-spacing: 0.1em;
+                        font-size: 0.9em;
+                    }
+
+                    .textfield {
+                        height: 35px;
+                    }
+
+                    #Submit {
+                        width: 40%;
+                        font-size: 0.9em;
+                        line-height: 30px;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            section#search_result {
+                .resultmap {
+                    float: right;
+                    height: 375px;
+                    width: 48%;
+                }
+            }
+        }
+
+        .camp {
+            ul {
+                padding: 0;
+                width: 100%;
+                height: 40px;
+                list-style: outside none none;
+
+                li {
+                    font-family: ($FontList);
+                    float: left;
+                    width: 20%;
+                    text-align: center;
+                    height: 40px;
+                    margin-left: 5%;
+
+                    a {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+
+        .home-page-text {
+            letter-spacing: 0.1em;
+            width: 100%;
+            height: auto;
+
+            h1 {
+                font-size: 1.8em;
+                line-height: 50px;
+            }
+
+            h2 {
+                font-size: 1em;
+                line-height: 30px;
+            }
+
+            p {
+                font-size: 0.80em;
+            }
+        }
+
+        .textboxes {
+            letter-spacing: 0.1em;
+
+            h2 {
+                font-size: 0.90em;
+            }
+
+            div.media {
+                .media-left {
+                    width: 22%;
+
+                    img.media-object {
+                        margin: 1% 1% 0;
+                    }
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 1.2em;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 0.80em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        footer#site-footer {
+            ul {
+                li {
+                    a {
+                        font-size: 0.80em;
+                    }
+
+                    a:hover {
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 980px) {
+    .container-fluid {
+        .sidebar-btn {
+            display: none;
+        }
+
+        header {
+            .socials {}
+        }
+
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                // display:none !important;
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.85em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.85em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.85em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.85em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        aside#side-bar-left {
+            height: auto;
+            background-color: $color2;
+
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 46%;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    h3 {
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.85em;
+            }
+
+            .panel {
+                .activ_img,
+                .cook_img,
+                .equip1_img,
+                .equip2_img,
+                .equip_img,
+                .trav_img {
+                    margin: 0 2% 0 0;
+                    width: 22%;
+                }
+
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.3em;
+
+                        span.fa {
+                            color: $color1;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    p {
+                        width: 100%;
+                        font-size: 0.8em;
+                    }
+
+                    p a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .textboxes {
+            letter-spacing: 0.1em;
+
+            div.media {
+                .media-left {
+                    width: 23%;
+                    margin: 0 2% 0 0;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 1.05em;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 0.80em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        .home-page-text {
+            h1 {
+                font-size: 1.7em;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+        }
+
+        section#search_result .resultmap {
+            float: right;
+            height: 360px;
+            width: 48%;
+        }
+
+        footer#site-footer {
+            ul {
+                li a {
+                    font-size: 0.75em;
+                }
+
+                li a:hover {
+                    font-size: 0.80em;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 800px) {
+    .container-fluid {
+        .sidebar-btn {
+            display: none;
+        }
+
+        header {
+            .campuklogo {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                // display:none !important;
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.85em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.85em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.85em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.85em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 98%;
+                    padding: 5%;
+
+                    h3 {
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            #newsletter .btn-default {
+                font-size: 0.75em;
+            }
+        }
+
+        #main-content {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            h3 {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 0.8em;
+                margin: 5px 0;
+            }
+
+            ul li {
+                font-size: 0.80em;
+                line-height: 20px;
+            }
+
+            section#search_result .resultmap {
+                float: right;
+                height: 320px;
+                width: 48%;
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.2em;
+
+                        span.fa {
+                            color: $color1;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 2% 0 0;
+                        width: 22%;
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 0.75em;
+                    }
+
+                    p a {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        .home-page-text {
+            h2 {
+                font-size: 0.90em;
+            }
+
+            p {
+                font-size: 0.75em;
+            }
+        }
+
+        .textboxes {
+            letter-spacing: 0.1em;
+
+            h2 {
+                font-size: 0.9em;
+            }
+
+            div.media {
+                .media-left {
+                    width: 20%;
+
+                    img.media-object {
+                        margin: 1% 1% 0;
+                    }
+                }
+            }
+
+            .media-body {
+                width: 100%;
+
+                h4.media-heading {
+                    font-size: 1em;
+                    line-height: 25px;
+                }
+
+                p {
+                    font-size: 0.70em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        footer#site-footer {
+            ul li a {
+                font-size: 0.70em;
+            }
+
+            ul li a:hover {
+                font-size: 0.75em;
+            }
+        }
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media all and (max-width: 768px) {
+    .container-fluid {
+        header {
+            .campuklogo {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            .socials {
+                width: 100%;
+            }
+        }
+
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                //  display:none !important;
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            height: auto;
+            width: 100%;
+            margin: auto;
+
+            section.searchformadvance {
+                width: 80%;
+
+                form ul label {
+                    font-size: 0.75em;
+                }
+            }
+
+            section#search_result .resultmap {
+                float: right;
+                height: 290px;
+                width: 48%;
+            }
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.25em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            #newsletter .btn-default {
+                font-size: 0.75em;
+            }
+        }
+
+        .home-page-text {
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            width: 100%;
+            height: auto;
+
+            h1 {
+                line-height: 40px;
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.85em;
+            }
+        }
+
+        .textboxes {
+            letter-spacing: 0.1em;
+
+            h2 {
+                font-size: 0.75em;
+            }
+
+            div.media {
+                padding: 1%;
+
+                .media-left {
+                    width: 35%;
+                    display: block;
+                    margin: 2% auto;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                width: 100%;
+                display: block;
+
+                h4.media-heading {
+                    font-size: 1em;
+                    line-height: 30px;
+                    text-align: center;
+                    font-weight: bolder;
+                    display: block;
+                }
+
+                p {
+                    font-size: 0.70em;
+                    width: 100%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        footer#site-footer {
+            ul {
+                padding: 0;
+                margin: 0 auto;
+                width: 90%;
+                height: 40px;
+                list-style: outside none none;
+
+                li {
+                    font-family: ($FontList);
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    height: 40px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 736px) {
+    .sidebar-btn {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        left: 92%;
+        top: 259px;
+        width: 60px;
+        height: 65px;
+        background-color: $color3;
+        text-align: center;
+        color: $color2;
+        font-size: 0.8em;
+        padding-top: 0.5%;
+    }
+
+    .sidebar-btn:hover {
+        color: $color3;
+        background-color: $color2;
+        cursor: pointer;
+    }
+
+    .container-fluid {
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .navbar-collapse {
+                //   display:none !important;
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 13.7%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        #side-bar-left {
+            height: auto;
+            background-color: $color2;
+            display: none;
+            position: absolute;
+            z-index: 9998;
+            top: 0;
+            left: 6%;
+            width: 70%;
+
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.35em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            #newsletter .btn-default {
+                font-size: 0.75em;
+            }
+        }
+
+        #main-content {
+            h1 {
+                margin: 0;
+                font-size: 1.5em;
+                line-height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                line-height: 35px;
+                letter-spacing: 0.1em;
+                font-size: 1.2em;
+            }
+
+            p {
+                width: 96%;
+                margin: 0;
+                font-size: 0.85em;
+                line-height: 1.7em;
+
+                a {
+                    font-size: 1.1em;
+                }
+            }
+
+            ul {
+                list-style: none;
+                margin: 2% 0;
+                font-size: 1em;
+                width: 35%;
+
+                li {
+                    letter-spacing: 0.1em;
+                    width: 100%;
+                    line-height: 35px;
+                    font-size: 0.9em;
+
+                    span {}
+                }
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.3em;
+                        height: 30px;
+                        line-height: 1.2em;
+
+                        span {
+                            margin: 0 0.5% 0 0;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 1%;
+                        width: 23%;
+                    }
+
+                    p {
+                        margin: 0 0 1%;
+                        font-size: 0.8em;
+                        line-height: 1.5em;
+                    }
+
+                    p a {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        .home-page-text {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+
+        .textboxes {
+            div.media {
+                .media-left {
+                    width: 30%;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 1.1em;
+                }
+
+                p {
+                    font-size: 0.75em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+    }
+}
+@media all and (max-width: 667px) {
+    .container-fluid {
+        .sidebar-btn {
+            left: 91%;
+            font-size: 0.70em;
+            padding: 1%;
+            z-index: 999;
+            display: block;
+            height: auto;
+        }
+
+        header {
+            .campuklogo {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        nav {
+            padding: 0;
+
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar-toggle {
+                display: block;
+                position: absolute;
+                z-index: 99;
+                background-color: #000;
+                height: 40px;
+                width: 40px;
+            }
+
+            .navbar-collapse {
+                ul.navbar-default {
+                    margin: 0 auto;
+                    width: 100%;
+
+                    li {
+                        height: 50px;
+                        width: 100%;
+                        display: inline-block;
+                        text-align: center;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                            background-color: $color1;
+                            color: $color2;
+                            width: 100%;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                            background-color: $color2;
+                            color: $color1;
+                            width: 100%;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+
+            #main-navi {
+                margin: 0;
+
+                .navbar {
+                    padding: 0;
+                    display: none;
+                }
+
+                ul.navbar-default {
+                    margin: 0;
+
+                    li {
+                        height: 50px;
+                        width: 100%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+
+                ul#main-menu {
+                    height: auto;
+
+                    li {
+                        height: 50px;
+                        width: 100%;
+                        display: inline-block;
+
+                        a.nav-link {
+                            font-size: 0.8em;
+                            line-height: 50px;
+                        }
+
+                        a:hover {
+                            line-height: 50px;
+                            height: 50px;
+                            font-size: 0.8em;
+                        }
+
+                        a:active {}
+                    }
+                }
+            }
+        }
+
+        aside#side-bar-left {
+            height: auto;
+            background-color: $color2;
+
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.80em;
+                    font-weight: bolder;
+                }
+
+                span {
+                    font-size: 0.9em;
+                }
+
+                span a {
+                    font-size: 1em;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+
+                #newsletter {
+                    form {
+                        .form-group {
+                            label#NewsLetter {
+                                input {
+                                    margin: 1em 0;
+                                    font-weight: normal;
+                                    font-size: 0.9em;
+                                }
+                            }
+                        }
+
+                        button[type="submit"] {
+                            font-size: 0.8em;
+                            line-height: 15px;
+                            height: 30px;
+                            width: 60%;
+                        }
+
+                        button[type="submit"]:hover {}
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            h1 {
+                margin: 0;
+                font-size: 1.4em;
+                line-height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                line-height: 35px;
+                letter-spacing: 0.1em;
+                font-size: 1.1em;
+            }
+
+            p {
+                width: 98%;
+                font-size: 0.80em;
+                line-height: 1.8em;
+            }
+
+            ul {
+                margin: 2% 0;
+                font-size: 0.9em;
+                width: 35%;
+
+                li {
+                    letter-spacing: 0.1em;
+                    width: 100%;
+                    line-height: 35px;
+                    font-size: 0.9em;
+                }
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.3em;
+                        height: 30px;
+                        line-height: 1.3em;
+
+                        span {
+                            margin: 0 0.5% 0 0;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 1%;
+                        width: 25%;
+                    }
+
+                    p {
+                        margin: 0 0 1%;
+                        font-size: 0.8em;
+                        line-height: 1.5em;
+                    }
+
+                    p a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .textboxes {
+            h2 {
+                font-size: 0.80em;
+            }
+
+            div.media {
+                .media-left {
+                    width: 25%;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 1.1em;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 0.70em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+    }
+}
+@media all and (max-width: 640px) {
+    .sidebar-btn {
+        left: 89%;
+        font-size: 0.80em;
+        padding: 1%;
+        top: 230px;
+    }
+
+    .container-fluid {
+        max-width: 96%;
+
+        header {
+            .socials {
+                width: 100%;
+            }
+        }
+
+        nav {
+            .navbar-default {
+                .navbar-toggle {
+                    margin-right: -7px;
+                    background-color: $color1;
+                }
+
+                .container-fluid {
+                    .navbar-collapse {
+                        margin-bottom: 5px;
+
+                        ul.navbar-nav {
+                            width: 100%;
+                            height: auto;
+
+                            li {
+                                width: 100%;
+                                display: block;
+
+                                a {
+                                    font-size: 1em;
+                                }
+
+                                a:hover {
+                                    font-size: 1em;
+                                    background-color: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .textboxes {
+            .media .media-left {
+                width: 35%;
+            }
+        }
+
+        aside#side-bar-left {
+            height: auto;
+            background-color: $color2;
+
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                span {}
+
+                span a {
+                    font-size: 0.9em;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+                #newsletter {
+                    form {
+                        .form-group {
+                            label#NewsLetter {
+                                input {
+                                    margin: 1em 0;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+
+                        button[type="submit"] {
+                            font-size: 0.8em;
+                            line-height: 15px;
+                            height: 30px;
+                            width: 60%;
+                        }
+
+                        button[type="submit"]:hover {}
+                    }
+                }
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 83%;
+            margin: auto;
+        }
+
+        section.searchformadvance {
+            width: 100%;
+        }
+
+        section#search_result {
+            .result_s {
+                height: auto;
+                width: 26%;
+                float: left;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+
+            .result_s1 {
+                height: auto;
+                width: 26%;
+                display: block;
+                float: left;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    height: 30px;
+                    width: 100%;
+                    line-height: 30px;
+                }
+            }
+
+            .resultmap {
+                float: right;
+                height: 275px;
+                width: 48%;
+            }
+        }
+
+        #main-content {
+            height: auto;
+            width: 100%;
+            margin: auto;
+
+            h1 {
+                margin: 0;
+                font-size: 1.3em;
+                line-height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                line-height: 35px;
+                letter-spacing: 0.1em;
+                font-size: 1em;
+            }
+
+            p {
+                width: 98%;
+                font-size: 0.75em;
+                line-height: 1.8em;
+            }
+
+            ul {
+                margin: 2% 0;
+                font-size: 0.75em;
+                width: 35%;
+
+                li {
+                    letter-spacing: 0.1em;
+                    width: 100%;
+                    line-height: 35px;
+                    font-size: 0.75em;
+                }
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.2em;
+                        height: 30px;
+                        line-height: 1.3em;
+
+                        span {
+                            margin: 0 0.5% 0 0;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 1%;
+                        width: 35%;
+                    }
+
+                    p {
+                        margin: 0 0 1%;
+                        font-size: 0.75em;
+                        line-height: 1.5em;
+                    }
+
+                    p a {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        .home-page-text {
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            width: 100%;
+            height: auto;
+        }
+
+        footer#site-footer {
+            ul {
+                padding: 0;
+                margin: 0 auto;
+                width: 90%;
+                height: 40px;
+                list-style: outside none none;
+
+                li {
+                    font-family: ($FontList);
+                    float: left;
+                    line-height: 35px;
+                    width: 25%;
+                    text-align: center;
+                    height: 40px;
+                    margin-left: 0;
+
+                    a {
+                        font-size: 0.70em;
+                    }
+
+                    a:hover {
+                        font-size: 0.75em;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Landscape phones and down */
+@media all and (max-width: 480px) {
+    .sidebar-btn {
+        left: 88%;
+        font-size: 0.70em;
+        padding: 1%;
+        top: 129px;
+    }
+
+    .container-fluid {
+        header {
+            .socials {
+                width: 100%;
+            }
+        }
+
+        nav {
+            .navbar-default {
+                .navbar-toggle {
+                    margin-right: -4px;
+                    background-color: $color1;
+                }
+
+                .container-fluid {
+                    .navbar-collapse {
+                        margin-bottom: 5px;
+
+                        ul.navbar-nav {
+                            width: 100%;
+                            height: auto;
+
+                            li {
+                                width: 100%;
+                                display: block;
+
+                                a {
+                                    font-size: 1em;
+                                }
+
+                                a:hover {
+                                    font-size: 1em;
+                                    background-color: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 90%;
+            margin: auto;
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.80em;
+                    font-weight: bolder;
+                }
+
+                span {}
+
+                span a {
+                    font-size: 0.9em;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+                #newsletter {
+                    form {
+                        .form-group {
+                            label#NewsLetter {
+                                input {
+                                    margin: 1em 0;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+
+                        button[type="submit"] {
+                            font-size: 0.8em;
+                            line-height: 15px;
+                            height: 30px;
+                            width: 60%;
+                        }
+
+                        button[type="submit"]:hover {}
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            h1 {
+                font-size: 1.4em;
+                height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                letter-spacing: 0.1em;
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 0.9em;
+                line-height: 1.3em;
+            }
+
+            p {
+                font-size: 0.8em;
+                line-height: 1.5em;
+            }
+
+            ul {
+                width: 55%;
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.2em;
+                        height: 30px;
+                        line-height: 1.3em;
+
+                        span {
+                            margin: 0 2% 0 0;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 2% 0 0;
+                        width: 35%;
+                    }
+
+                    p {
+                        margin: 0 0 1%;
+                        font-size: 0.75em;
+                        line-height: 1.5em;
+                    }
+
+                    p a {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+            /*register Form*/
+            #campregister {
+                width: 80%;
+
+                form#RegForm {
+                    width: 90%;
+
+                    img {
+                        width: 25%;
+                        height: 40px;
+                    }
+
+                    label {
+                        font-size: 0.9em;
+                    }
+
+                    .verifybox {
+                        font-size: 0.85em;
+                    }
+
+                    .textfield {
+                        font-size: 0.85em;
+                    }
+
+                    #select8 {
+                        font-size: 0.85em;
+                    }
+
+                    #Submit {
+                        font-size: 0.85em;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                        font-size: 0.85em;
+                    }
+                }
+            }
+            /*search form*/
+            section.searchformadvance {
+                width: 90%;
+
+                form#contactform,
+                form#login,
+                form#retrieve,
+                form#searchform {
+                    width: 90%;
+
+                    label {
+                        letter-spacing: 0.1em;
+                        font-size: 0.85em;
+                    }
+
+                    .textfield {}
+
+                    #Submit {
+                        width: 40%;
+                        font-size: 0.85em;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            section#search_result .resultmap {
+                float: right;
+                height: 250px;
+                width: 48%;
+            }
+        }
+
+        .textboxes {
+            h2 {
+                font-size: 0.75em;
+                line-height: 20px;
+            }
+
+            div.media {
+                .media-left {
+                    width: 35%;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 0.9em;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 0.70em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        .home-page-text {
+            h1 {
+                font-size: 1.4em;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                width: 100%;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-size: 1.1em;
+                height: 30px;
+                line-height: 30px;
+                margin: 0;
+                width: 100%;
+            }
+
+            p {
+                font-size: 0.85em;
+                width: 98%;
+            }
+        }
+
+        footer#site-footer {
+            width: 100%;
+            height: 40px;
+            margin-top: 5px;
+            background-color: $color1;
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+            ul {
+                padding: 0;
+                width: 90%;
+                height: 40px;
+                margin: auto;
+
+                li {
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+
+                    a {
+                        font-size: 0.7em;
+                    }
+
+                    a:active {
+                        color: #FF0;
+                    }
+
+                    a:hover {
+                        font-weight: bold;
+                        color: $color1;
+                    }
+                }
+
+                li:hover {
+                    background-color: $color2;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 360px) {
+    .sidebar-btn {
+        left: 82%;
+        font-size: 0.75em;
+        padding: 2%;
+        top: 265px;
+    }
+
+    .container-fluid {
+        max-width: 100%;
+
+        header {
+            .campuklogo {
+                height: 100%;
+            }
+
+            .socials {
+                width: 100%;
+            }
+
+            .socials ul li a i {
+                font-size: 1em;
+            }
+        }
+
+        nav {
+            .navbar-default {
+                .navbar-toggle {
+                    margin-right: 4px;
+                    background-color: $color1;
+                }
+
+                .container-fluid {
+                    .navbar-collapse {
+                        margin-bottom: 5px;
+
+                        ul.navbar-nav {
+                            width: 100%;
+                            height: auto;
+
+                            li {
+                                width: 100%;
+                                display: block;
+
+                                a {
+                                    font-size: 1em;
+                                }
+
+                                a:hover {
+                                    font-size: 1em;
+                                    background-color: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 90%;
+            margin: auto;
+        }
+
+        .camp ul li {
+            width: 24%;
+        }
+
+        #main-content {
+            h1 {
+                font-size: 1.4em;
+                height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                letter-spacing: 0.1em;
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 0.9em;
+                line-height: 1.3em;
+            }
+
+            p {
+                font-size: 0.75em;
+                line-height: 1.5em;
+            }
+
+            ul {
+                width: 55%;
+            }
+
+            .panel {
+                .panel-heading {
+                    h3.panel-title {
+                        font-size: 1.2em;
+                        height: 30px;
+                        line-height: 1.3em;
+
+                        span {
+                            margin: 0 2% 0 0;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .activ_img,
+                    .cook_img,
+                    .equip1_img,
+                    .equip2_img,
+                    .equip_img,
+                    .trav_img {
+                        margin: 0 2% 0 0;
+                        width: 45%;
+                    }
+
+                    p {
+                        margin: 0 0 1%;
+                        font-size: 0.75em;
+                        line-height: 1.5em;
+                    }
+
+                    p a {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+            /*register Form*/
+            #campregister {
+                width: 90%;
+
+                form#RegForm {
+                    width: 90%;
+
+                    img {
+                        width: 25%;
+                        height: 40px;
+                    }
+
+                    label {
+                        font-size: 0.9em;
+                    }
+
+                    .verifybox {
+                        font-size: 0.85em;
+                    }
+
+                    .textfield {
+                        font-size: 0.85em;
+                    }
+
+                    #select8 {
+                        font-size: 0.85em;
+                    }
+
+                    #Submit {
+                        font-size: 0.85em;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                        font-size: 0.85em;
+                    }
+                }
+            }
+            /*search form*/
+            section.searchformadvance {
+                width: 90%;
+
+                form#contactform,
+                form#login,
+                form#retrieve,
+                form#searchform {
+                    width: 80%;
+
+                    label {
+                        letter-spacing: 0.1em;
+                        font-size: 0.95em;
+                    }
+
+                    #Submit {
+                        width: 40%;
+                        font-size: 0.85em;
+                    }
+
+                    #Submit:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            section#search_result {
+                .result_s {
+                    height: auto;
+                    width: 35%;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 85%;
+                }
+
+                .result_s1 {
+                    height: auto;
+                    width: 63%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                .resultmap {
+                    height: auto;
+                    width: 100%;
+                    float: left;
+                }
+
+                .resultimage {
+                    width: 100%;
+                    max-height: 100%;
+                }
+
+                input {
+                    height: 30px;
+                    width: 90%;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                span {}
+
+                span a {
+                    font-size: 0.9em;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.75em;
+                    }
+                }
+
+                #newsletter {
+                    form {
+                        .form-group {
+                            label#NewsLetter {
+                                input {
+                                    margin: 1em 0;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+
+                        button[type="submit"] {
+                            font-size: 0.8em;
+                            line-height: 15px;
+                            height: 30px;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .textboxes {
+            h2 {
+                font-size: 0.80em;
+            }
+
+            div.media {
+                .media-left {
+                    width: 40%;
+
+                    img.media-object {}
+                }
+            }
+
+            .media-body {
+                h4.media-heading {
+                    font-size: 1em;
+                }
+
+                p {
+                    font-size: 0.70em;
+                }
+
+                p:last-of-type {
+                    margin: 0 0 2%;
+                }
+            }
+        }
+        /*end of text boxes*/
+        .home-page-text {
+            h2 {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+@media all and (max-width: 320px) {
+    .sidebar-btn {
+        left: 80%;
+    }
+
+    .container-fluid {
+        header {
+            height: 40px;
+
+            .campuklogo {
+                height: 100%;
+            }
+
+            .socials {
+                width: 100%;
+
+                ul li a i {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        nav {
+            .navbar-default {
+                .navbar-toggle {
+                    margin-right: 4px;
+                }
+
+                .container-fluid {
+                    .navbar-collapse {
+                        margin-bottom: 5px;
+
+                        ul.navbar-nav {
+                            width: 100%;
+
+                            li {
+                                width: 100%;
+
+                                a {
+                                    font-size: 1em;
+                                }
+
+                                a:hover {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #main-content {
+            h1 {
+                font-size: 1.3em;
+                height: 50px;
+            }
+
+            h2 {
+                height: 30px;
+                letter-spacing: 0.1em;
+                font-size: 1.1em;
+            }
+
+            h3 {
+                font-size: 0.9em;
+                line-height: 1.3em;
+            }
+
+            p {
+                font-size: 0.70em;
+                line-height: 1.5em;
+            }
+
+            ul {
+                width: 55%;
+            }
+
+            section.searchformadvance {
+                width: 90%;
+
+                form ul {
+                    width: 90%;
+                    height: auto;
+                    margin: 0;
+                }
+            }
+
+            #campregister {
+                form ul {
+                    width: 90%;
+                    height: auto;
+                    margin: 0;
+                }
+            }
+        }
+
+        aside#side-bar-left {
+            .side-bar-box {
+                h2 {
+                    clear: both;
+                    font-size: 0.85em;
+                    font-weight: bolder;
+                }
+
+                span {}
+
+                span a {
+                    font-size: 0.9em;
+                }
+
+                .media {
+                    display: block;
+                }
+
+                .media .media-left {
+                    width: 60%;
+                    display: block;
+                    margin: 2% auto;
+                }
+
+                .media .media-left .media-object {
+                    opacity: 0.9;
+                }
+
+                .media .media-left .media-object:hover {
+                    opacity: 1;
+                }
+
+                .media .media-body {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.75em;
+                    }
+                }
+
+                #newsletter {
+                    form {
+                        .form-group {
+                            label#NewsLetter {
+                                input {
+                                    margin: 1em 0;
+                                    font-weight: normal;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+
+                        button[type="submit"] {
+                            font-size: 0.8em;
+                            line-height: 15px;
+                            height: 30px;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+
+        section#search_result {
+            .resultimage {
+                width: 100%;
+                max-height: 100%;
+            }
+
+            .result_s1 {
+                height: auto;
+                width: 51%;
+                display: inline-block;
+                float: none;
+            }
+
+            .result_s {
+                height: auto;
+                width: 45%;
+                display: block;
+                margin: 0;
+                padding: 0;
+                font-size: 85%;
+            }
+
+            .resultmap {
+                height: auto;
+                width: 100%;
+                float: none;
+            }
+        }
+
+        .home-page-text {
+            h1 {
+                font-size: 1.3em;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.85em;
+                width: 98%;
+            }
+        }
+
+        footer#site-footer {
+            width: 100%;
+
+            ul {
+                width: 100%;
+                height: 40px;
+
+                li {
+                    height: 40px;
+                    line-height: 40px;
+
+                    a {
+                        font-size: 0.7em;
+                    }
+
+                    a:active {
+                        color: #FF0;
+                    }
+
+                    a:hover {
+                        font-weight: bold;
+                    }
+                }
+
+                li:hover {}
+            }
+        }
+    }
+}

@@ -27,13 +27,15 @@
                             <h3 class="panel-title"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>Self Catering</h3>
                           </div>
                           <div class="panel-body">
-                          <figure class="cook_img"><img  src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2017/04/girl-and-boy-cooking.jpg" class="img-thumbnail img-responsive" /></figure>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum,
-                            magna nibh dictum justo, eu porttitor nisl mi nec leo. </p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
 
+                          <figure class="cook_img"><img  src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2017/04/girl-and-boy-cooking.jpg" class="img-thumbnail img-responsive" /></figure>
+
+                          <p> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elite. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum, magna nibh dictum justo, eu porttitor nisl mi nec leo. ', 'camping-advice' ); ?></p>
+
+                          <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+                          <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+                          <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+                                       
                           </div>
                         </div>
 
@@ -44,8 +46,7 @@
                           </div>
                           <div class="panel-body">
 
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
+                        <p> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elite. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum, magna nibh dictum justo, eu porttitor nisl mi nec leo. ', 'camping-advice' ); ?></p>
 
                           </div>
                         </div>
@@ -57,10 +58,10 @@
                           <div class="panel-body">
                             <figure class="cook_img pull-right"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2017/04/barbeque-chicken-on-grill.jpg" class="img-thumbnail img-responsive" alt="barbeque-chicken-on-grill" /></figure>
 
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum,
-                            magna nibh dictum justo, eu porttitor nisl mi nec leo. </p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
+                        <p> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elite. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum, magna nibh dictum justo, eu porttitor nisl mi nec leo. ', 'camping-advice' ); ?></p>
+
+<p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+<p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
                         
 
                           </div>
@@ -72,9 +73,7 @@
                           </div>
                           <div class="panel-body">
 
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
-
+                        <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
                           </div>
                         </div>
 
@@ -85,13 +84,12 @@
                           <div class="panel-body">
                             <figure class="cook_img"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2017/04/gasburner.jpg" class="img-thumbnail img-responsive" alt="gas-burner" /></figure>
 
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum,
-                            magna nibh dictum justo, eu porttitor nisl mi nec leo. </p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
+                        <p> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elite. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum, magna nibh dictum justo, eu porttitor nisl mi nec leo. ', 'camping-advice' ); ?></p>
 
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
-                        <p>Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie.</p>
+                        <p> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elite. Sed facilisis est sit amet velit posuere vel luctus turpis aliquet. Praesent a bibendum velit. Aliquam erat volutpat. Maecenas condimentum, quam nec lacinia condimentum, magna nibh dictum justo, eu porttitor nisl mi nec leo. ', 'camping-advice' ); ?></p>
+
+                        <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+                       
                           </div>
                         </div>
 
@@ -103,14 +101,14 @@
                           <div class="panel-body">
                            <figure class="cook_img pull-right"><img src="<?php echo home_url(); ?>/wp-content/uploads/sites/3/2017/04/family-sitting-at-restaurant-table.jpg" class="img-thumbnail img-responsive " alt="family-sitting-at-restaurant-table" /></figure>
 
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
-                        <p> Proin vehicula suscipit diam, nec convallis purus facilisis ut. Cras elit massa, rutrum eu laoreet rutrum, euismod volutpat nisl. Nulla sit amet nunc mi. Donec vulputate tellus ut metus luctus at adipiscing dui ultricies. Praesent
-                            ut nisi odio, nec aliquam neque. Aliquam condimentum vestibulum quam. In a ipsum enim. </p>
+                         <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+
+                        <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+
+                         <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+
+                         <p> <?php _e( 'Praesent imperdiet nulla at sem vulputate vitae eleifend lorem egestas. Quisque vel lacus eget lorem bibendum cursus. Phasellus non mattis augue. Maecenas tincidunt ante eu justo consequat molestie. ', 'camping-advice' ); ?></p>
+                         
                           </div>
                         </div>
                 <div class="clearfix"> </div>

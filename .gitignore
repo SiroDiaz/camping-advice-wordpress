@@ -54,6 +54,8 @@ css/.sass-cache/
 
 .sass-cache/
 
+node_modules/
+
 images/
 js/
 js/bootstrap/
@@ -83,6 +85,7 @@ members/register.php
 members.php/activate.php
 members/members.loop.php
 
+fonts/
 
 
 common/
