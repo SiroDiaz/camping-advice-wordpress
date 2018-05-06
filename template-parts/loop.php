@@ -1,5 +1,7 @@
   
 
+ 
+
     <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
@@ -7,29 +9,40 @@
             <article class="post group <?php post_class() ?>" id="post-<?php the_ID(); ?>">
 
                 <h1 class="post-title">
-                    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute( array(
+            'before' => 'Permalink to: ',
+            'after' => '')
+        );?>">  <?php the_title(); ?> </a>
                 </h1>
 
                 <header class="byline">
                     <div class="entry-meta">
                         <div class="meta-content">
-
-                            single loop
+                            
 
                         </div>
                     </div><!-- .entry-meta -->
                 </header>
-                
-  <a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute() ?>;">
-                    <figure class="featuredImage"><?php the_post_thumbnail('custom'); ?></figure>
-                </a>
+        
 
-              
- <div class="entry-content">
-                     
-                      <?php the_content(); ?>
- </div>
-                    <br>
+                    <?php if (has_post_thumbnail()) { ?>
+                        <figure class="featuredImage">
+                            <a href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark">
+                                <?php the_post_thumbnail('featured-image'); ?>
+                            </a>
+                        </figure>
+                    <?php } else { ?>
+                        <figure class="featuredImage">
+                            <a href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark">
+                                <?php the_post_thumbnail(); ?>
+                            </a>
+                        </figure>
+                    <?php }
+                    ?>
+                    <div class="entry-content">
+                      <?php the_excerpt(); ?>
+                    </div>
+                <br/>
                     <footer class="byline">
 
                       <p class='right'>
@@ -51,13 +64,11 @@
 
                     </footer>
 
-<?php comment_form(); ?>
-<br>
-<br>
+<br/>
             </article>
         <?php endwhile; ?>
     <?php else: ?>
 
-       
+        <?php get_template_part( 'templates/loop', 'none' ); ?>
         
     <?php endif; ?>

@@ -9,11 +9,7 @@
 
 ?>
 
-<<<<<<< HEAD:bbpress/loop-forums.php
 <?php do_action( 'bbp_before_main_content' ); ?>
-=======
-<?php do_action( 'bbp_template_before_forums_loop' ); ?>
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42:camping-advice-wordpress/bbpress/loop-forums.php
 
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 
@@ -48,12 +44,8 @@
 
 </ul><!-- .forums-directory -->
 
-<<<<<<< HEAD:bbpress/loop-forums.php
 	<?php do_action( 'bbp_after_main_content' ); ?>
 	
 	<?php get_sidebar('forum'); ?>
 
 
-=======
-<?php do_action( 'bbp_template_after_forums_loop' ); ?>
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42:camping-advice-wordpress/bbpress/loop-forums.php

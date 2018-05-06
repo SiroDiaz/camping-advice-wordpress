@@ -44,11 +44,7 @@ module.exports = function(grunt){
                     },
 
                     files:{
-<<<<<<< HEAD
                             'style.css':'css/style.scss'
-=======
-                            'camping-advice-wordpress/css/main.css':'camping-advice-wordpress/css/main.scss'
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42
                             /*where file goes-----/where file from*/
                     }
                 },
@@ -59,11 +55,7 @@ module.exports = function(grunt){
                                 sourcemap:'auto'
                         },
                         files:{
-<<<<<<< HEAD
                             'css/style-min.css':'css/style.scss'
-=======
-                            'camping-advice-wordpress/main-min.css':'camping-advice-wordpress/css/main.scss'
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42
                                 /*where file goes-----/where file from*/
                         }
                     }
@@ -81,11 +73,7 @@ module.exports = function(grunt){
          * JS Hint
          */
         jshint: {
-<<<<<<< HEAD
             files: ['Gruntfile.js', 'js/**/*.js', 'test/**/*.js'],
-=======
-            files: ['Gruntfile.js', 'camping-advice-wordpress/js/**/*.js', 'test/**/*.js'],
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42
             options: {
                 // options here to override JSHint defaults
                 
@@ -101,11 +89,7 @@ module.exports = function(grunt){
             watch:{
 
                 css:{
-<<<<<<< HEAD
                         files:'css/**/*.scss',
-=======
-                        files:'camping-advice-wordpress/**/*.scss',
->>>>>>> aa6f18f202d16c01773934c7be91883c8cfc8f42
                         tasks:['sass']
                 }
             }

@@ -18,7 +18,6 @@ get_header('forum'); ?>
 		<div id="forum-front" class="bbp-forum-front">
 
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			index-bbpress
 			<div class="entry-content">
 
 				<?php the_content(); ?>

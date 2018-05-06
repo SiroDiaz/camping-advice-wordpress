@@ -26,6 +26,6 @@
 
 
 </div>
-
+<?php get_sidebar('forum'); ?> 
 <?php get_footer(); ?>
 
