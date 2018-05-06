@@ -225,6 +225,46 @@ function camping_advice_widgets_init() {
 add_action( 'widgets_init', 'camping_advice_widgets_init' );
 
 /**
+ * members area
+ *
+ */
+if (! function_exists('camping_advice_members_widgets_init')) :
+    function camping_advice_members_widgets_init()
+    {
+        register_sidebar(array(
+        'name' => __('members-menu', 'camping-advice'),
+        'id' => 'members-menu',
+        'description' => __('The members Menu widget area', 'camping-advice'),
+        'menu_class' => 'menu',
+        'before_widget' => '<article class="side-bar-box">',
+        'after_widget' => '</article>',
+        ));
+    }
+endif;
+add_action('widgets_init', 'camping_advice_members_widgets_init');
+
+/**
+ * whois in area
+ *
+ */
+if (! function_exists('camping_advice_whois_widgets_init')) :
+    function camping_advice_whois_widgets_init()
+    {
+        register_sidebar(array(
+        'name' => __('whois-menu', 'camping-advice'),
+        'id' => 'whois-menu',
+        'description' => __('The Whois Menu widget area', 'camping-advice'),
+        'menu_class' => 'menu',
+        'before_widget' => '<article class="side-bar-box">',
+        'after_widget' => '</article>',
+        ));
+    }
+endif;
+add_action('widgets_init', 'camping_advice_whois_widgets_init');
+
+
+
+/**
  * front-menu area
  *
  */

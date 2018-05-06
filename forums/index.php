@@ -267,10 +267,6 @@ get_header('forum'); ?>
 		</article>
 
 	<?php get_sidebar('forum'); ?>
-    </div>
-
-</div>
-
 
 
 <?php get_footer(); ?>

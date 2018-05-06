@@ -1,14 +1,3 @@
-
-<?php get_header('forum'); ?>
-
-<div class="row">
-    <!---Right side content area with slider and intro text and links-->
-    <div class="col-lg- 12 col-md-12 col-sm-12 col-xs-12">
-
-        <article id="main-content">
-
-
-
 <?php
 /**
  * BuddyPress - Members
@@ -27,6 +16,13 @@
 
 do_action( 'bp_before_directory_members_page' ); ?>
 
+<?php get_header('forum'); ?>
+
+<div class="row">
+    <!---Right side content area with slider and intro text and links-->
+    <div class="col-lg- 12 col-md-12 col-sm-12 col-xs-12">
+
+        <article id="main-content">
 
 
 <div id="buddypress">

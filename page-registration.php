@@ -1,6 +1,6 @@
 	
 
-<?php get_header('forum'); ?>
+<?php get_header(); ?>
 	
 
 

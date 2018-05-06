@@ -1067,9 +1067,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 					
 						display:block;
 						width:100%;
-						line-height:35px;
-						color:$color1;
-						text-align:center;
+						line-height: 40px;
+                        color: $color2;
+                        background-color: $color1;
+                        text-align:center;
+                        text-decoration: none;
 						
 					}
 				
@@ -1080,7 +1082,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				text-decoration: none;
 				padding: 0;
 				margin: 0;
-				float:left;
 				display:inline-block;
 				margin:0.2em;
 				width:96%;
@@ -1251,22 +1252,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                         li.menu-item{
                             width: 100%;
                             margin: 0.5em 0;
-                            font-weight: bold;
                             text-align: center;
                             letter-spacing: 0.1em;
                             height:40px;
         
                             a {
-                                display: block;
-                                text-decoration: none;
+                                
                                 margin: 0 auto;
-                                height: 100%;
                                 width: 80%;
                                 letter-spacing: 0.2em;
                                 font-size: 0.85em;
-                                color: $color2;
-                                text-align: center;
-                                background-color: $color1;
                                 @include TransOrigin( 0,0 );
                                 @include FillUp( both );
                                 @include TranSition( all 0.2s linear);
@@ -1275,7 +1270,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                                     width: 80%;
                                     background-color: $color2;
                                     color: $color1;
-                                    text-decoration: none;
                                     font-weight: bold;
                                     letter-spacing: 0.1em;
                                 }

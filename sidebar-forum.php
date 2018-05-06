@@ -7,11 +7,18 @@
         <article class="side-bar-box">
      <h2>Links</h2>         
 <?php get_template_part( 'template-parts/navigation', 'front' ); ?>
+
                     </article>
-   
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('forum-sidebar')) : ?>
+                    <article class="side-bar-box">
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('members-menu')) : ?>
 
         <?php endif; ?>
+        </article>
+        <article class="side-bar-box">
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('whois-menu')) : ?>
+
+<?php endif; ?>
+</article>
 
  <div class="clearfix"></div>
 </aside>
