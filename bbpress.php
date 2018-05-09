@@ -107,10 +107,10 @@ End of Page
       </article>
             
     </div><!-- .row -->
-       
+    <?php get_sidebar('forum'); ?>
   </div><!-- .col -->
   
- <?php get_sidebar('forum'); ?>
+
  
 </div><!-- .row -->
  

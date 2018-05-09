@@ -2094,7 +2094,7 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
 
 .widget.buddypress div.item-avatar img.avatar {
   margin: 3%;
-  width: 15%;
+  width: 5%;
 }
 
 .widget.buddypress .bp-login-widget-user-avatar {
@@ -2250,6 +2250,30 @@ h2.user-nicename {
   padding: 1em 0.5em;
   background-color: #336600;
 }
+#buddypress #item-body div.item-list-tabs div.message-search form#search-message-form {
+  padding: 0.5em;
+  width: 100%;
+}
+#buddypress #item-body div.item-list-tabs div.message-search form#search-message-form label {
+  width: 28%;
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  color: #fff;
+  background-color: #6ab866;
+  margin-right: 0.5em;
+  text-indent: 1em;
+}
+#buddypress #item-body div.item-list-tabs div.message-search form#search-message-form input[type="text"] {
+  width: 48%;
+  display: inline-block;
+  height: 40px;
+}
+#buddypress #item-body div.item-list-tabs div.message-search form#search-message-form input[type="submit"] {
+  width: 20%;
+  display: inline-block;
+  height: 40px;
+}
 #buddypress #item-body div.profile {
   display: inline-block;
   clear: both;
@@ -2259,7 +2283,7 @@ h2.user-nicename {
 }
 #buddypress #item-body div.myblogs {
   display: inline-block;
-  width: 80%;
+  width: 58%;
 }
 #buddypress #item-body div.myblogs ul#blogs-list {
   width: 100%;
@@ -5030,31 +5054,38 @@ object {
   .container-fluid aside#side-bar-left ul li a {
     display: block;
     width: 100%;
-    line-height: 35px;
-    color: #336600;
+    line-height: 40px;
+    color: #fff;
+    background-color: #336600;
     text-align: center;
+    text-decoration: none;
+    height: auto;
+  }
+  .container-fluid aside#side-bar-left ul li a:hover {
+    color: #336600;
+    background-color: #fff;
+    cursor: pointer;
   }
   .container-fluid aside#side-bar-left .side-bar-box {
+    display: block;
     height: auto;
     text-decoration: none;
     padding: 0;
-    margin: 0;
-    float: left;
-    display: inline-block;
-    margin: 0.2em;
+    margin: 1em auto;
     width: 96%;
   }
   .container-fluid aside#side-bar-left .side-bar-box h2 {
     width: 100%;
-    height: 40px;
+    height: auto;
     line-height: 40px;
     color: #fff;
-    margin: 0;
+    margin: 0.5em 0;
     font-weight: bold;
     font-size: 1em;
     background-color: #336600;
     text-align: center;
     letter-spacing: 0.1em;
+    display: block;
   }
   .container-fluid aside#side-bar-left .side-bar-box #bp-login-widget-form {
     background-color: #336600;
@@ -5149,15 +5180,18 @@ object {
     color: #336600;
   }
   .container-fluid aside#side-bar-left .side-bar-box span {
-    width: 60%;
+    width: 100%;
     display: block;
     height: auto;
     margin: auto;
     text-align: center;
     font-size: 0.9em;
+    line-height: 40px;
   }
   .container-fluid aside#side-bar-left .side-bar-box span:hover {
     background-color: #e5e5e5;
+    color: #336600;
+    cursor: pointer;
   }
   .container-fluid aside#side-bar-left .side-bar-box span a {
     text-decoration: none;
@@ -5199,6 +5233,9 @@ object {
     text-align: center;
     letter-spacing: 0.1em;
   }
+  .container-fluid aside#side-bar-left .side-bar-box-front .card {
+    margin: 1em;
+  }
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu {
     /*linkt to buddypress forums*/
   }
@@ -5210,23 +5247,16 @@ object {
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.menu-item {
     width: 100%;
     margin: 0.5em 0;
-    font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
     height: 40px;
   }
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.bp-menu a,
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.menu-item a {
-    display: block;
-    text-decoration: none;
     margin: 0 auto;
-    height: 100%;
     width: 80%;
     letter-spacing: 0.2em;
     font-size: 0.85em;
-    color: #fff;
-    text-align: center;
-    background-color: #336600;
     -webkit-transform-origin: 0, 0;
     -moz-transform-origin: 0, 0;
     -o-transform-origin: 0, 0;
@@ -5246,13 +5276,12 @@ object {
     width: 80%;
     background-color: #fff;
     color: #336600;
-    text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.1em;
   }
   .container-fluid aside#side-bar-left .side-bar-box-front .card-img-top {
     border-radius: .25rem .25rem 0 0;
-    width: 50%;
+    width: 45%;
     margin: 1em auto;
     display: block;
   }
