@@ -15,7 +15,7 @@
     ul{
         background-color:$color1;
         padding:0.5em;
-        width:90%;
+        width:100%;
         margin:0 auto;
         li{
             display:block;
@@ -545,7 +545,7 @@ form.bbp-login-form{
                         float:left;
 						font-size: 0.9em;
                         img.avatar{
-							width:20%; 
+							width:8%; 
 							margin: 0;
 						}
                         span.bbp-topic-started-by{
@@ -566,6 +566,19 @@ form.bbp-login-form{
 								width: 53%; 
 								font-size:0.95em;
 							}
+
+                        }
+
+                        span.bbp-topic-started-in{
+                            white-space: normal;
+                            display: block;
+                            height: 35px;
+                            line-height: 35px;
+                            a{
+                                margin: 0;
+                                display: inline-block;
+                                width: 90%;
+                            }
 
                         }
 
@@ -591,10 +604,10 @@ form.bbp-login-form{
                         display: inline-block;
 
                         span.bbp-topic-freshness-author{
-                            width:100%;
+                            width:10%;
                             display: block;
                             a:first-of-type{
-                               width:8%;
+                               width:100%;
 
                                img.avatar{
 								   width:100%; 
@@ -604,7 +617,11 @@ form.bbp-login-form{
                             a{ 
 								font-size:0.95em; 
 								width: auto; 
-								float: none;
+                                float: none;
+                                img.avatar{
+                                    width:100%; 
+                                    margin: 0;
+                                 }
 							}
                         }
                     }

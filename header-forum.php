@@ -49,7 +49,7 @@
                         </div><!-- .site-branding -->
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-6 ">
-                            <?php if (is_front_page() || is_page()) : ?>
+                            
                                 
                                     <hgroup>
                                         <h1 id="logo-blog"><span>RAYTHOMPSON</span><span >WEBDEV</span>FORUM</h1>
@@ -67,7 +67,7 @@
 
                                 <?php endif; ?>
 
-                                <?php endif; ?>
+                                
                     </div>
                     
                     <div class="col-lg-3 col-md-3 col-sm-4 col-6 pull-right">

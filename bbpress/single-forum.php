@@ -37,6 +37,7 @@ get_header('forum'); ?>
 
 
 	<?php do_action( 'bbp_after_main_content' ); ?>
+	
 
 	<?php get_sidebar('forum'); ?>
 

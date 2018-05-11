@@ -7,16 +7,16 @@ index-buddy
 
            <article id="main-content">
 
- <?php if ( is_bbpress() ) : ?>
-<?php bbp_breadcrumb(); ?>
+                    <?php if ( is_bbpress() ) : ?>
+                    <?php bbp_breadcrumb(); ?>
 				
                     <?php bbp_get_template_part( 'content', 'single-user' ); ?>
                                
-                <?php else : ?>
+                    <?php else : ?>
           
  					<?php get_template_part('template-parts/loop','single'); ?>
  					
- 						<?php endif; ?>
+ 					<?php endif; ?>
 
            </article>
 

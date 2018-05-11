@@ -1397,7 +1397,7 @@ ul {
 #main-content #subnav ul {
   background-color: #336600;
   padding: 0.5em;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 #main-content #subnav ul li {
@@ -1909,7 +1909,7 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
   font-size: 0.9em;
 }
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta img.avatar {
-  width: 20%;
+  width: 8%;
   margin: 0;
 }
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-by {
@@ -1931,6 +1931,17 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
   width: 53%;
   font-size: 0.95em;
 }
+#bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-in {
+  white-space: normal;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+}
+#bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-title p.bbp-topic-meta span.bbp-topic-started-in a {
+  margin: 0;
+  display: inline-block;
+  width: 90%;
+}
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-voice-count {
   width: 10%;
   text-align: left;
@@ -1951,11 +1962,11 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
   display: inline-block;
 }
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span.bbp-topic-freshness-author {
-  width: 100%;
+  width: 10%;
   display: block;
 }
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span.bbp-topic-freshness-author a:first-of-type {
-  width: 8%;
+  width: 100%;
 }
 #bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span.bbp-topic-freshness-author a:first-of-type img.avatar {
   width: 100%;
@@ -1965,6 +1976,10 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
   font-size: 0.95em;
   width: auto;
   float: none;
+}
+#bbpress-forums ul.bbp-topics li.bbp-body ul.topic li.bbp-topic-freshness p.bbp-topic-meta span.bbp-topic-freshness-author a img.avatar {
+  width: 100%;
+  margin: 0;
 }
 #bbpress-forums div.bbp-submit-wrapper button#bbp_topic_submit {
   display: block;
@@ -2110,11 +2125,11 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
 .widget.buddypress div.item-options a#popular-members {
   display: block;
   text-decoration: none;
-  margin: 2% auto;
+  margin: 1em auto;
   height: 100%;
-  width: 80%;
+  width: 100%;
   line-height: 30px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   font-size: 0.8em;
   color: #fff;
   text-align: center;
@@ -2142,7 +2157,7 @@ form.bbp-login-form fieldset.bbp-form div.bbp-submit-wrapper button[type="submit
 }
 #buddypress #item-header {
   height: auto;
-  width: 38%;
+  width: 55%;
   float: left;
   display: block;
   padding: 0.5em;
@@ -2182,7 +2197,7 @@ h2.user-nicename {
   background-color: #336600;
 }
 #buddypress #item-nav {
-  width: 62%;
+  width: 45%;
   display: inline-block;
 }
 #buddypress #item-nav div#object-nav {
@@ -2191,6 +2206,11 @@ h2.user-nicename {
 }
 #buddypress #item-nav div#object-nav ul {
   margin: 0;
+  padding: 0.5em;
+}
+#buddypress #item-nav div#object-nav ul li {
+  height: auto;
+  margin-bottom: 0.5em;
 }
 #buddypress #item-nav div#object-nav ul li a {
   display: block;
@@ -2207,14 +2227,29 @@ h2.user-nicename {
 #buddypress #item-body {
   width: 100%;
   margin-top: 1em;
-  min-height: 200px;
+  min-height: 330px;
   border: 1px solid #336600;
   padding: 0.4em;
   clear: both;
   /*profile-forum-navigation-buddypress*/
 }
+#buddypress #item-body h2.bp-screen-reader-text {
+  margin: 0.5em 0;
+  color: #336600;
+  height: auto;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  text-align: left;
+  display: inline-block;
+  width: auto;
+}
+#buddypress #item-body div.messages {
+  width: 58%;
+  display: inline-block;
+}
 #buddypress #item-body div.item-list-tabs {
-  width: 40%;
+  width: 30%;
   background-color: #336600;
   display: block;
   float: left;
@@ -2223,7 +2258,7 @@ h2.user-nicename {
 #buddypress #item-body div.item-list-tabs ul {
   background-color: #336600;
   padding: 0.5em;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 #buddypress #item-body div.item-list-tabs ul li {
@@ -2277,13 +2312,16 @@ h2.user-nicename {
 #buddypress #item-body div.profile {
   display: inline-block;
   clear: both;
-  width: 59%;
+  width: 69%;
   background-color: #6ab866;
   padding: 0.5em;
 }
 #buddypress #item-body div.myblogs {
   display: inline-block;
-  width: 58%;
+  width: 69%;
+}
+#buddypress #item-body div.myblogs div#pag-top {
+  height: 50px;
 }
 #buddypress #item-body div.myblogs ul#blogs-list {
   width: 100%;
@@ -2293,7 +2331,7 @@ h2.user-nicename {
 #buddypress #item-body div.myblogs ul#blogs-list li.odd {
   display: block;
   width: 100%;
-  border: 1px solid #336600;
+  background-color: #336600;
   height: auto;
   padding: 1em;
   margin-bottom: 1em;
@@ -2301,17 +2339,29 @@ h2.user-nicename {
 #buddypress #item-body div.myblogs ul#blogs-list li.odd div.item-avatar {
   float: left;
   display: block;
-  width: 8%;
+  width: 5%;
   margin-right: 0.5em;
 }
-#buddypress #item-body div.myblogs ul#blogs-list li.odd .item {
-  width: 80%;
+#buddypress #item-body div.myblogs ul#blogs-list li.odd div.item {
+  width: 93%;
   display: inline-block;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.odd div.item div.item-title {
+  background-color: #fff;
+  margin-bottom: 0.5em;
+  text-indent: 0.5em;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.odd div.item div.item-meta {
+  background-color: #fff;
+  text-indent: 0.5em;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.odd div.action {
+  color: #fff;
 }
 #buddypress #item-body div.myblogs ul#blogs-list li.even {
   display: block;
   width: 100%;
-  border: 1px solid #336600;
+  background-color: #336600;
   height: auto;
   padding: 1em;
   margin-bottom: 1em;
@@ -2319,12 +2369,24 @@ h2.user-nicename {
 #buddypress #item-body div.myblogs ul#blogs-list li.even div.item-avatar {
   float: left;
   display: block;
-  width: 8%;
+  width: 5%;
   margin-right: 0.5em;
 }
-#buddypress #item-body div.myblogs ul#blogs-list li.even .item {
-  width: 80%;
+#buddypress #item-body div.myblogs ul#blogs-list li.even div.item {
+  width: 93%;
   display: inline-block;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.even div.item div.item-title {
+  background-color: #fff;
+  margin-bottom: 0.5em;
+  text-indent: 0.5em;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.even div.item div.item-meta {
+  background-color: #fff;
+  text-indent: 0.5em;
+}
+#buddypress #item-body div.myblogs ul#blogs-list li.even div.action {
+  color: #fff;
 }
 #buddypress div.dir-search,
 #buddypress #members-dir-search {
@@ -2370,17 +2432,6 @@ h2.user-nicename {
 #buddypress form#groups-directory-form,
 #buddypress form#members-directory-form {
   clear: both;
-}
-#buddypress h2.bp-screen-reader-text {
-  margin: 1% 0;
-  width: 100%;
-  color: #336600;
-  height: 40px;
-  line-height: 40px;
-  letter-spacing: 0.1em;
-  font-size: 1.4em;
-  text-align: left;
-  display: block;
 }
 #buddypress #members-dir-list {
   width: 25%;
@@ -2441,52 +2492,92 @@ h2.user-nicename {
   padding-top: 1em;
   clear: both;
 }
-#buddypress div.activity ul {
+#buddypress div.activity ul#activity-stream {
   margin: 0;
+  padding: 0;
 }
-#buddypress div.activity ul li {
-  margin: 0;
+#buddypress div.activity ul#activity-stream li.new_blog_post {
+  margin: 0.5em 0;
+  background-color: #336600;
 }
-#buddypress div.activity ul li div.activity-avatar {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-avatar {
   width: 5%;
   display: block;
   float: left;
-  margin-right: 1em;
+  margin: 0.5em;
 }
-#buddypress div.activity ul li div.activity-content {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content {
   margin: 0;
   font-size: 0.9em;
   width: 92%;
   display: inline-block;
   height: auto;
 }
-#buddypress div.activity ul li div.activity-content div.activity-header {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-header {
+  line-height: 35px;
   font-size: 0.9em;
-  height: 30px;
+  height: 35px;
+  color: #fff;
+  display: block;
+  margin: 0.5em 0;
 }
-#buddypress div.activity ul li div.activity-content div.activity-inner {
-  height: 30px;
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-header p {
+  color: #336600;
+  background-color: #fff;
+  height: 100%;
+  line-height: 35px;
+  text-indent: 1em;
+}
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-header p a {
+  color: #336600;
+}
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-inner {
+  line-height: 35px;
   margin: 0;
+  height: 35px;
+  display: block;
+  color: #fff;
 }
-#buddypress div.activity ul li div.activity-content div.activity-meta {
-  height: 30px;
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-inner p {
+  text-indent: 1em;
+  height: 100%;
+  line-height: 35px;
+  color: #336600;
+  background-color: #fff;
+}
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-inner p a {
+  color: #fff;
+}
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-meta {
+  line-height: 35px;
   margin: 0;
+  height: 35px;
+  display: block;
+  color: #fff;
 }
-#buddypress div.activity ul li div.activity-comments {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-content div.activity-meta a {
+  color: #fff;
+  line-height: 35px;
+  color: #fff;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments {
   margin: 1em 0;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form {
   margin: 0;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-avatar {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-avatar {
   width: 10%;
   margin: auto;
   display: block;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-content {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-content {
   width: 100%;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-content input[type="submit"] {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-content input[type="submit"] {
   display: inline-block;
   font-size: 0.9em;
   line-height: 15px;
@@ -2517,14 +2608,14 @@ h2.user-nicename {
   background-color: #336600;
   width: 20%;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-content input[type="submit"]:hover {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-content input[type="submit"]:hover {
   background-color: #fff;
   color: #336600;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-content textarea.bp-suggestions {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-content textarea.bp-suggestions {
   margin-bottom: 1em;
 }
-#buddypress div.activity ul li div.activity-comments form.ac-form div.ac-reply-content a {
+#buddypress div.activity ul#activity-stream li.new_blog_post div.activity-comments form.ac-form div.ac-reply-content a {
   display: inline-block;
   width: 30%;
 }
@@ -3984,6 +4075,9 @@ object {
     /*Right side*/
     /*Footer*/
   }
+  .container-fluid .row {
+    width: 100%;
+  }
   .container-fluid header#masthead {
     width: 100%;
     height: auto;
@@ -5045,8 +5139,9 @@ object {
     /* homepage text box*/
   }
   .container-fluid aside#side-bar-left ul {
-    padding: 0;
+    padding: 0.5em;
     margin: 0;
+    background-color: #336600;
   }
   .container-fluid aside#side-bar-left ul li {
     height: auto;
@@ -5220,6 +5315,7 @@ object {
   }
   .container-fluid aside#side-bar-left .side-bar-box-front {
     width: 100%;
+    margin-bottom: 0.5em;
   }
   .container-fluid aside#side-bar-left .side-bar-box-front h2 {
     width: 100%;
@@ -5232,6 +5328,7 @@ object {
     background-color: #336600;
     text-align: center;
     letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
   }
   .container-fluid aside#side-bar-left .side-bar-box-front .card {
     margin: 1em;
@@ -5254,7 +5351,7 @@ object {
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.bp-menu a,
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.menu-item a {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     letter-spacing: 0.2em;
     font-size: 0.85em;
     -webkit-transform-origin: 0, 0;
@@ -5273,7 +5370,7 @@ object {
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.bp-menu a:hover,
   .container-fluid aside#side-bar-left .side-bar-box-front nav#navbar-front-menu ul#navbar-front li.menu-item a:hover {
     font-size: 0.95em;
-    width: 80%;
+    width: 100%;
     background-color: #fff;
     color: #336600;
     font-weight: bold;
