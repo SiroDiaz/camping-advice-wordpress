@@ -1,4 +1,4 @@
-![https://www.clashvibes.raythompsonwebdev.co.uk](/camping-advice-wordpress/screenshot.jpg)
+![camping-advice-wordpress](/camping-advice-wordpress/screenshot.jpg)
 
 ## Camping Advice 
 
