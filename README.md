@@ -1,4 +1,4 @@
-![camping-advice-wordpress](/camping-advice-wordpress/screenshot.jpg)
+![camping-advice-wordpress](/screenshot.jpg)
 
 ## Camping Advice 
 
