@@ -17,7 +17,7 @@ License: GNU General Public License v2 or later
 
 ## Description 
 
-##Introduction
+## Introduction
 
 Traditionally many griiish people spend their annual summer holiday overseas. however, following the
 recent economic downturn many British holidaymakers are looking for cheaper holidays and choosing
@@ -69,7 +69,7 @@ before making a contribution to the forum. A website administrator will need a w
 inappropriate messages.
 
 
-##Task I
+## Task I
 There are many different websites with information about camping. You should do some research using
 these websites. When conducting your research bear in mind the purpose of the website, to introduce camping as a relaxing and enjoyable holiday. 
 
@@ -81,7 +81,7 @@ specification is being used to expraln your proposed website to someone with no 
 web design. There should be enough detail presented in such a way that the camping organisation can
 quickly understand what will be developed'.
 
-##Task 3
+## Task 3
 The home page of the website should be developed.
 
 * Be consistent with the design specification produced for task2.
@@ -93,7 +93,7 @@ horizontally.
 
 * Demonstate good application of web design principles and be easy to navigate and use'.
 
-##Task 4
+## Task 4
 Using a search Engines give three.,exampres of companies providing web Hosting services. For each
 of them, provide the following details;
 
@@ -143,10 +143,8 @@ Yes. clashvibes-plugin for custom posts.
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-
 * HTML5 Shiv 3.7.3 (C) @afarkas (C) @jdalton (C)@jon_neal @rem | MIT/GPL2 Licensed,https://github.com/aFarkas/html5shiv
-
  
- * skip-link-focus-fix.js- Helps with accessibility for keyboard only users. Learn more: https://git.io/vWdr2
+* skip-link-focus-fix.js- Helps with accessibility for keyboard only users. Learn more: https://git.io/vWdr2
 
- * 
+
