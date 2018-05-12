@@ -17,11 +17,11 @@ License: GNU General Public License v2 or later
 
 ## Description 
 
-This site is a Wordpress theme which uses Buddypress and BBpress. Theme was originally a project I completed for a web design exam. see breif below:
+This site is a Wordpress theme which uses Buddypress and BBpress. Theme was originally a project I completed for a web design exam I took at East London Technology Training in 2012. See the actual brief for the project below:
 
 ### Introduction
 
-Traditionally many griiish people spend their annual summer holiday overseas. however, following the recent economic downturn many British holidaymakers are looking for cheaper holidays and choosing to take their summer break within the UK. 
+Traditionally many british people spend their annual summer holiday overseas. however, following the recent economic downturn many British holidaymakers are looking for cheaper holidays and choosing to take their summer break within the UK. 
 One of the cheapest types of holiday is camping. Once you have purchased the basic equipment (tents, sleeping bags, cooking equipment etc.) there are many campsites throughout the UK that allow you to pitch a tent and stay for several days for comparatively little cost. 
 
 Many of these campsites provide facilities such as toilets, showers and even small shops and cafe's.
